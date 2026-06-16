@@ -1,539 +1,273 @@
 #!/usr/bin/env python3
-"""
-Build DIM wishlist files directly from the current Aegis Endgame Analysis Excel workbook.
-
-What it does:
-- Reads data/endgame.xlsx by default.
-- Finds rows with Name, Tier, Rank, Perk 1, Perk 2, and Notes-style columns.
-- Downloads the current Destiny 2 manifest from Bungie.
-- Maps weapon/perk names to Destiny Inventory Item hashes.
-- Writes strict DIM wishlist lines:
-    dimwishlist:item=<weapon_hash>&perks=<perk_1_hash>,<perk_2_hash>#notes:...
-- Outputs S-tier, A-tier, and A+S-tier files.
-
-This intentionally does NOT include barrels, magazines, or origin traits in the DIM match.
-That keeps the wishlist useful for vault cleaning without requiring perfect 5/5 rolls.
-"""
-
 from __future__ import annotations
 
-import argparse
-import csv
-import itertools
-import json
-import os
-import re
-import sqlite3
-import sys
-import tempfile
-import urllib.request
-import zipfile
+import argparse, csv, itertools, json, os, re, sqlite3, urllib.request, zipfile
 from collections import defaultdict
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterable
 
-try:
-    import openpyxl
-except ImportError as exc:
-    raise SystemExit(
-        "Missing dependency: openpyxl. Install with: pip install openpyxl"
-    ) from exc
+import openpyxl
+
+ROOT = "https://www.bungie.net"
 
 
-BUNGIE_ROOT = "https://www.bungie.net"
-
-
-@dataclass(frozen=True)
-class AegisRow:
-    sheet: str
-    row_number: int
-    name: str
-    tier: str
-    rank: str
-    perk1_names: tuple[str, ...]
-    perk2_names: tuple[str, ...]
-    barrel: str = ""
-    mag: str = ""
-    origin_trait: str = ""
-    notes: str = ""
-
-
-@dataclass
-class ManifestIndex:
-    # Normalized display name -> inventory item hashes
-    weapons_by_name: dict[str, list[int]]
-    plugs_by_name: dict[str, list[int]]
-    all_item_names_by_hash: dict[int, str]
-
-
-def norm_name(value: Any) -> str:
-    """Normalize names for matching Aegis sheet text to Bungie manifest display names."""
-    if value is None:
+def clean(x):
+    if x is None:
         return ""
-    text = str(value).strip()
-    text = text.replace("\u2019", "'").replace("\u2018", "'")
-    text = text.replace("\u201c", '"').replace("\u201d", '"')
-    text = re.sub(r"\s+", " ", text)
-    return text.casefold()
+    s = str(x).strip().replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+    return re.sub(r"\s+", " ", s).strip()
 
 
-def clean_cell(value: Any) -> str:
-    if value is None:
-        return ""
-    text = str(value).strip()
-    text = text.replace("\u2019", "'").replace("\u2018", "'")
-    text = text.replace("\u201c", '"').replace("\u201d", '"')
-    text = re.sub(r"[ \t]+", " ", text)
-    return text.strip()
+def norm(x):
+    return clean(x).casefold()
 
 
-def split_perks(value: Any) -> tuple[str, ...]:
-    """
-    Split perk cells like:
-      Reconstruction, Demolitionist, Discord
-      Fourth Time's the Charm\nKinetic Tremors
-    """
-    text = clean_cell(value)
-    if not text:
-        return tuple()
-
-    # Remove common annotations.
-    text = re.sub(r"\([^)]*enhanced[^)]*\)", "", text, flags=re.I)
-    text = re.sub(r"\bEnhanced\b", "", text, flags=re.I)
-
-    parts: list[str] = []
-    for chunk in re.split(r"[\n\r,;]+", text):
-        chunk = clean_cell(chunk)
-        if not chunk:
+def split_perks(x):
+    s = clean(x)
+    if not s:
+        return []
+    s = re.sub(r"\bEnhanced\b", "", s, flags=re.I)
+    out, seen = [], set()
+    for p in re.split(r"[\n\r,;]+", s):
+        p = clean(p)
+        if not p or norm(p) in {"none", "n/a", "na", "-", "?", "need testing"}:
             continue
-        # Avoid obvious non-perk placeholders.
-        if chunk.casefold() in {"none", "n/a", "na", "-", "?", "need testing"}:
-            continue
-        parts.append(chunk)
-
-    # Deduplicate while preserving order.
-    seen: set[str] = set()
-    out: list[str] = []
-    for p in parts:
-        key = norm_name(p)
-        if key not in seen:
-            seen.add(key)
+        k = norm(p)
+        if k not in seen:
+            seen.add(k)
             out.append(p)
-    return tuple(out)
+    return out
 
 
-def find_header_row(ws: Any, max_scan_rows: int = 20) -> tuple[int, dict[str, int]] | None:
-    """
-    Locate a header row containing Name, Perk 1, Perk 2, Tier.
-    Returns (row_number, normalized_header -> 1-based column index).
-    """
+def find_header(ws):
     max_row = ws.max_row or 0
     max_col = ws.max_column or 0
-
     if max_row < 1 or max_col < 1:
         return None
 
-    for row in range(1, min(max_scan_rows, max_row) + 1):
-        headers: dict[str, int] = {}
-
-        for col in range(1, max_col + 1):
-            text = clean_cell(ws.cell(row=row, column=col).value)
-            if text:
-                headers[norm_name(text)] = col
-
-        if "name" in headers and "perk 1" in headers and "perk 2" in headers and "tier" in headers:
-            return row, headers
-
+    for r in range(1, min(max_row, 30) + 1):
+        h = {}
+        for c in range(1, max_col + 1):
+            v = clean(ws.cell(r, c).value)
+            if v:
+                h[norm(v)] = c
+        if all(x in h for x in ["name", "perk 1", "perk 2", "tier"]):
+            return r, h
     return None
 
 
-def pick_col(headers: dict[str, int], *names: str) -> int | None:
-    for name in names:
-        key = norm_name(name)
-        if key in headers:
-            return headers[key]
+def col(h, *names):
+    for n in names:
+        if norm(n) in h:
+            return h[norm(n)]
     return None
 
 
-def read_aegis_rows(excel_path: Path) -> list[AegisRow]:
-    wb = openpyxl.load_workbook(excel_path, data_only=True, read_only=True)
-    rows: list[AegisRow] = []
+def read_rows(xlsx):
+    # IMPORTANT: read_only=False is required for this workbook. In read_only mode,
+    # some sheets can report max_row/max_column as None, causing zero detected rows.
+    wb = openpyxl.load_workbook(xlsx, data_only=True, read_only=False)
+    rows = []
 
     for ws in wb.worksheets:
-        header = find_header_row(ws)
-        if not header:
+        found = find_header(ws)
+        if not found:
             continue
 
-        header_row, headers = header
-        name_col = pick_col(headers, "Name")
-        tier_col = pick_col(headers, "Tier")
-        rank_col = pick_col(headers, "Rank")
-        perk1_col = pick_col(headers, "Perk 1")
-        perk2_col = pick_col(headers, "Perk 2")
-        barrel_col = pick_col(headers, "Barrel")
-        mag_col = pick_col(headers, "Mag")
-        origin_col = pick_col(headers, "Origin Trait", "Origin Trai")
-        notes_col = pick_col(headers, "Notes")
+        hr, h = found
+        c_name, c_tier = col(h, "Name"), col(h, "Tier")
+        c_rank, c_p1, c_p2 = col(h, "Rank"), col(h, "Perk 1"), col(h, "Perk 2")
+        c_barrel, c_mag = col(h, "Barrel"), col(h, "Mag")
+        c_origin, c_notes = col(h, "Origin Trait", "Origin Trai"), col(h, "Notes")
 
-        if not all([name_col, tier_col, perk1_col, perk2_col]):
-            continue
-
-        for r in range(header_row + 1, ws.max_row + 1):
-            name = clean_cell(ws.cell(row=r, column=name_col).value)
-            tier = clean_cell(ws.cell(row=r, column=tier_col).value).upper()
+        max_row = ws.max_row or 0
+        for r in range(hr + 1, max_row + 1):
+            name = clean(ws.cell(r, c_name).value)
+            tier = clean(ws.cell(r, c_tier).value).upper()
             if not name or tier not in {"S", "A"}:
                 continue
 
-            perk1 = split_perks(ws.cell(row=r, column=perk1_col).value)
-            perk2 = split_perks(ws.cell(row=r, column=perk2_col).value)
-            if not perk1 or not perk2:
+            p1 = split_perks(ws.cell(r, c_p1).value)
+            p2 = split_perks(ws.cell(r, c_p2).value)
+            if not p1 or not p2:
                 continue
 
-            rank = clean_cell(ws.cell(row=r, column=rank_col).value) if rank_col else ""
-            barrel = clean_cell(ws.cell(row=r, column=barrel_col).value) if barrel_col else ""
-            mag = clean_cell(ws.cell(row=r, column=mag_col).value) if mag_col else ""
-            origin = clean_cell(ws.cell(row=r, column=origin_col).value) if origin_col else ""
-            notes = clean_cell(ws.cell(row=r, column=notes_col).value) if notes_col else ""
-
-            rows.append(
-                AegisRow(
-                    sheet=ws.title,
-                    row_number=r,
-                    name=name,
-                    tier=tier,
-                    rank=rank,
-                    perk1_names=perk1,
-                    perk2_names=perk2,
-                    barrel=barrel,
-                    mag=mag,
-                    origin_trait=origin,
-                    notes=notes,
-                )
-            )
+            rows.append({
+                "sheet": ws.title,
+                "row": r,
+                "name": name,
+                "tier": tier,
+                "rank": clean(ws.cell(r, c_rank).value) if c_rank else "",
+                "p1": p1,
+                "p2": p2,
+                "barrel": clean(ws.cell(r, c_barrel).value) if c_barrel else "",
+                "mag": clean(ws.cell(r, c_mag).value) if c_mag else "",
+                "origin": clean(ws.cell(r, c_origin).value) if c_origin else "",
+                "notes": clean(ws.cell(r, c_notes).value) if c_notes else "",
+            })
 
     return rows
 
 
-def get_json_url(url: str, api_key: str | None = None) -> Any:
-    headers = {"User-Agent": "aegis-dim-wishlist-builder/1.0"}
-    if api_key:
-        headers["X-API-Key"] = api_key
+def get_json(url, key=None):
+    headers = {"User-Agent": "aegis-dim-builder/1.1"}
+    if key:
+        headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req) as response:
-        return json.loads(response.read().decode("utf-8"))
+    with urllib.request.urlopen(req) as res:
+        return json.loads(res.read().decode("utf-8"))
 
 
-def download_file(url: str, dest: Path, api_key: str | None = None) -> None:
-    headers = {"User-Agent": "aegis-dim-wishlist-builder/1.0"}
-    if api_key:
-        headers["X-API-Key"] = api_key
+def download(url, path, key=None):
+    headers = {"User-Agent": "aegis-dim-builder/1.1"}
+    if key:
+        headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req) as response:
-        dest.write_bytes(response.read())
+    with urllib.request.urlopen(req) as res:
+        path.write_bytes(res.read())
 
 
-def download_manifest_db(cache_dir: Path, api_key: str | None = None) -> Path:
-    cache_dir.mkdir(parents=True, exist_ok=True)
-    manifest = get_json_url(f"{BUNGIE_ROOT}/Platform/Destiny2/Manifest/", api_key=api_key)
-    response = manifest.get("Response", manifest)
-
-    paths = response.get("mobileWorldContentPaths", {}).get("en")
-    if not paths:
-        # Some responses use jsonWorldComponentContentPaths, but mobile sqlite is much easier.
-        raise RuntimeError("Could not find mobileWorldContentPaths['en'] in Bungie manifest response.")
-
-    zip_url = BUNGIE_ROOT + paths
-    zip_path = cache_dir / "destiny_manifest.zip"
-    download_file(zip_url, zip_path, api_key=api_key)
-
-    with zipfile.ZipFile(zip_path, "r") as zf:
-        db_names = [n for n in zf.namelist() if n.endswith((".content", ".sqlite", ".db"))]
-        if not db_names:
-            db_names = zf.namelist()
-        db_name = db_names[0]
-        zf.extract(db_name, cache_dir)
-
-    return cache_dir / db_name
+def manifest_db(cache):
+    key = os.environ.get("BUNGIE_API_KEY")
+    cache.mkdir(parents=True, exist_ok=True)
+    data = get_json(ROOT + "/Platform/Destiny2/Manifest/", key)
+    resp = data.get("Response", data)
+    rel = resp["mobileWorldContentPaths"]["en"]
+    zpath = cache / "manifest.zip"
+    download(ROOT + rel, zpath, key)
+    with zipfile.ZipFile(zpath) as z:
+        name = next((n for n in z.namelist() if n.endswith((".content", ".sqlite", ".db"))), z.namelist()[0])
+        z.extract(name, cache)
+    return cache / name
 
 
-def iter_inventory_item_json(db_path: Path) -> Iterable[dict[str, Any]]:
-    conn = sqlite3.connect(db_path)
+def iter_items(db):
+    con = sqlite3.connect(db)
     try:
-        # Table can be named DestinyInventoryItemDefinition in current manifests.
-        table_names = {
-            row[0] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
-        }
-        table = "DestinyInventoryItemDefinition"
-        if table not in table_names:
-            candidates = [t for t in table_names if "InventoryItemDefinition" in t]
-            if not candidates:
-                raise RuntimeError("Could not find DestinyInventoryItemDefinition table.")
-            table = candidates[0]
-
-        # Usually has columns id, json.
-        for (json_text,) in conn.execute(f"SELECT json FROM {table}"):
+        tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+        table = "DestinyInventoryItemDefinition" if "DestinyInventoryItemDefinition" in tables else next(t for t in tables if "InventoryItemDefinition" in t)
+        for (txt,) in con.execute(f"SELECT json FROM {table}"):
             try:
-                yield json.loads(json_text)
+                yield json.loads(txt)
             except Exception:
-                continue
+                pass
     finally:
-        conn.close()
+        con.close()
 
 
-def build_manifest_index(db_path: Path) -> ManifestIndex:
-    weapons_by_name: dict[str, list[int]] = defaultdict(list)
-    plugs_by_name: dict[str, list[int]] = defaultdict(list)
-    all_item_names_by_hash: dict[int, str] = {}
-
-    for item in iter_inventory_item_json(db_path):
-        display = item.get("displayProperties") or {}
-        name = clean_cell(display.get("name"))
-        if not name:
+def build_index(db):
+    weapons, plugs = defaultdict(list), defaultdict(list)
+    for it in iter_items(db):
+        name = clean((it.get("displayProperties") or {}).get("name"))
+        if not name or "hash" not in it:
             continue
-
-        h = item.get("hash")
-        if h is None:
-            continue
-        try:
-            h = int(h)
-        except Exception:
-            continue
-
-        all_item_names_by_hash[h] = name
-        key = norm_name(name)
-
-        item_type = int(item.get("itemType", -1))
-        item_subtype = int(item.get("itemSubType", -1))
-        inventory = item.get("inventory") or {}
-        bucket_hash = inventory.get("bucketTypeHash")
-
-        # Weapon items are itemType 3. Bucket can be kinetic/energy/power, but itemType is usually enough.
-        if item_type == 3:
-            weapons_by_name[key].append(h)
-
-        # Perks, traits, barrels, mags, origin traits, etc. are plug items.
-        plug = item.get("plug")
-        if plug is not None:
-            # DIM docs say use InventoryItem versions, not SandboxPerkDefinition.
-            plugs_by_name[key].append(h)
-
-    def dedupe_sorted(d: dict[str, list[int]]) -> dict[str, list[int]]:
-        return {k: sorted(set(v)) for k, v in d.items()}
-
-    return ManifestIndex(
-        weapons_by_name=dedupe_sorted(weapons_by_name),
-        plugs_by_name=dedupe_sorted(plugs_by_name),
-        all_item_names_by_hash=all_item_names_by_hash,
-    )
+        h = int(it["hash"])
+        if int(it.get("itemType", -1)) == 3:
+            weapons[norm(name)].append(h)
+        if it.get("plug") is not None:
+            plugs[norm(name)].append(h)
+    return {k: sorted(set(v)) for k, v in weapons.items()}, {k: sorted(set(v)) for k, v in plugs.items()}
 
 
-def safe_note(text: str) -> str:
-    # DIM notes live after #notes:. Keep it one line.
-    text = text.replace("\n", "\\n").replace("\r", "")
-    text = text.replace("#", "")
-    return text.strip()
-
-
-def row_note(row: AegisRow) -> str:
+def note(row):
     bits = [
-        f"{row.name} - Rank {row.rank}, Tier {row.tier} by TheAegisRelic".strip(),
-        f"Sheet: {row.sheet}",
-        f"Column 1: {', '.join(row.perk1_names)}",
-        f"Column 2: {', '.join(row.perk2_names)}",
+        f"{row['name']} - Rank {row['rank']}, Tier {row['tier']} by TheAegisRelic",
+        f"Sheet: {row['sheet']}",
+        "Column 1: " + ", ".join(row["p1"]),
+        "Column 2: " + ", ".join(row["p2"]),
     ]
-    if row.barrel:
-        bits.append(f"Barrel: {row.barrel}")
-    if row.mag:
-        bits.append(f"Mag: {row.mag}")
-    if row.origin_trait:
-        bits.append(f"Origin Trait: {row.origin_trait}")
-    if row.notes:
-        bits.append(f"Notes: {row.notes}")
-    return safe_note("\\n".join(bits))
+    if row["barrel"]:
+        bits.append("Barrel: " + row["barrel"])
+    if row["mag"]:
+        bits.append("Mag: " + row["mag"])
+    if row["origin"]:
+        bits.append("Origin Trait: " + row["origin"])
+    if row["notes"]:
+        bits.append("Notes: " + row["notes"])
+    return "\\n".join(bits).replace("#", "").replace("\r", "")
 
 
-def generate_dim_lines(
-    rows: list[AegisRow],
-    index: ManifestIndex,
-    tier_filter: set[str],
-    include_origin_trait: bool = False,
-    max_hashes_per_name: int = 20,
-) -> tuple[list[str], list[dict[str, str]]]:
-    lines: list[str] = []
-    unresolved: list[dict[str, str]] = []
-    seen_lines: set[str] = set()
-
-    selected = [r for r in rows if r.tier in tier_filter]
-
-    for row in selected:
-        weapon_hashes = index.weapons_by_name.get(norm_name(row.name), [])
-        if not weapon_hashes:
-            unresolved.append({
-                "sheet": row.sheet,
-                "row": str(row.row_number),
-                "weapon": row.name,
-                "type": "weapon",
-                "missing": row.name,
-                "tier": row.tier,
-                "rank": row.rank,
-            })
+def generate(rows, weapons, plugs, tiers):
+    lines, missing, seen = [], [], set()
+    for row in rows:
+        if row["tier"] not in tiers:
             continue
 
-        perk1_hashes_by_name: list[tuple[str, list[int]]] = []
-        perk2_hashes_by_name: list[tuple[str, list[int]]] = []
-        origin_hashes: list[int] = []
-
-        for p in row.perk1_names:
-            hashes = index.plugs_by_name.get(norm_name(p), [])
-            if not hashes:
-                unresolved.append({
-                    "sheet": row.sheet,
-                    "row": str(row.row_number),
-                    "weapon": row.name,
-                    "type": "perk_1",
-                    "missing": p,
-                    "tier": row.tier,
-                    "rank": row.rank,
-                })
-            else:
-                perk1_hashes_by_name.append((p, hashes[:max_hashes_per_name]))
-
-        for p in row.perk2_names:
-            hashes = index.plugs_by_name.get(norm_name(p), [])
-            if not hashes:
-                unresolved.append({
-                    "sheet": row.sheet,
-                    "row": str(row.row_number),
-                    "weapon": row.name,
-                    "type": "perk_2",
-                    "missing": p,
-                    "tier": row.tier,
-                    "rank": row.rank,
-                })
-            else:
-                perk2_hashes_by_name.append((p, hashes[:max_hashes_per_name]))
-
-        if include_origin_trait and row.origin_trait:
-            origin_hashes = index.plugs_by_name.get(norm_name(row.origin_trait), [])[:max_hashes_per_name]
-            if not origin_hashes:
-                unresolved.append({
-                    "sheet": row.sheet,
-                    "row": str(row.row_number),
-                    "weapon": row.name,
-                    "type": "origin_trait",
-                    "missing": row.origin_trait,
-                    "tier": row.tier,
-                    "rank": row.rank,
-                })
-
-        if not perk1_hashes_by_name or not perk2_hashes_by_name:
+        wh = weapons.get(norm(row["name"]), [])
+        if not wh:
+            missing.append([row["sheet"], row["row"], row["name"], "weapon", row["name"], row["tier"], row["rank"]])
             continue
 
-        note = row_note(row)
+        p1s, p2s = [], []
+        for p in row["p1"]:
+            hs = plugs.get(norm(p), [])
+            if hs:
+                p1s.extend(hs[:20])
+            else:
+                missing.append([row["sheet"], row["row"], row["name"], "perk_1", p, row["tier"], row["rank"]])
+        for p in row["p2"]:
+            hs = plugs.get(norm(p), [])
+            if hs:
+                p2s.extend(hs[:20])
+            else:
+                missing.append([row["sheet"], row["row"], row["name"], "perk_2", p, row["tier"], row["rank"]])
 
-        lines.append("")
-        lines.append(f"//notes:{note}")
+        if not p1s or not p2s:
+            continue
 
-        for weapon_hash in weapon_hashes[:max_hashes_per_name]:
-            for _, p1_hashes in perk1_hashes_by_name:
-                for _, p2_hashes in perk2_hashes_by_name:
-                    for p1_hash, p2_hash in itertools.product(p1_hashes, p2_hashes):
-                        perk_hashes = [p1_hash, p2_hash]
-                        if include_origin_trait and origin_hashes:
-                            for origin_hash in origin_hashes:
-                                candidate = f"dimwishlist:item={weapon_hash}&perks={','.join(map(str, perk_hashes + [origin_hash]))}"
-                                if candidate not in seen_lines:
-                                    seen_lines.add(candidate)
-                                    lines.append(candidate)
-                        else:
-                            candidate = f"dimwishlist:item={weapon_hash}&perks={','.join(map(str, perk_hashes))}"
-                            if candidate not in seen_lines:
-                                seen_lines.add(candidate)
-                                lines.append(candidate)
+        lines += ["", "//notes:" + note(row)]
+        for w, p1, p2 in itertools.product(wh[:20], sorted(set(p1s)), sorted(set(p2s))):
+            line = f"dimwishlist:item={w}&perks={p1},{p2}"
+            if line not in seen:
+                seen.add(line)
+                lines.append(line)
 
-    return lines, unresolved
+    return lines, missing
 
 
-def write_wishlist(path: Path, title: str, description: str, body_lines: list[str]) -> None:
-    header = [
-        f"title:{title}",
-        f"description:{description}",
-        "// Generated from the current Aegis Endgame Analysis Excel file.",
-        "// Strict matching mode: weapon + one recommended Column 1 perk + one recommended Column 2 perk.",
-        "// Barrels, mags, masterworks, and origin traits are intentionally not required by default.",
+def write_file(path, title, desc, lines):
+    head = [
+        "title:" + title,
+        "description:" + desc,
+        "// Generated from current Aegis Endgame Analysis Excel.",
+        "// Strict mode: weapon + one recommended Perk 1 + one recommended Perk 2.",
+        "// Barrels, mags, masterworks, and origin traits are intentionally not required.",
         "",
     ]
-    path.write_text("\n".join(header + body_lines).strip() + "\n", encoding="utf-8")
+    Path(path).write_text("\n".join(head + lines).strip() + "\n", encoding="utf-8")
 
 
-def write_unresolved(path: Path, unresolved: list[dict[str, str]]) -> None:
-    fieldnames = ["sheet", "row", "weapon", "type", "missing", "tier", "rank"]
-    with path.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        for row in unresolved:
-            writer.writerow(row)
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--excel", default="data.xlsx")
+    ap.add_argument("--outdir", default=".")
+    ap.add_argument("--cache-dir", default=".cache")
+    args = ap.parse_args()
 
+    rows = read_rows(Path(args.excel))
+    print(f"Found {len(rows)} A/S rows")
+    if not rows:
+        raise SystemExit("No A/S rows found. Check that the Excel workbook has Name, Perk 1, Perk 2, Tier headers.")
 
-def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--excel", default="data/endgame.xlsx", help="Path to Aegis Endgame Analysis .xlsx")
-    parser.add_argument("--outdir", default=".", help="Output directory")
-    parser.add_argument("--cache-dir", default=".cache", help="Cache directory for Bungie manifest DB")
-    parser.add_argument("--include-origin-trait", action="store_true", help="Require origin trait in DIM matches")
-    parser.add_argument("--max-hashes-per-name", type=int, default=20, help="Safety cap for ambiguous name hashes")
-    args = parser.parse_args()
+    db = manifest_db(Path(args.cache_dir))
+    weapons, plugs = build_index(db)
+    print(f"Indexed {len(weapons)} weapon names and {len(plugs)} plug names")
 
-    excel_path = Path(args.excel)
-    outdir = Path(args.outdir)
-    cache_dir = Path(args.cache_dir)
+    all_missing = []
+    for fn, tiers, title, desc in [
+        ("Aegis-Endgame-S.txt", {"S"}, "Aegis Endgame S-tier", "Current Aegis Endgame S-tier weapons."),
+        ("Aegis-Endgame-A.txt", {"A"}, "Aegis Endgame A-tier", "Current Aegis Endgame A-tier weapons."),
+        ("Aegis-Endgame-A-and-S.txt", {"A", "S"}, "Aegis Endgame A and S-tier", "Current Aegis Endgame A/S-tier weapons."),
+    ]:
+        lines, missing = generate(rows, weapons, plugs, tiers)
+        write_file(Path(args.outdir) / fn, title, desc, lines)
+        all_missing += missing
+        print(f"Wrote {fn}: {sum(1 for l in lines if l.startswith('dimwishlist:'))} DIM lines; {len(missing)} unresolved")
 
-    if not excel_path.exists():
-        raise SystemExit(f"Excel file not found: {excel_path}")
-
-    outdir.mkdir(parents=True, exist_ok=True)
-
-    api_key = os.environ.get("BUNGIE_API_KEY") or None
-
-    print(f"Reading workbook: {excel_path}")
-    rows = read_aegis_rows(excel_path)
-    print(f"Found {len(rows)} A/S-tier rows with perk recommendations.")
-
-    print("Downloading/loading Destiny manifest...")
-    db_path = download_manifest_db(cache_dir, api_key=api_key)
-    print(f"Manifest DB: {db_path}")
-
-    print("Building manifest name index...")
-    index = build_manifest_index(db_path)
-    print(f"Indexed {len(index.weapons_by_name)} weapon names and {len(index.plugs_by_name)} plug names.")
-
-    outputs = [
-        ("Aegis-Endgame-S.txt", {"S"}, "Aegis Endgame S-tier", "Current Aegis Endgame Analysis S-tier weapons."),
-        ("Aegis-Endgame-A.txt", {"A"}, "Aegis Endgame A-tier", "Current Aegis Endgame Analysis A-tier weapons."),
-        ("Aegis-Endgame-A-and-S.txt", {"A", "S"}, "Aegis Endgame A and S-tier", "Current Aegis Endgame Analysis A/S-tier weapons."),
-    ]
-
-    all_unresolved: list[dict[str, str]] = []
-
-    for filename, tier_filter, title, description in outputs:
-        body, unresolved = generate_dim_lines(
-            rows,
-            index,
-            tier_filter=tier_filter,
-            include_origin_trait=args.include_origin_trait,
-            max_hashes_per_name=args.max_hashes_per_name,
-        )
-        write_wishlist(outdir / filename, title, description, body)
-        all_unresolved.extend(unresolved)
-        dim_line_count = sum(1 for line in body if line.startswith("dimwishlist:"))
-        print(f"Wrote {filename}: {dim_line_count} DIM wishlist lines; {len(unresolved)} unresolved references.")
-
-    write_unresolved(outdir / "Aegis-Unresolved-Names.csv", all_unresolved)
-    print(f"Wrote Aegis-Unresolved-Names.csv with {len(all_unresolved)} unresolved references.")
-
-    return 0
+    with open(Path(args.outdir) / "Aegis-Unresolved-Names.csv", "w", newline="", encoding="utf-8") as f:
+        wr = csv.writer(f)
+        wr.writerow(["sheet", "row", "weapon", "type", "missing", "tier", "rank"])
+        wr.writerows(all_missing)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
