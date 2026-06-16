@@ -10,10 +10,15 @@ import openpyxl
 ROOT = "https://www.bungie.net"
 
 
-def clean(x):
+def normalize_quotes(x):
     if x is None:
         return ""
-    s = str(x).strip().replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+    return str(x).strip().replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+
+
+def clean(x):
+    """Clean display text for notes/matching, collapsing whitespace."""
+    s = normalize_quotes(x)
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -22,12 +27,24 @@ def norm(x):
 
 
 def split_perks(x):
-    s = clean(x)
-    if not s:
+    """
+    Split perk cells while preserving Excel line breaks.
+
+    The previous version called clean() first, which collapsed newlines into spaces.
+    That turned cells like:
+        Physic\nBurning Ambition
+    into:
+        Physic Burning Ambition
+    which is not a real perk name and caused hundreds of unresolved rows.
+    """
+    raw = normalize_quotes(x)
+    if not raw:
         return []
-    s = re.sub(r"\bEnhanced\b", "", s, flags=re.I)
+
+    raw = re.sub(r"\bEnhanced\b", "", raw, flags=re.I)
+
     out, seen = [], set()
-    for p in re.split(r"[\n\r,;]+", s):
+    for p in re.split(r"[\n\r,;]+", raw):
         p = clean(p)
         if not p or norm(p) in {"none", "n/a", "na", "-", "?", "need testing"}:
             continue
