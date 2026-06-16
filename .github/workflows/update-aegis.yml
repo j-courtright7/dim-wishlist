@@ -1,0 +1,95 @@
+name: Update Aegis DIM Wishlist
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/update-aegis.yml"
+  schedule:
+    - cron: "17 9 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Build combined DIM wishlist files
+        run: |
+          python3 <<'PY'
+          import json
+          import urllib.request
+          from datetime import datetime, timezone
+
+          upstream_api = "https://api.github.com/repos/chapo2501/theaegisrelic-wishlist/contents"
+
+          with urllib.request.urlopen(upstream_api) as response:
+              files = json.load(response)
+
+          txt_files = [
+              f for f in files
+              if f.get("type") == "file"
+              and f.get("name", "").endswith(".txt")
+              and f.get("download_url")
+          ]
+
+          tier_files = [
+              f for f in txt_files
+              if f["name"].endswith("_tier_a_and_s.txt")
+          ]
+
+          def fetch_text(url):
+              with urllib.request.urlopen(url) as response:
+                  return response.read().decode("utf-8", errors="replace")
+
+          def write_combined(output_name, selected_files, description):
+              now = datetime.now(timezone.utc).isoformat()
+
+              with open(output_name, "w", encoding="utf-8") as out:
+                  out.write(f"title:{output_name}\n")
+                  out.write(f"description:{description}\n")
+                  out.write(f"// Generated from chapo2501/theaegisrelic-wishlist on {now}\n")
+                  out.write(f"// Raw URL: https://raw.githubusercontent.com/j-courtright7/dim-wishlist/main/{output_name}\n\n")
+
+                  for f in sorted(selected_files, key=lambda x: x["name"].lower()):
+                      out.write("\n\n")
+                      out.write("// ============================================================\n")
+                      out.write(f"// Source file: {f['name']}\n")
+                      out.write("// ============================================================\n")
+                      out.write(fetch_text(f["download_url"]).strip())
+                      out.write("\n")
+
+          write_combined(
+              "Aegis-Endgame-A-and-S.txt",
+              tier_files,
+              "Combined Aegis Relic DIM wishlist files for categories with explicit A/S-tier files."
+          )
+
+          write_combined(
+              "Aegis-Endgame-All-Categories.txt",
+              txt_files,
+              "Combined Aegis Relic DIM wishlist files from all category txt files."
+          )
+
+          print("A/S tier files:", len(tier_files), [f["name"] for f in sorted(tier_files, key=lambda x: x["name"].lower())])
+          print("All txt files:", len(txt_files), [f["name"] for f in sorted(txt_files, key=lambda x: x["name"].lower())])
+          PY
+
+      - name: Commit combined wishlist files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add Aegis-Endgame-A-and-S.txt Aegis-Endgame-All-Categories.txt
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update combined Aegis DIM wishlists"
+            git push
+          fi
