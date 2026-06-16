@@ -1,1 +1,1077 @@
 sheet,row,weapon,type,missing,tier,rank
+Autos,3,No Hesitation,perk_1,Physic Burning Ambition,S,1.0
+Autos,3,No Hesitation,perk_2,Chaos Reshaped Attrition Orbs Incandescent,S,1.0
+Autos,4,DECATUR 02,perk_1,Physic Attrition Orbs Crystalline Corpsebloom,S,2.0
+Autos,4,DECATUR 02,perk_2,Reciprocity Master of Arms Redirection,S,2.0
+Autos,5,Adamantite,perk_1,Physic Reciprocity Demolitionist,S,3.0
+Autos,5,Adamantite,perk_2,Hatchling Desperate Measures Tear,S,3.0
+Bows,3,Point of the Stag,perk_2,Voltshot Archer's Gambit,S,1.0
+Bows,4,Biting Winds,perk_1,Bewildering Burst Impromptu Ammunition Archer's Tempo,S,2.0
+Bows,4,Biting Winds,perk_2,Kinetic Tremors Explosive Head,S,2.0
+Bows,5,The Spiteful Fang,perk_1,Headstone Rimestealer,S,3.0
+Bows,5,The Spiteful Fang,perk_2,Firefly Crystalline Corpsebloom Archer's Gambit,S,3.0
+Bows,6,Non-Denouement,perk_1,Dragonfly Rolling Storm Shoot to Loot,S,4.0
+Bows,6,Non-Denouement,perk_2,Voltshot Chaos Reshaped Meganeura,S,4.0
+Bows,7,Accrued Redemption,perk_1,Attrition Orbs Archer's Tempo,S,5.0
+Bows,7,Accrued Redemption,perk_2,Kinetic Tremors Firefly Archer's Gambit,S,5.0
+HCs,3,Word of Crota,perk_1,Repulsor Brace Dragonfly,S,1.0
+HCs,4,IRONWOOD 03,perk_1,Repulsor Brace Dimensional Shift Demolitionist,S,2.0
+HCs,4,IRONWOOD 03,perk_2,Destabilizing Rounds Surrounded Master of Arms,S,2.0
+HCs,5,Posterity,perk_2,Frenzy Redirection Explosive Payload,S,3.0
+HCs,6,Modified B-7 Pistol,perk_1,Firefly Rimestealer Rapid Hit,S,4.0
+HCs,6,Modified B-7 Pistol,perk_2,Headstone Crystalline Corpsebloom,S,4.0
+Pulses,3,Claws of the Wolf,perk_2,Destabilizing Rounds Attrition Orbs,S,1.0
+Pulses,4,Joxer's Longsword,perk_1,Repulsor Brace Dragonfly Shoot to Loot,S,2.0
+Pulses,4,Joxer's Longsword,perk_2,Destabilizing Rounds Demoralize Withering Gaze,S,2.0
+Pulses,5,Gridskipper,perk_1,Repulsor Brace Demoralize,S,3.0
+Pulses,6,The Martlet,perk_1,Firefly Repulsor Brace,S,4.0
+Pulses,7,Nullify,perk_1,Firefly Heal Clip Burning Ambition,S,5.0
+Pulses,7,Nullify,perk_2,Incandescent Chaos Reshaped Meganeura,S,5.0
+Pulses,8,Veles-X,perk_1,Repulsor Brace Demoralize,S,6.0
+Pulses,8,Veles-X,perk_2,Destabilizing Rounds Withering Gaze Firefly,S,6.0
+Pulses,9,High Tyrant,perk_1,Destabilizing Rounds Repulsor Brace Loose Change,S,7.0
+Pulses,9,High Tyrant,perk_2,Meganeura Demoralize Frenzy,S,7.0
+Scouts,3,Unworthy,perk_1,Firefly Rolling Storm,S,1.0
+Scouts,3,Unworthy,perk_2,Voltshot Frenzy Gear Shift,S,1.0
+Scouts,4,Vouchsafe,perk_1,Repulsor Brace Dimensional Shift Shoot to Loot,S,2.0
+Scouts,4,Vouchsafe,perk_2,Destabilizing Rounds Withering Gaze Explosive Payload,S,2.0
+Scouts,5,Trustee,perk_2,Burning Ambition Incandescent,S,3.0
+Scouts,6,Voltaic Shade,perk_1,Jolting Feedback Rapid Hit Shoot to Loot,S,4.0
+Scouts,6,Voltaic Shade,perk_2,Voltshot Meganeura Frenzy,S,4.0
+Scouts,7,Aisha's Embrace,perk_1,Demoralize Rapid Hit Shoot to Loot,S,5.0
+Scouts,7,Aisha's Embrace,perk_2,Destabilizing Rounds Desperate Measures Withering Gaze,S,5.0
+Scouts,8,Doom of Chelchis,perk_1,Destabilizing Rounds Firefly Explosive Payload,S,6.0
+Scouts,8,Doom of Chelchis,perk_2,Meganeura Repulsor Brace Withering Gaze,S,6.0
+Scouts,9,No Feelings,perk_1,Voltshot Rolling Storm,S,7.0
+Scouts,9,No Feelings,perk_2,Meganeura Explosive Payload,S,7.0
+Sidearms,3,Evening SI4,perk_1,Heal Clip Impromptu Ammunition,S,1.0
+Sidearms,3,Evening SI4,perk_2,Incandescent Burning Ambition Desperate Measures,S,1.0
+Sidearms,4,Punching Out,perk_2,Incandescent Meganeura,S,2.0
+Sidearms,5,Drang,perk_1,Heal Clip Loose Change Collective Pugilism,S,3.0
+Sidearms,5,Drang,perk_2,Incandescent Burning Ambition Master of Arms,S,3.0
+Sidearms,6,Compact Defender,perk_2,Repulsor Brace Frenzy,S,4.0
+Sidearms,7,Brass Attacks,perk_1,Repulsor Brace Impromptu Ammunition,S,5.0
+Sidearms,7,Brass Attacks,perk_2,Destabilizing Rounds Demoralize,S,5.0
+Sidearms,8,Seventh Seraph SI-2,perk_1,Destabilizing Rounds Dimensional Shift,S,6.0
+Sidearms,8,Seventh Seraph SI-2,perk_2,Meganeura Repulsor Brace Demoralize,S,6.0
+Sidearms,9,Heliocentric QSc,perk_1,Heal Clip Demolitionist,S,7.0
+Sidearms,9,Heliocentric QSc,perk_2,Incandescent Frenzy Surrounded,S,7.0
+Sidearms,10,Insurmountable,perk_1,Repulsor Brace Air Trigger Attrition Orbs,S,8.0
+Sidearms,10,Insurmountable,perk_2,Destabilizing Rounds Surrounded,S,8.0
+SMGs,3,Multimach CCX,perk_1,Attrition Orbs Bewildering Burst Stopping Power,S,1.0
+SMGs,3,Multimach CCX,perk_2,Kinetic Tremors Master of Arms,S,1.0
+SMGs,4,Yeartide Apex,perk_1,Heal Clip Attrition Orbs Demolitionist,S,2.0
+SMGs,4,Yeartide Apex,perk_2,Incandescent Chaos Reshaped Burning Ambition,S,2.0
+SMGs,5,Unforgiven,perk_1,Destabilizing Rounds Attrition Orbs,S,3.0
+SMGs,5,Unforgiven,perk_2,Repulsor Brace Chaos Reshaped Dimensional Shift,S,3.0
+SMGs,6,The Recluse,perk_1,Repulsor Brace Dimensional Shift Collective Pugilism,S,4.0
+SMGs,6,The Recluse,perk_2,Destabilizing Rounds Chaos Reshaped,S,4.0
+SMGs,7,"M-17 ""Fast Talker""",perk_1,Attrition Orbs Cooling Baubles Demolitionist,S,5.0
+SMGs,7,"M-17 ""Fast Talker""",perk_2,Target Lock Crystalline Corpsebloom,S,5.0
+SMGs,8,Peculiar Charm,perk_1,Attrition Orbs Stopping Power Shoot to Loot,S,6.0
+SMGs,8,Peculiar Charm,perk_2,Kinetic Tremors Bewildering Burst Firefly,S,6.0
+SMGs,9,MIDA Mini-Tool,perk_1,Heal Clip Attrition Orbs Loose Change,S,7.0
+SMGs,9,MIDA Mini-Tool,perk_2,Incandescent Burning Ambition Collective Pugilism,S,7.0
+SMGs,10,No Survivors,perk_1,Heal Clip Attrition Orbs Burning Ambition,S,8.0
+SMGs,13,Antedate,perk_1,Dragonfly Rewind Rounds Rolling Storm,S,11.0
+SMGs,13,Antedate,perk_2,Jolting Feedback Target Lock Desperate Measures,S,11.0
+SMGs,14,The Title,perk_1,Repulsor Brace Threat Detector,S,12.0
+SMGs,14,The Title,perk_2,Destabilizing Rounds Surrounded,S,12.0
+SMGs,15,Bug-Out Bag,perk_1,Repulsor Brace Attrition Orbs,S,13.0
+BGLs,3,VS Velocity Baton,perk_1,Repulsor Brace Dimensional Shift Reconstruction,S,1.0
+BGLs,3,VS Velocity Baton,perk_2,Destabilizing Rounds Chain Reaction Attrition Orbs,S,1.0
+BGLs,4,Ouster Engine,perk_1,Air Trigger Blast Distributor Auto-Loading Holster,S,2.0
+BGLs,4,Ouster Engine,perk_2,Chaos Reshaped Crystalline Corpsebloom Chain Reaction,S,2.0
+BGLs,5,Psychopomp,perk_1,Auto-Loading Holster Blast Distributor Impromptu Ammunition,S,3.0
+BGLs,5,Psychopomp,perk_2,Aggregate Charge Voltshot Attrition Orbs,S,3.0
+BGLs,6,Festival Flight,perk_1,Envious Arsenal Blast Distributor Slice,S,4.0
+BGLs,6,Festival Flight,perk_2,Elemental Honing One for All Attrition Orbs,S,4.0
+BGLs,7,Gizmo Weft,perk_1,Air Trigger Slideshot Envious Arsenal,S,5.0
+BGLs,7,Gizmo Weft,perk_2,Bipod Aggregate Charge Elemental Honing,S,5.0
+BGLs,8,Motif-41,perk_1,Auto-Loading Holster Wellspring Impulse Amplifier,S,6.0
+BGLs,8,Motif-41,perk_2,Incandescent Master of Arms Attrition Orbs,S,6.0
+BGLs,9,Lost Signal,perk_1,Auto-Loading Holster Lead from Gold,S,7.0
+BGLs,9,Lost Signal,perk_2,Vorpal Weapon Demolitionist One for All,S,7.0
+BGLs,10,Theodolite,perk_1,Reconstruction Blast Distributor Eddy Current,S,8.0
+BGLs,10,Theodolite,perk_2,Elemental Honing Voltshot Frenzy,S,8.0
+Fusions,3,Cartesian Coordinate,perk_1,Reconstruction Envious Arsenal Discord,S,1.0
+Fusions,3,Cartesian Coordinate,perk_2,Aggregate Charge Controlled Burst Reservoir Burst,S,1.0
+Fusions,4,Null Composure,perk_1,Overflow Reconstruction Envious Arsenal,S,2.0
+Fusions,4,Null Composure,perk_2,Elemental Honing Controlled Burst Reservoir Burst,S,2.0
+Fusions,5,The Beacon,perk_1,Rewind Rounds Lead from Gold Demolitionist,S,3.0
+Fusions,5,The Beacon,perk_2,Bait and Switch Controlled Burst Deconstruct,S,3.0
+Fusions,6,Riptide,perk_1,Auto-Loading Holster Overflow,S,4.0
+Fusions,6,Riptide,perk_2,Chill Clip Controlled Burst,S,4.0
+Fusions,7,Lionfish-4fr,perk_1,Reconstruction Lead from Gold,S,5.0
+Fusions,7,Lionfish-4fr,perk_2,Chill Clip Controlled Burst Elemental Honing,S,5.0
+Fusions,8,Accelerando-42,perk_1,Overflow Slice,S,6.0
+Fusions,8,Accelerando-42,perk_2,Aggregate Charge Controlled Burst Surrounded,S,6.0
+Fusions,9,Scatter Signal,perk_1,Overflow Slice,S,7.0
+Glaives,3,Rake Angle,perk_1,Overflow Impulse Amplifier Lead from Gold,S,1.0
+Glaives,3,Rake Angle,perk_2,Chill Clip Close to Melee,S,1.0
+Glaives,4,Refusal of the Call,perk_1,Slice Close to Melee Chain Reaction,S,2.0
+Glaives,4,Refusal of the Call,perk_2,Chaos Reshaped Mega Kill Clip Replenishing Aegis,S,2.0
+Glaives,5,Forthcoming Deviance,perk_1,Repulsor Brace Dimensional Shift Impulse Amplifier,S,3.0
+Glaives,5,Forthcoming Deviance,perk_2,Destabilizing Rounds Close to Melee Chaos Reshaped,S,3.0
+Glaives,6,The Heron,perk_1,Repulsor Brace Disruption Break Lead from Gold,S,4.0
+Glaives,6,The Heron,perk_2,Destabilizing Rounds Close to Melee Redirection,S,4.0
+Glaives,7,Lubrae's Ruin,perk_1,Close to Melee Grave Robber Frenzy,S,5.0
+Glaives,7,Lubrae's Ruin,perk_2,Chaos Reshaped Incandescent Unrelenting,S,5.0
+Glaives,8,Nezarec's Whisper,perk_1,Demolitionist Impulse Amplifier Lead from Gold,S,6.0
+Glaives,9,Ecliptic Distaff,perk_1,Repulsor Brace Impulse Amplifier Disruption Break,S,7.0
+Glaives,9,Ecliptic Distaff,perk_2,Close to Melee Destabilizing Rounds Chaos Reshaped,S,7.0
+Glaives,10,Greasy Luck,perk_1,Chaos Reshaped Reconstruction Heal Clip,S,8.0
+Glaives,10,Greasy Luck,perk_2,Close to Melee Mega Kill Clip Chain Reaction,S,8.0
+Glaives,11,The Enigma,perk_1,Impulse Amplifier Lead from Gold,S,9.0
+Glaives,11,The Enigma,perk_2,Close to Melee Frenzy,S,9.0
+Shotguns,3,Perfect Paradox,perk_1,Pugilist Stopping Power Bewildering Burst,S,1.0
+Shotguns,3,Perfect Paradox,perk_2,One-Two Punch Trench Barrel All-Star,S,1.0
+Shotguns,4,Heritage,perk_1,Redirection Reconstruction Demolitionist,S,2.0
+Shotguns,4,Heritage,perk_2,Recombination Aggregate Charge Cascade Point,S,2.0
+Shotguns,5,Unvoiced,perk_1,Redirection Fourth Time's the Charm,S,3.0
+Shotguns,5,Unvoiced,perk_2,Bait and Switch Vorpal Weapon,S,3.0
+Shotguns,6,Found Verdict,perk_1,Aggregate Charge Discord,S,4.0
+Shotguns,6,Found Verdict,perk_2,Trench Barrel Elemental Honing Gear Shift,S,4.0
+Shotguns,7,Basso Ostinato,perk_1,Grave Robber Discord Demolitionist,S,5.0
+Shotguns,7,Basso Ostinato,perk_2,One-Two Punch Destabilizing Rounds Trench Barrel,S,5.0
+Shotguns,8,One Small Step,perk_1,Grave Robber Lead from Gold,S,6.0
+Shotguns,8,One Small Step,perk_2,One-Two Punch Trench Barrel,S,6.0
+Shotguns,9,Threat Level,perk_1,Grave Robber One-Two Punch Cascade Point,S,7.0
+Shotguns,9,Threat Level,perk_2,Chaos Reshaped Trench Barrel Elemental Honing,S,7.0
+Shotguns,10,IKELOS_SG_v1.0.3,perk_1,Grave Robber Threat Detector Pugilist,S,8.0
+Shotguns,10,IKELOS_SG_v1.0.3,perk_2,One-Two Punch Surrounded Cascade Point,S,8.0
+Snipers,4,Praedyth's Revenge,perk_1,Aggregate Charge Fourth Time's the Charm Kinetic Tremors,S,1.0
+Snipers,4,Praedyth's Revenge,perk_2,Elemental Honing Bait and Switch Firefly,S,1.0
+Snipers,6,Lance Ephemeral,perk_1,Fourth Time's the Charm Envious Arsenal Lead from Gold,S,3.0
+Snipers,6,Lance Ephemeral,perk_2,Bait and Switch Elemental Honing Redirection,S,3.0
+Snipers,7,Rapid Growth,perk_2,Aggregate Charge Gear Shift,S,4.0
+Snipers,8,Omniscient Eye,perk_1,Fourth Time's the Charm Envious Arsenal,S,5.0
+Snipers,9,Something Something,perk_1,Triple Tap Discord,S,6.0
+Snipers,9,Something Something,perk_2,Elemental Honing All-Star Adhesive Ordnance,S,6.0
+Rocket Sidearms,3,Lotus-Eater,perk_1,Repulsor Brace Dimensional Shift Air Trigger,S,1.0
+Rocket Sidearms,3,Lotus-Eater,perk_2,Destabilizing Rounds Withering Gaze Surrounded,S,1.0
+Rocket Sidearms,4,Returned Memory,perk_1,Heal Clip Lead from Gold Impromptu Ammunition,S,2.0
+Rocket Sidearms,4,Returned Memory,perk_2,Incandescent Redirection Desperate Measures,S,2.0
+Rocket Sidearms,5,High Albedo,perk_1,Lead from Gold Stopping Power Blast Distributor,S,3.0
+Rocket Sidearms,5,High Albedo,perk_2,Kinetic Tremors All-Star Recombination,S,3.0
+Rocket Sidearms,6,Aberrant Action,perk_1,Heal Clip Field Prep,S,4.0
+Rocket Sidearms,6,Aberrant Action,perk_2,Incandescent Demolitionist,S,4.0
+Rocket Sidearms,7,The Call,perk_1,Slice Lead from Gold Impulse Amplifier,S,5.0
+Rocket Sidearms,7,The Call,perk_2,Chaos Reshaped Hatchling,S,5.0
+Rocket Sidearms,8,Tinasha's Mastery,perk_1,Air Trigger Impulse Amplifier Loose Change,S,6.0
+Rocket Sidearms,8,Tinasha's Mastery,perk_2,Chill Clip Surrounded Desperate Measures,S,6.0
+Rocket Sidearms,9,Indebted Kindness,perk_1,Air Trigger Beacon Rounds Deconstruct,S,7.0
+Rocket Sidearms,9,Indebted Kindness,perk_2,Voltshot Chain Reaction Gear Shift,S,7.0
+Traces,3,Unsworn,perk_1,Shoot to Loot Tear Collective Pugilism,S,1.0
+Traces,3,Unsworn,perk_2,Chaos Reshaped Detonator Beam Hatchling,S,1.0
+Traces,4,Chronophage,perk_1,Shoot to Loot Repulsor Brace,S,2.0
+Traces,4,Chronophage,perk_2,Destabilizing Rounds Demolitionist Desperate Measures,S,2.0
+Traces,5,Keraunios,perk_1,Shoot to Loot Fourth Time's the Charm,S,3.0
+Traces,5,Keraunios,perk_2,Chain Reaction Rolling Storm Detonator Beam,S,3.0
+HGLs,3,VS Chill Inhibitor,perk_1,Envious Arsenal Cascade Point Chill Clip,S,1.0
+HGLs,3,VS Chill Inhibitor,perk_2,Aggregate Charge Elemental Honing Surrounded,S,1.0
+HGLs,4,Edge Transit BRAVE version,weapon,Edge Transit BRAVE version,S,2.0
+HGLs,5,The Ever-Present,perk_2,Aggregate Charge Bait and Switch Elemental Honing,S,3.0
+HGLs,6,Koraxis's Distress,perk_1,Envious Arsenal Chain Reaction,S,4.0
+HGLs,6,Koraxis's Distress,perk_2,Bait and Switch Chaos Reshaped Surrounded,S,4.0
+HGLs,7,Outrageous Fortune,perk_1,Envious Arsenal Incandescent,S,5.0
+HGLs,7,Outrageous Fortune,perk_2,Bait and Switch Explosive Light Chain Reaction,S,5.0
+HGLs,8,Love and Death,perk_1,Envious Arsenal Cascade Point Impromptu Ammunition,S,6.0
+HGLs,8,Love and Death,perk_2,Aggregate Charge Elemental Honing Chain Reaction,S,6.0
+LFRs,3,Eyes Unveiled,perk_1,Fourth Time's the Charm Mega Kill Clip,S,1.0
+LFRs,4,Cataclysmic,perk_2,Aggregate Charge Elemental Honing Bait and Switch,S,2.0
+LFRs,5,Briar's Contempt,perk_2,Aggregate Charge Chaos Reshaped Surrounded,S,3.0
+LFRs,6,Scintillation,perk_1,Rewind Rounds Cornered,S,4.0
+LFRs,6,Scintillation,perk_2,Bait and Switch Surrounded,S,4.0
+LFRs,7,Mistral Lift,perk_1,Envious Arsenal Reconstruction Withering Gaze,S,5.0
+LFRs,7,Mistral Lift,perk_2,Bait and Switch Precision Instrument,S,5.0
+LMGs,3,Song of Ir Yût,perk_1,Demolitionist Reconstruction Jolting Feedback,S,1.0
+LMGs,3,Song of Ir Yût,perk_2,Mega Kill Clip High Ground Bait and Switch,S,1.0
+LMGs,4,Qua Vinctus IV,perk_1,Demolitionist Hatchling Slice,S,2.0
+LMGs,4,Qua Vinctus IV,perk_2,Meganeura Killing Tally,S,2.0
+LMGs,5,Thermal Erosion,perk_1,Demolitionist Incandescent,S,3.0
+LMGs,5,Thermal Erosion,perk_2,Meganeura Burning Ambition Mega Kill Clip,S,3.0
+LMGs,6,Pro Memoria,perk_1,Demolitionist Reconstruction Tear,S,4.0
+LMGs,6,Pro Memoria,perk_2,Desperate Measures Bait and Switch Mega Kill Clip,S,4.0
+LMGs,7,Circular Logic,perk_1,Firefly Demolitionist Fourth Time's the Charm,S,5.0
+LMGs,7,Circular Logic,perk_2,Mega Kill Clip Hatchling Desperate Measures,S,5.0
+LMGs,8,Ulterior Observation,perk_1,Demolitionist Headstone Envious Arsenal,S,6.0
+LMGs,8,Ulterior Observation,perk_2,Dragonfly Rimestealer Killing Tally,S,6.0
+LMGs,9,Corrective Measure,perk_1,Destabilizing Rounds Firefly Demolitionist,S,7.0
+LMGs,9,Corrective Measure,perk_2,One for All Demoralize Killing Tally,S,7.0
+LMGs,10,Chain of Command,perk_1,Headstone Overflow,S,8.0
+LMGs,10,Chain of Command,perk_2,Meganeura Demolitionist Desperate Measures,S,8.0
+LMGs,11,Bane of Sorrow,perk_1,Destabilizing Rounds Dimensional Shift Collective Demolition,S,9.0
+LMGs,11,Bane of Sorrow,perk_2,Mega Kill Clip Meganeura Killing Tally,S,9.0
+LMGs,12,Qullim's Terminus,perk_2,Mega Kill Clip Crystalline Corpsebloom Headstone,S,10.0
+Rockets,3,Hezen Vengeance,perk_1,Envious Arsenal Cluster Bomb Collective Demolition,S,1.0
+Rockets,3,Hezen Vengeance,perk_2,Bait and Switch Aggregate Charge Bipod,S,1.0
+Rockets,4,Cynosure,perk_2,Aggregate Charge Bait and Switch Bipod,S,2.0
+Rockets,5,The Hothead,perk_2,Aggregate Charge Elemental Honing Bipod,S,3.0
+Rockets,6,The When and Where,perk_1,Clown Cartridge Reconstruction Overflow,S,4.0
+Rockets,6,The When and Where,perk_2,Bait and Switch Elemental Honing Bipod,S,4.0
+Rockets,7,Crux Celeritas IV,perk_1,Reconstruction Clown Cartridge,S,5.0
+Rockets,7,Crux Celeritas IV,perk_2,Aggregate Charge Elemental Honing Bipod,S,5.0
+Rockets,8,Bellowing Giant,perk_2,Aggregate Charge Reaper's Tithe Bipod,S,6.0
+Rockets,9,Roar of the Bear,perk_1,Explosive Light Reconstruction,S,7.0
+Rockets,9,Roar of the Bear,perk_2,Reaper's Tithe Bipod,S,7.0
+Rockets,10,Apex Predator,perk_1,Reconstruction Cluster Bomb Chain Reaction,S,8.0
+Rockets,10,Apex Predator,perk_2,Bait and Switch Reaper's Tithe Bipod,S,8.0
+Swords,3,Zephyr,perk_1,Surrounded Cold Steel Whirlwind Blade,S,1.0
+Swords,3,Zephyr,perk_2,Surrounded Cold Steel Whirlwind Blade,S,1.0
+Swords,4,Synanceia,perk_1,Relentless Strikes Attrition Orbs Sharp Harvest,S,2.0
+Swords,4,Synanceia,perk_2,Elemental Honing Eager Edge Burning Ambition,S,2.0
+Swords,5,The Slammer,perk_1,Eager Edge Chain Reaction Relentless Strikes,S,3.0
+Swords,5,The Slammer,perk_2,Cold Steel Chaos Reshaped Surrounded,S,3.0
+Swords,6,False Idols,perk_1,Relentless Strikes Attrition Orbs Eager Edge,S,4.0
+Swords,6,False Idols,perk_2,Bait and Switch Surrounded Elemental Honing,S,4.0
+Swords,7,Sullen Claw,perk_1,Eager Edge Vorpal Weapon Relentless Strikes,S,5.0
+Swords,7,Sullen Claw,perk_2,Assassin's Blade Whirlwind Blade Destabilizing Rounds,S,5.0
+Swords,8,Terciopelo-4bl,perk_1,Relentless Strikes Burning Ambition Eager Edge,S,6.0
+Swords,8,Terciopelo-4bl,perk_2,Chaos Reshaped Aggregate Charge Whirlwind Blade,S,6.0
+Swords,9,Bequest,perk_1,Relentless Strikes Jolting Feedback,S,7.0
+Swords,9,Bequest,perk_2,Surrounded Elemental Honing Redirection,S,7.0
+Autos,8,Cusp Sempiternal,perk_1,Reciprocity Repulsor Brace Attrition Orbs,A,5.0
+Autos,8,Cusp Sempiternal,perk_2,Destabilizing Rounds Master of Arms Withering Gaze,A,5.0
+Autos,9,Gnawing Hunger,perk_1,Repulsor Brace Demolitionist Withering Gaze,A,6.0
+Autos,9,Gnawing Hunger,perk_2,Destabilizing Rounds Master of Arms,A,6.0
+Autos,10,Positive Outlook,perk_1,Repulsor Brace Withering Gaze,A,7.0
+Autos,10,Positive Outlook,perk_2,Destabilizing Rounds Mega Kill Clip,A,7.0
+Autos,11,Arctic Haze,perk_1,Incandescent Heal Clip Demolitionist,A,8.0
+Autos,11,Arctic Haze,perk_2,Burning Ambition Frenzy,A,8.0
+Autos,12,The Ringing Nail,perk_1,Incandescent Heal Clip Impromptu Ammunition,A,9.0
+Autos,12,The Ringing Nail,perk_2,Burning Ambition Firefly Onslaught,A,9.0
+Autos,13,Zealous Ideal,perk_1,Heal Clip Attrition Orbs,A,10.0
+Autos,13,Zealous Ideal,perk_2,Incandescent Burning Ambition,A,10.0
+Autos,14,Reghusk's Pledge,perk_1,Destabilizing Rounds Demoralize,A,11.0
+Autos,14,Reghusk's Pledge,perk_2,Repulsor Brace Golden Tricorn Attrition Orbs,A,11.0
+Autos,15,Abyss Defiant,perk_1,Heal Clip Burning Ambition,A,12.0
+Autos,16,The Summoner,perk_2,Incandescent Burning Ambition,A,13.0
+Autos,17,The Riposte,perk_1,Repulsor Brace Dimensional Shift Demoralize,A,14.0
+Autos,17,The Riposte,perk_2,Destabilizing Rounds Desperate Measures,A,14.0
+Autos,18,Scathelocke,perk_1,Attrition Orbs Shoot to Loot,A,15.0
+Autos,18,Scathelocke,perk_2,Kinetic Tremors Ancillary Ordinance,A,15.0
+Autos,19,Everburning Glitz,perk_1,Attrition Orbs Bewildering Burst,A,16.0
+Autos,19,Everburning Glitz,perk_2,Kinetic Tremors Ancillary Ordinance,A,16.0
+Autos,20,VS Pyroelectric Propellant,perk_1,Attrition Orbs Eddy Current Strategist,A,17.0
+Autos,20,VS Pyroelectric Propellant,perk_2,Jolting Feedback Gear Shift,A,17.0
+Autos,21,Chroma Rush,perk_1,Bewildering Burst Stopping Power,A,18.0
+Autos,21,Chroma Rush,perk_2,Kinetic Tremors Ancillary Ordinance All-Star,A,18.0
+Autos,22,Snipehunt Mk. 47,perk_2,Chaos Reshaped Voltshot Attrition Orbs,A,19.0
+Bows,8,Fortunate Star,perk_1,Dragonfly Repulsor Brace Impromptu Ammunition,A,6.0
+Bows,8,Fortunate Star,perk_2,Destabilizing Rounds Demoralize Explosive Head,A,6.0
+Bows,9,Anamnesis,perk_1,Repulsor Brace Dragonfly Archer's Tempo,A,7.0
+Bows,9,Anamnesis,perk_2,Destabilizing Rounds Demoralize Explosive Head,A,7.0
+Bows,10,Hush,perk_1,Burning Ambition Firefly,A,8.0
+Bows,10,Hush,perk_2,Incandescent Meganeura Archer's Gambit,A,8.0
+Bows,11,Pre Astyanax IV,perk_1,Incandescent Firefly,A,9.0
+Bows,11,Pre Astyanax IV,perk_2,Burning Ambition Explosive Head Elemental Honing,A,9.0
+Bows,12,Tyranny of Heaven,perk_1,Dragonfly Meganeura Burning Ambition,A,10.0
+Bows,12,Tyranny of Heaven,perk_2,Incandescent Archer's Gambit,A,10.0
+Bows,13,Convened Recurve,perk_1,Repulsor Brace Dimensional Shift Withering Gaze,A,11.0
+Bows,13,Convened Recurve,perk_2,Destabilizing Rounds Demoralize,A,11.0
+Bows,14,King Orfeo,perk_1,Explosive Head Archer's Tempo Shoot to Loot,A,12.0
+Bows,14,King Orfeo,perk_2,Meganeura Jolting Feedback,A,12.0
+Bows,15,Vengeful Whisper,perk_1,Explosive Head Archer's Tempo Slice,A,13.0
+Bows,15,Vengeful Whisper,perk_2,Meganeura Hatchling Archer's Gambit,A,13.0
+Bows,16,Mercury-A,perk_1,Attrition Orbs Successful Warm-Up,A,14.0
+HCs,7,Kindled Orchid,perk_1,Repulsor Brace Shoot to Loot,A,5.0
+HCs,7,Kindled Orchid,perk_2,Destabilizing Rounds Demoralize Explosive Payload,A,5.0
+HCs,10,Exalted Truth,perk_1,Destabilizing Rounds Withering Gaze,A,7.0
+HCs,10,Exalted Truth,perk_2,Repulsor Brace Demoralize,A,7.0
+HCs,11,Aureus Neutralizer,perk_1,Vorpal Weapon Grave Robber,A,8.0
+HCs,11,Aureus Neutralizer,perk_2,Cascade Point One-Two Punch Trench Barrel,A,8.0
+HCs,12,Eyasluna,perk_1,Firefly Meganeura,A,9.0
+HCs,12,Eyasluna,perk_2,Crystalline Corpsebloom Headstone Chaos Reshaped,A,9.0
+HCs,14,Agape,perk_1,Heal Clip Rewind Rounds,A,11.0
+HCs,14,Agape,perk_2,Incandescent Firefly Precision Instrument,A,11.0
+HCs,15,Corundum Hammer,perk_1,Firefly Slice Shoot to Loot,A,12.0
+HCs,15,Corundum Hammer,perk_2,Tear Explosive Payload Elemental Honing,A,12.0
+HCs,16,D.F.A.,perk_1,Explosive Payload Adhesive Ordnance,A,13.0
+HCs,16,D.F.A.,perk_2,Attrition Orbs Frenzy,A,13.0
+HCs,17,Service Revolver,perk_1,Stopping Power Shoot to Loot,A,14.0
+HCs,17,Service Revolver,perk_2,Mega Kill Clip Kinetic Tremors Explosive Payload,A,14.0
+HCs,18,Unloved,perk_1,Dragonfly Hatchling Rapid Hit,A,15.0
+HCs,18,Unloved,perk_2,Elemental Honing Frenzy Tear,A,15.0
+HCs,19,Midnight Coup,perk_1,Firefly Bewildering Burst Explosive Payload,A,16.0
+HCs,19,Midnight Coup,perk_2,Kinetic Tremors Ancillary Ordinance One for All,A,16.0
+HCs,20,Solemn Remembrance,perk_2,Firefly Rimestealer,A,17.0
+HCs,21,Ancient Gospel,perk_1,Destabilizing Rounds Repulsor Brace,A,18.0
+HCs,21,Ancient Gospel,perk_2,Explosive Payload Demoralize,A,18.0
+HCs,22,Triple Laureate,perk_1,Crystalline Corpsebloom Grave Robber,A,19.0
+HCs,22,Triple Laureate,perk_2,Chaos Reshaped One-Two Punch,A,19.0
+HCs,23,Sarpedon-D,perk_1,Lead From Light Eddy Current Trickle Charge,A,20.0
+HCs,23,Sarpedon-D,perk_2,Trench Barrel One-Two Punch Rolling Storm,A,20.0
+HCs,24,Phoneutria Fera,perk_1,Threat Remover Threat Detector Slideshot,A,21.0
+HCs,24,Phoneutria Fera,perk_2,Incandescent One-Two Punch Surrounded,A,21.0
+HCs,25,Luna's Howl,perk_1,Firefly Heal Clip,A,22.0
+HCs,25,Luna's Howl,perk_2,Incandescent Chaos Reshaped,A,22.0
+HCs,26,Epochal Integration,perk_1,Heal Clip Explosive Payload,A,23.0
+HCs,26,Epochal Integration,perk_2,Incandescent Meganeura Chaos Reshaped,A,23.0
+HCs,27,Trust,perk_2,Incandescent Dragonfly Explosive Payload,A,24.0
+HCs,28,Vulpecula,perk_1,Headstone Rimestealer Shoot to Loot,A,25.0
+HCs,28,Vulpecula,perk_2,Crystalline Corpsebloom Explosive Payload,A,25.0
+HCs,29,Nation of Beasts,perk_1,Gear Shift Dragonfly Eddy Current,A,26.0
+HCs,29,Nation of Beasts,perk_2,Voltshot Jolting Feedback Explosive Payload,A,26.0
+HCs,30,Fatebringer,perk_1,Explosive Payload Kinetic Tremors Stopping Power,A,27.0
+HCs,30,Fatebringer,perk_2,Firefly One for All All-Star,A,27.0
+HCs,31,Maahes HC4,perk_1,Repulsor Brace Enlightened Action,A,28.0
+HCs,31,Maahes HC4,perk_2,Destabilizing Rounds Dragonfly,A,28.0
+Pulses,10,Blast Furnace,perk_1,Kinetic Tremors Bewildering Burst Ancillary Ordinance,A,8.0
+Pulses,10,Blast Furnace,perk_2,Chaos Reshaped Firefly,A,8.0
+Pulses,11,Oversoul Edict,perk_1,Rolling Storm Eddy Current,A,9.0
+Pulses,11,Oversoul Edict,perk_2,Voltshot Jolting Feedback Gear Shift,A,9.0
+Pulses,12,Horror's Least,perk_1,Trickle Charge Supercharged Magazine,A,10.0
+Pulses,12,Horror's Least,perk_2,Jolting Feedback Rolling Storm,A,10.0
+Pulses,14,All or Nothing,perk_1,Firefly Slice,A,12.0
+Pulses,14,All or Nothing,perk_2,Tear Hatchling,A,12.0
+Pulses,15,Infinite Paths 8,perk_1,Dragonfly Demolitionist,A,13.0
+Pulses,15,Infinite Paths 8,perk_2,Voltshot Rolling Storm,A,13.0
+Pulses,16,Corrasion,perk_1,Eddy Current Enlightened Action,A,14.0
+Pulses,17,Premonition,perk_1,Repulsor Brace Firefly Demoralize,A,15.0
+Pulses,17,Premonition,perk_2,Destabilizing Rounds Meganeura Withering Gaze,A,15.0
+Pulses,18,Elsie's Rifle,perk_1,Repulsor Brace Dimensional Shift Collective Demolition,A,16.0
+Pulses,18,Elsie's Rifle,perk_2,Destabilizing Rounds Demoralize Frenzy,A,16.0
+Pulses,19,The Time-Worn Spire,perk_2,Crystalline Corpsebloom Headstone Elemental Honing,A,17.0
+Pulses,20,Jurassic Green,perk_1,Heal Clip Loose Change,A,18.0
+Pulses,21,Adhortative,perk_1,Heal Clip Attrition Orbs Shoot to Loot,A,19.0
+Pulses,22,Darkest Before,perk_1,Heal Clip Attrition Orbs,A,20.0
+Pulses,22,Darkest Before,perk_2,Incandescent Burning Ambition,A,20.0
+Pulses,23,Redrix's Estoc,perk_1,Firefly Crystalline Corpsebloom Rimestealer,A,21.0
+Pulses,24,Hailing Confusion,perk_1,Headstone Rimestealer,A,22.0
+Pulses,24,Hailing Confusion,perk_2,Crystalline Corpsebloom Meganeura,A,22.0
+Pulses,27,The Messenger,perk_1,Firefly Bewildering Burst Stopping Power,A,24.0
+Pulses,27,The Messenger,perk_2,Kinetic Tremors Ancillary Ordinance,A,24.0
+Pulses,28,Insidious,perk_1,Rolling Storm Dragonfly,A,25.0
+Pulses,28,Insidious,perk_2,Voltshot Chaos Reshaped,A,25.0
+Pulses,30,Cruel Mercy,perk_1,Dragonfly Eddy Current Demolitionist,A,27.0
+Pulses,30,Cruel Mercy,perk_2,Rolling Storm Frenzy,A,27.0
+Pulses,31,Stars in Shadow,perk_1,Heal Clip Rapid Hit Impromptu Ammunition,A,28.0
+Pulses,31,Stars in Shadow,perk_2,Incandescent Burning Ambition,A,28.0
+Scouts,10,Forced Memorializer,perk_1,Bewildering Burst Explosive Payload Rapid Hit,A,8.0
+Scouts,10,Forced Memorializer,perk_2,Ancillary Ordinance Kinetic Tremors,A,8.0
+Scouts,11,Hung Jury SR4,perk_1,Kinetic Tremors Shoot to Loot Adhesive Ordnance,A,9.0
+Scouts,11,Hung Jury SR4,perk_2,Firefly Ancillary Ordinance Explosive Payload,A,9.0
+Scouts,12,Vision of Confluence,perk_1,Incandescent Heal Clip Rewind Rounds,A,10.0
+Scouts,12,Vision of Confluence,perk_2,Firefly Explosive Payload Burning Ambition,A,10.0
+Scouts,13,Randy's Throwing Knife,perk_2,Kinetic Tremors Firefly,A,11.0
+Scouts,14,Patron of Lost Causes,perk_1,Rapid Hit Strategist,A,12.0
+Scouts,14,Patron of Lost Causes,perk_2,Kinetic Tremors Explosive Payload,A,12.0
+Scouts,15,Nature Reclaimed,perk_1,Heal Clip Rapid Hit Shoot to Loot,A,13.0
+Scouts,15,Nature Reclaimed,perk_2,Incandescent Explosive Payload,A,13.0
+Scouts,16,Tarnished Mettle,perk_1,Rapid Hit Shoot to Loot Demolitionist,A,14.0
+Scouts,16,Tarnished Mettle,perk_2,Voltshot Explosive Payload,A,14.0
+Scouts,17,Fang of Ir Yût,perk_1,Tear Slice Shoot to Loot,A,15.0
+Scouts,17,Fang of Ir Yût,perk_2,Meganeura Hatchling,A,15.0
+Scouts,18,The Scholar,perk_1,Firefly Slice Shoot to Loot,A,16.0
+Scouts,18,The Scholar,perk_2,Hatchling Tear Explosive Payload,A,16.0
+Sidearms,11,The Keening,perk_2,Jolting Feedback Dragonfly,A,9.0
+Sidearms,12,Forgiveness,perk_2,Desperate Measures Kill Clip Surrounded,A,10.0
+Sidearms,13,Division,perk_1,Eddy Current Pugilist Grave Robber,A,11.0
+Sidearms,13,Division,perk_2,Voltshot Surrounded,A,11.0
+Sidearms,14,Fimbulwinter Stitch,perk_1,Supercharged Magazine Loose Change Trickle Charge,A,12.0
+Sidearms,14,Fimbulwinter Stitch,perk_2,Jolting Feedback Voltshot Rolling Storm,A,12.0
+Sidearms,15,Anonymous Autumn,perk_1,Eddy Current Attrition Orbs Demolitionist,A,13.0
+Sidearms,16,Brigand's Law,perk_1,Threat Detector Feeding Frenzy Pugilist,A,14.0
+Sidearms,16,Brigand's Law,perk_2,Voltshot Swashbuckler,A,14.0
+Sidearms,17,Drang (Baroque),perk_1,Wellspring Disruption Break,A,15.0
+Sidearms,17,Drang (Baroque),perk_2,Incandescent Swashbuckler,A,15.0
+SMGs,16,Vikala SMG4,perk_2,Destabilizing Rounds Chaos Reshaped,A,14.0
+SMGs,17,Imminence,perk_1,Slice Tear,A,15.0
+SMGs,17,Imminence,perk_2,Chaos Reshaped Hatchling Firefly,A,15.0
+SMGs,18,Gunburn,perk_1,Bewildering Burst Lead from Light Pugilist,A,16.0
+SMGs,18,Gunburn,perk_2,Kinetic Tremors Ancillary Ordinance Attrition Orbs,A,16.0
+SMGs,19,No Survivors RotN version,weapon,No Survivors RotN version,A,17.0
+SMGs,20,Parabellum,perk_1,Heal Clip Collective Demolition,A,18.0
+SMGs,20,Parabellum,perk_2,Incandescent Burning Ambition Attrition Orbs,A,18.0
+SMGs,21,Shayura's Wrath,perk_1,Repulsor Brace Demoralize,A,19.0
+SMGs,22,Every Waking Moment,perk_1,Destabilizing Rounds Repulsor Brace,A,20.0
+SMGs,22,Every Waking Moment,perk_2,Meganeura Demoralize,A,20.0
+SMGs,24,Noxious Vetiver,perk_1,Attrition Orbs Loose Change Pugilist,A,22.0
+BGLs,11,The Mountaintop BRAVE version,weapon,The Mountaintop BRAVE version,A,9.0
+BGLs,12,Liturgy,perk_1,Envious Arsenal Slideways,A,10.0
+BGLs,12,Liturgy,perk_2,Chill Clip Lead from Gold Chain Reaction,A,10.0
+BGLs,13,Romantic Death,perk_1,Repulsor Brace Proximity Power,A,11.0
+BGLs,13,Romantic Death,perk_2,Destabilizing Rounds Chain Reaction Surrounded,A,11.0
+BGLs,14,New Pacific Epitaph,perk_1,Chain Reaction Air Trigger Rimestealer,A,12.0
+BGLs,14,New Pacific Epitaph,perk_2,Redirection Reaper's Tithe Crystalline Corpsebloom,A,12.0
+BGLs,15,Wilderflight,perk_1,Envious Arsenal Auto-Loading Holster Repulsor Brace,A,13.0
+BGLs,15,Wilderflight,perk_2,Aggregate Charge Bait and Switch Withering Gaze,A,13.0
+BGLs,16,Wilderflight RotN version,weapon,Wilderflight RotN version,A,14.0
+BGLs,17,Martyr's Retribution,perk_1,Heal Clip Demolitionist Field Prep,A,15.0
+BGLs,17,Martyr's Retribution,perk_2,Incandescent Kill Clip Desperate Measures,A,15.0
+BGLs,18,Forbearance BRAVE version,weapon,Forbearance BRAVE version,A,16.0
+BGLs,19,Forbearance,perk_1,Rolling Storm Unrelenting Demolitionist,A,17.0
+BGLs,19,Forbearance,perk_2,Chain Reaction Gear Shift,A,17.0
+BGLs,20,Lingering Dread,perk_1,Auto-Loading Holster Demolitionist Discord,A,18.0
+BGLs,20,Lingering Dread,perk_2,Bipod Chill Clip,A,18.0
+BGLs,21,New Pacific Epitaph RotN version,weapon,New Pacific Epitaph RotN version,A,19.0
+BGLs,22,Permafrost,perk_1,Rimestealer Demolitionist Blast Distributor,A,20.0
+BGLs,22,Permafrost,perk_2,Crystalline Corpsebloom Reaper's Tithe Wellspring,A,20.0
+BGLs,23,Tusk of the Boar,perk_1,Slice Slideways,A,21.0
+BGLs,23,Tusk of the Boar,perk_2,Chain Reaction Deconstruct,A,21.0
+Fusions,10,Techeun Force,perk_1,Rewind Rounds Demolitionist Collective Demolition,A,8.0
+Fusions,10,Techeun Force,perk_2,Controlled Burst Aggregate Charge,A,8.0
+Fusions,11,Finite Maybe,perk_1,Reconstruction Incandescent Demolitionist,A,9.0
+Fusions,11,Finite Maybe,perk_2,Bait and Switch Controlled Burst Discord,A,9.0
+Fusions,12,TAHOMA 01,perk_1,Overflow Collective Demolition Lead from Gold,A,10.0
+Fusions,12,TAHOMA 01,perk_2,Aggregate Charge Controlled Burst Collective Pugilism,A,10.0
+Fusions,13,Zealot's Reward,perk_1,Auto-Loading Holster Lead from Gold Destabilizing Rounds,A,11.0
+Fusions,13,Zealot's Reward,perk_2,Controlled Burst Reservoir Burst Withering Gaze,A,11.0
+Fusions,14,Glacioclasm,perk_1,Envious Assassin Slideshot Air Trigger,A,12.0
+Fusions,14,Glacioclasm,perk_2,Controlled Burst Reservoir Burst Withering Gaze,A,12.0
+Fusions,15,Monody-44,perk_1,Discord Repulsor Brace,A,13.0
+Fusions,15,Monody-44,perk_2,Destabilizing Rounds Withering Gaze Controlled Burst,A,13.0
+Fusions,16,Afterlight,perk_1,Discord Lead from Gold Grave Robber,A,14.0
+Fusions,16,Afterlight,perk_2,Reservoir Burst Destabilizing Rounds Vorpal Weapon,A,14.0
+Glaives,12,Unexpected Resurgence,perk_1,Auto-Loading Holster Impulse Amplifier Replenishing Aegis,A,10.0
+Glaives,12,Unexpected Resurgence,perk_2,Frenzy Close to Melee Voltshot,A,10.0
+Glaives,13,Backfang,perk_1,Impulse Amplifier Grave Robber Lead from Gold,A,11.0
+Glaives,13,Backfang,perk_2,Surrounded Close to Melee Voltshot,A,11.0
+Glaives,14,Greasy Luck RotN version,weapon,Greasy Luck RotN version,A,12.0
+Shotguns,11,Arcane Embrace,perk_1,Fourth Time's the Charm Dual Loader Grave Robber,A,9.0
+Shotguns,11,Arcane Embrace,perk_2,Aggregate Charge Precision Instrument Surrounded,A,9.0
+Shotguns,12,Until Its Return,perk_1,Auto-Loading Holster Overflow,A,10.0
+Shotguns,12,Until Its Return,perk_2,Cascade Point Surrounded Vorpal Weapon,A,10.0
+Shotguns,14,A Sudden Death RotN version,weapon,A Sudden Death RotN version,A,12.0
+Shotguns,15,Imperial Decree,perk_2,Trench Barrel Surrounded,A,13.0
+Shotguns,16,Pure Recollection,perk_1,Envious Arsenal High-Impact Reserves,A,14.0
+Shotguns,16,Pure Recollection,perk_2,Bait and Switch Withering Gaze,A,14.0
+Snipers,11,The Supremacy,perk_1,Rewind Rounds Lead from Gold Discord,A,8.0
+Snipers,11,The Supremacy,perk_2,Kinetic Tremors Bait and Switch Fourth Time's the Charm,A,8.0
+Snipers,12,Critical Anomaly,perk_1,Chill Clip Rewind Rounds Crystalline Corpsebloom,A,9.0
+Snipers,12,Critical Anomaly,perk_2,Chaos Reshaped Mega Kill Clip Elemental Honing,A,9.0
+Snipers,13,ALLEN 05,perk_2,Precision Instrument Firing Line Mega Kill Clip,A,10.0
+Snipers,14,Father's Sins,perk_1,Triple Tap Shoot to Loot Lead from Gold,A,11.0
+Snipers,14,Father's Sins,perk_2,Bait and Switch Withering Gaze,A,11.0
+Snipers,15,Keen Thistle,perk_1,Envious Arsenal Incandescent Triple Tap,A,12.0
+Snipers,15,Keen Thistle,perk_2,Bait and Switch Elemental Honing Fourth Time's the Charm,A,12.0
+Snipers,16,Trophy Hunter,perk_1,Triple Tap Lead from Gold Auto-Loading Holster,A,13.0
+Snipers,16,Trophy Hunter,perk_2,Aggregate Charge Withering Gaze Bait and Switch,A,13.0
+Snipers,18,Succession BRAVE version,weapon,Succession BRAVE version,A,15.0
+Snipers,19,Succession,perk_1,Reconstruction Demolitionist Discord,A,16.0
+Snipers,19,Succession,perk_2,Elemental Honing Recombination Redirection,A,16.0
+Rocket Sidearms,10,Unfall,perk_1,Lead from Gold Impulse Amplifier Beacon Rounds,A,8.0
+Rocket Sidearms,10,Unfall,perk_2,Jolting Feedback Rolling Storm Master of Arms,A,8.0
+Traces,6,Retraced Path,perk_2,Demolitionist Frenzy Incandescent,A,4.0
+Traces,7,Acasia's Dejection,perk_1,Burning Ambition Reconstruction Field Prep,A,5.0
+Traces,7,Acasia's Dejection,perk_2,Chaos Reshaped Incandescent Detonator Beam,A,5.0
+Traces,9,Incisor,perk_2,Attrition Orbs Hatchling,A,7.0
+Traces,10,Action Item,perk_1,Deconstruct Demolitionist Rimestealer,A,8.0
+Traces,10,Action Item,perk_2,Crystalline Corpsebloom Detonator Beam Headstone,A,8.0
+HGLs,9,Canis Major,perk_1,Reconstruction Incandescent Rampage,A,7.0
+HGLs,9,Canis Major,perk_2,Aggregate Charge Bait and Switch Chain Reaction,A,7.0
+HGLs,10,Doomsday,perk_2,Bait and Switch Explosive Light Chain Reaction,A,8.0
+HGLs,11,Bitter/Sweet,perk_2,Bait and Switch Cascade Point Explosive Light,A,9.0
+HGLs,12,Wicked Sister,perk_2,Bait and Switch Cascade Point Explosive Light,A,10.0
+HGLs,13,Cataphract GL3,perk_1,Envious Arsenal Auto-Loading Holster,A,11.0
+HGLs,13,Cataphract GL3,perk_2,Bait and Switch Explosive Light,A,11.0
+HGLs,14,Dimensional Hypotrochoid,perk_1,Envious Arsenal Field Prep,A,12.0
+HGLs,14,Dimensional Hypotrochoid,perk_2,Bait and Switch Crystalline Corpsebloom Chain Reaction,A,12.0
+LFRs,8,Stormchaser,perk_1,Auto-Loading Holster Clown Cartridge,A,6.0
+LFRs,8,Stormchaser,perk_2,Aggregate Charge Elemental Honing,A,6.0
+LFRs,9,Boomslang-4fr,perk_1,Envious Arsenal Rapid Hit,A,7.0
+LFRs,9,Boomslang-4fr,perk_2,Precision Instrument Reservoir Burst,A,7.0
+LFRs,10,Doomed Petitioner,perk_1,Envious Assassin Reconstruction,A,8.0
+LFRs,10,Doomed Petitioner,perk_2,Surrounded Precision Instrument,A,8.0
+LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
+LMGs,14,Seventh Seraph SAW,perk_1,Reconstruction Trickle Charge,A,12.0
+LMGs,14,Seventh Seraph SAW,perk_2,Meganeura Mega Kill Clip Rolling Storm,A,12.0
+LMGs,15,Terminus Horizon,perk_1,Meganeura Reconstruction Fourth Time's the Charm,A,13.0
+LMGs,15,Terminus Horizon,perk_2,Mega Kill Clip Rolling Storm,A,13.0
+LMGs,16,Commemoration,perk_1,Reconstruction Dragonfly Subsistence,A,14.0
+LMGs,16,Commemoration,perk_2,Killing Tally Repulsor Brace Redirection,A,14.0
+LMGs,17,DIABLERETS 06,perk_1,Auto-Loading Holster Hatchling,A,15.0
+LMGs,17,DIABLERETS 06,perk_2,Meganeura Redirection Killing Tally,A,15.0
+LMGs,18,Avalanche,perk_1,Auto-Loading Holster Subsistence Dragonfly,A,16.0
+LMGs,18,Avalanche,perk_2,Incandescent Cascade Point Golden Tricorn,A,16.0
+LMGs,19,Unwavering Duty,perk_1,Incandescent Fourth Time's the Charm Auto-Loading Holster,A,17.0
+LMGs,19,Unwavering Duty,perk_2,Killing Tally Target Lock Burning Ambition,A,17.0
+LMGs,20,Temporal Clause,perk_1,Demolitionist Meganeura Incandescent,A,18.0
+LMGs,20,Temporal Clause,perk_2,Mega Kill Clip Burning Ambition Killing Tally,A,18.0
+LMGs,21,Hammerhead,perk_1,Demolitionist Destabilizing Rounds Dimensional Shift,A,19.0
+LMGs,21,Hammerhead,perk_2,Mega Kill Clip Desperate Measures,A,19.0
+LMGs,22,Dawn Far Off,perk_1,Burning Ambition Impromptu Ammunition Subsistence,A,20.0
+LMGs,22,Dawn Far Off,perk_2,Incandescent Meganeura Redirection,A,20.0
+LMGs,23,Speleologist,perk_1,Envious Assassin Heal Clip Deconstruct,A,21.0
+LMGs,23,Speleologist,perk_2,Incandescent Killing Tally One For All,A,21.0
+LMGs,24,Archon's Thunder,perk_1,Rimestealer Air Trigger Fourth Time's the Charm,A,22.0
+LMGs,24,Archon's Thunder,perk_2,Headstone Desperate Measures Killing Tally,A,22.0
+LMGs,25,Watchful Eye,perk_1,Overflow Field Prep,A,23.0
+LMGs,25,Watchful Eye,perk_2,Jolting Feedback Killing Tally Rolling Storm,A,23.0
+Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
+Rockets,12,Heretic,perk_1,Envious Arsenal Cluster Bomb,A,11.0
+Rockets,12,Heretic,perk_2,Explosive Light Gear Shift Bipod,A,11.0
+Rockets,13,Tomorrow's Answer,perk_1,Envious Arsenal Air Trigger,A,10.0
+Rockets,13,Tomorrow's Answer,perk_2,Bait and Switch Explosive Light Bipod,A,10.0
+Rockets,14,Bad Omens,perk_1,Bipod Auto-Loading Holster,A,12.0
+Rockets,14,Bad Omens,perk_2,Elemental Honing Bait and Switch Explosive Light,A,12.0
+Rockets,15,Red Herring,perk_1,Reconstruction Cluster Bomb,A,13.0
+Rockets,16,Cold Comfort,perk_1,Envious Assassin Reconstruction Vorpal Weapon,A,14.0
+Rockets,16,Cold Comfort,perk_2,Aggregate Charge Reaper's Tithe Bipod,A,14.0
+Swords,10,Aurora Dawn,perk_1,Sharp Harvest Flash Counter Rimestealer,A,8.0
+Swords,10,Aurora Dawn,perk_2,Whirlwind Blade Elemental Honing Cold Steel,A,8.0
+Swords,11,Summum Bonum,perk_1,Relentless Strikes Attrition Orbs Deconstruct,A,9.0
+Swords,11,Summum Bonum,perk_2,Chaos Reshaped Whirlwind Blade Surrounded,A,9.0
+Swords,12,Abyssal Edge,perk_1,Relentless Strikes Flash Counter,A,10.0
+Swords,12,Abyssal Edge,perk_2,Elemental Honing Surrounded Redirection,A,10.0
+Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
+Swords,15,Ill Omen,perk_1,Relentless Strikes Attrition Orbs,A,13.0
+Swords,15,Ill Omen,perk_2,Whirlwind Blade Surrounded,A,13.0
+Swords,16,Nasreddin,perk_1,Relentless Strikes Sharp Harvest,A,14.0
+Swords,16,Nasreddin,perk_2,Surrounded Whirlwind Blade Eager Edge,A,14.0
+Swords,17,Sola's Scar,perk_1,Relentless Strikes Eager Edge,A,15.0
+Swords,17,Sola's Scar,perk_2,Elemental Honing Whirlwind Blade Redirection,A,15.0
+Swords,18,Chivalric Fire,perk_1,Relentless Strikes Sharp Harvest Collective Demolition,A,16.0
+Swords,18,Chivalric Fire,perk_2,Destabilizing Rounds Whirlwind Blade Eager Edge,A,16.0
+Swords,19,Night Terror,perk_1,Relentless Strikes Eager Edge,A,17.0
+Swords,19,Night Terror,perk_2,Aggregate Charge Elemental Honing Whirlwind Blade,A,17.0
+Swords,20,Hardline Cut,perk_1,Relentless Strikes Attrition Orbs Sharp Harvest,A,18.0
+Swords,20,Hardline Cut,perk_2,Whirlwind Blade Surrounded Eager Edge,A,18.0
+Swords,21,Abide the Return,perk_1,Relentless Strikes Sharp Harvest,A,19.0
+Swords,21,Abide the Return,perk_2,Whirlwind Blade Elemental Honing Eager Edge,A,19.0
+Swords,22,The Other Half,perk_1,Eager Edge Relentless Strikes,A,20.0
+Swords,22,The Other Half,perk_2,Surrounded Frenzy Whirlwind Blade,A,20.0
+Swords,23,Eighty-Six,perk_1,Relentless Strikes Sharp Harvest Slice,A,21.0
+Swords,23,Eighty-Six,perk_2,Elemental Honing Redirection Attrition Orbs,A,21.0
+Swords,25,Temptation's Hook,perk_1,Relentless Strikes Attrition Orbs,A,23.0
+Swords,26,Stryker's Sure-Hand,perk_1,Relentless Strikes Sharp Harvest,A,24.0
+Swords,26,Stryker's Sure-Hand,perk_2,Whirlwind Blade Surrounded Redirection,A,24.0
+Autos,3,No Hesitation,perk_1,Physic Burning Ambition,S,1.0
+Autos,3,No Hesitation,perk_2,Chaos Reshaped Attrition Orbs Incandescent,S,1.0
+Autos,4,DECATUR 02,perk_1,Physic Attrition Orbs Crystalline Corpsebloom,S,2.0
+Autos,4,DECATUR 02,perk_2,Reciprocity Master of Arms Redirection,S,2.0
+Autos,5,Adamantite,perk_1,Physic Reciprocity Demolitionist,S,3.0
+Autos,5,Adamantite,perk_2,Hatchling Desperate Measures Tear,S,3.0
+Autos,8,Cusp Sempiternal,perk_1,Reciprocity Repulsor Brace Attrition Orbs,A,5.0
+Autos,8,Cusp Sempiternal,perk_2,Destabilizing Rounds Master of Arms Withering Gaze,A,5.0
+Autos,9,Gnawing Hunger,perk_1,Repulsor Brace Demolitionist Withering Gaze,A,6.0
+Autos,9,Gnawing Hunger,perk_2,Destabilizing Rounds Master of Arms,A,6.0
+Autos,10,Positive Outlook,perk_1,Repulsor Brace Withering Gaze,A,7.0
+Autos,10,Positive Outlook,perk_2,Destabilizing Rounds Mega Kill Clip,A,7.0
+Autos,11,Arctic Haze,perk_1,Incandescent Heal Clip Demolitionist,A,8.0
+Autos,11,Arctic Haze,perk_2,Burning Ambition Frenzy,A,8.0
+Autos,12,The Ringing Nail,perk_1,Incandescent Heal Clip Impromptu Ammunition,A,9.0
+Autos,12,The Ringing Nail,perk_2,Burning Ambition Firefly Onslaught,A,9.0
+Autos,13,Zealous Ideal,perk_1,Heal Clip Attrition Orbs,A,10.0
+Autos,13,Zealous Ideal,perk_2,Incandescent Burning Ambition,A,10.0
+Autos,14,Reghusk's Pledge,perk_1,Destabilizing Rounds Demoralize,A,11.0
+Autos,14,Reghusk's Pledge,perk_2,Repulsor Brace Golden Tricorn Attrition Orbs,A,11.0
+Autos,15,Abyss Defiant,perk_1,Heal Clip Burning Ambition,A,12.0
+Autos,16,The Summoner,perk_2,Incandescent Burning Ambition,A,13.0
+Autos,17,The Riposte,perk_1,Repulsor Brace Dimensional Shift Demoralize,A,14.0
+Autos,17,The Riposte,perk_2,Destabilizing Rounds Desperate Measures,A,14.0
+Autos,18,Scathelocke,perk_1,Attrition Orbs Shoot to Loot,A,15.0
+Autos,18,Scathelocke,perk_2,Kinetic Tremors Ancillary Ordinance,A,15.0
+Autos,19,Everburning Glitz,perk_1,Attrition Orbs Bewildering Burst,A,16.0
+Autos,19,Everburning Glitz,perk_2,Kinetic Tremors Ancillary Ordinance,A,16.0
+Autos,20,VS Pyroelectric Propellant,perk_1,Attrition Orbs Eddy Current Strategist,A,17.0
+Autos,20,VS Pyroelectric Propellant,perk_2,Jolting Feedback Gear Shift,A,17.0
+Autos,21,Chroma Rush,perk_1,Bewildering Burst Stopping Power,A,18.0
+Autos,21,Chroma Rush,perk_2,Kinetic Tremors Ancillary Ordinance All-Star,A,18.0
+Autos,22,Snipehunt Mk. 47,perk_2,Chaos Reshaped Voltshot Attrition Orbs,A,19.0
+Bows,3,Point of the Stag,perk_2,Voltshot Archer's Gambit,S,1.0
+Bows,4,Biting Winds,perk_1,Bewildering Burst Impromptu Ammunition Archer's Tempo,S,2.0
+Bows,4,Biting Winds,perk_2,Kinetic Tremors Explosive Head,S,2.0
+Bows,5,The Spiteful Fang,perk_1,Headstone Rimestealer,S,3.0
+Bows,5,The Spiteful Fang,perk_2,Firefly Crystalline Corpsebloom Archer's Gambit,S,3.0
+Bows,6,Non-Denouement,perk_1,Dragonfly Rolling Storm Shoot to Loot,S,4.0
+Bows,6,Non-Denouement,perk_2,Voltshot Chaos Reshaped Meganeura,S,4.0
+Bows,7,Accrued Redemption,perk_1,Attrition Orbs Archer's Tempo,S,5.0
+Bows,7,Accrued Redemption,perk_2,Kinetic Tremors Firefly Archer's Gambit,S,5.0
+Bows,8,Fortunate Star,perk_1,Dragonfly Repulsor Brace Impromptu Ammunition,A,6.0
+Bows,8,Fortunate Star,perk_2,Destabilizing Rounds Demoralize Explosive Head,A,6.0
+Bows,9,Anamnesis,perk_1,Repulsor Brace Dragonfly Archer's Tempo,A,7.0
+Bows,9,Anamnesis,perk_2,Destabilizing Rounds Demoralize Explosive Head,A,7.0
+Bows,10,Hush,perk_1,Burning Ambition Firefly,A,8.0
+Bows,10,Hush,perk_2,Incandescent Meganeura Archer's Gambit,A,8.0
+Bows,11,Pre Astyanax IV,perk_1,Incandescent Firefly,A,9.0
+Bows,11,Pre Astyanax IV,perk_2,Burning Ambition Explosive Head Elemental Honing,A,9.0
+Bows,12,Tyranny of Heaven,perk_1,Dragonfly Meganeura Burning Ambition,A,10.0
+Bows,12,Tyranny of Heaven,perk_2,Incandescent Archer's Gambit,A,10.0
+Bows,13,Convened Recurve,perk_1,Repulsor Brace Dimensional Shift Withering Gaze,A,11.0
+Bows,13,Convened Recurve,perk_2,Destabilizing Rounds Demoralize,A,11.0
+Bows,14,King Orfeo,perk_1,Explosive Head Archer's Tempo Shoot to Loot,A,12.0
+Bows,14,King Orfeo,perk_2,Meganeura Jolting Feedback,A,12.0
+Bows,15,Vengeful Whisper,perk_1,Explosive Head Archer's Tempo Slice,A,13.0
+Bows,15,Vengeful Whisper,perk_2,Meganeura Hatchling Archer's Gambit,A,13.0
+Bows,16,Mercury-A,perk_1,Attrition Orbs Successful Warm-Up,A,14.0
+HCs,3,Word of Crota,perk_1,Repulsor Brace Dragonfly,S,1.0
+HCs,4,IRONWOOD 03,perk_1,Repulsor Brace Dimensional Shift Demolitionist,S,2.0
+HCs,4,IRONWOOD 03,perk_2,Destabilizing Rounds Surrounded Master of Arms,S,2.0
+HCs,5,Posterity,perk_2,Frenzy Redirection Explosive Payload,S,3.0
+HCs,6,Modified B-7 Pistol,perk_1,Firefly Rimestealer Rapid Hit,S,4.0
+HCs,6,Modified B-7 Pistol,perk_2,Headstone Crystalline Corpsebloom,S,4.0
+HCs,7,Kindled Orchid,perk_1,Repulsor Brace Shoot to Loot,A,5.0
+HCs,7,Kindled Orchid,perk_2,Destabilizing Rounds Demoralize Explosive Payload,A,5.0
+HCs,10,Exalted Truth,perk_1,Destabilizing Rounds Withering Gaze,A,7.0
+HCs,10,Exalted Truth,perk_2,Repulsor Brace Demoralize,A,7.0
+HCs,11,Aureus Neutralizer,perk_1,Vorpal Weapon Grave Robber,A,8.0
+HCs,11,Aureus Neutralizer,perk_2,Cascade Point One-Two Punch Trench Barrel,A,8.0
+HCs,12,Eyasluna,perk_1,Firefly Meganeura,A,9.0
+HCs,12,Eyasluna,perk_2,Crystalline Corpsebloom Headstone Chaos Reshaped,A,9.0
+HCs,14,Agape,perk_1,Heal Clip Rewind Rounds,A,11.0
+HCs,14,Agape,perk_2,Incandescent Firefly Precision Instrument,A,11.0
+HCs,15,Corundum Hammer,perk_1,Firefly Slice Shoot to Loot,A,12.0
+HCs,15,Corundum Hammer,perk_2,Tear Explosive Payload Elemental Honing,A,12.0
+HCs,16,D.F.A.,perk_1,Explosive Payload Adhesive Ordnance,A,13.0
+HCs,16,D.F.A.,perk_2,Attrition Orbs Frenzy,A,13.0
+HCs,17,Service Revolver,perk_1,Stopping Power Shoot to Loot,A,14.0
+HCs,17,Service Revolver,perk_2,Mega Kill Clip Kinetic Tremors Explosive Payload,A,14.0
+HCs,18,Unloved,perk_1,Dragonfly Hatchling Rapid Hit,A,15.0
+HCs,18,Unloved,perk_2,Elemental Honing Frenzy Tear,A,15.0
+HCs,19,Midnight Coup,perk_1,Firefly Bewildering Burst Explosive Payload,A,16.0
+HCs,19,Midnight Coup,perk_2,Kinetic Tremors Ancillary Ordinance One for All,A,16.0
+HCs,20,Solemn Remembrance,perk_2,Firefly Rimestealer,A,17.0
+HCs,21,Ancient Gospel,perk_1,Destabilizing Rounds Repulsor Brace,A,18.0
+HCs,21,Ancient Gospel,perk_2,Explosive Payload Demoralize,A,18.0
+HCs,22,Triple Laureate,perk_1,Crystalline Corpsebloom Grave Robber,A,19.0
+HCs,22,Triple Laureate,perk_2,Chaos Reshaped One-Two Punch,A,19.0
+HCs,23,Sarpedon-D,perk_1,Lead From Light Eddy Current Trickle Charge,A,20.0
+HCs,23,Sarpedon-D,perk_2,Trench Barrel One-Two Punch Rolling Storm,A,20.0
+HCs,24,Phoneutria Fera,perk_1,Threat Remover Threat Detector Slideshot,A,21.0
+HCs,24,Phoneutria Fera,perk_2,Incandescent One-Two Punch Surrounded,A,21.0
+HCs,25,Luna's Howl,perk_1,Firefly Heal Clip,A,22.0
+HCs,25,Luna's Howl,perk_2,Incandescent Chaos Reshaped,A,22.0
+HCs,26,Epochal Integration,perk_1,Heal Clip Explosive Payload,A,23.0
+HCs,26,Epochal Integration,perk_2,Incandescent Meganeura Chaos Reshaped,A,23.0
+HCs,27,Trust,perk_2,Incandescent Dragonfly Explosive Payload,A,24.0
+HCs,28,Vulpecula,perk_1,Headstone Rimestealer Shoot to Loot,A,25.0
+HCs,28,Vulpecula,perk_2,Crystalline Corpsebloom Explosive Payload,A,25.0
+HCs,29,Nation of Beasts,perk_1,Gear Shift Dragonfly Eddy Current,A,26.0
+HCs,29,Nation of Beasts,perk_2,Voltshot Jolting Feedback Explosive Payload,A,26.0
+HCs,30,Fatebringer,perk_1,Explosive Payload Kinetic Tremors Stopping Power,A,27.0
+HCs,30,Fatebringer,perk_2,Firefly One for All All-Star,A,27.0
+HCs,31,Maahes HC4,perk_1,Repulsor Brace Enlightened Action,A,28.0
+HCs,31,Maahes HC4,perk_2,Destabilizing Rounds Dragonfly,A,28.0
+Pulses,3,Claws of the Wolf,perk_2,Destabilizing Rounds Attrition Orbs,S,1.0
+Pulses,4,Joxer's Longsword,perk_1,Repulsor Brace Dragonfly Shoot to Loot,S,2.0
+Pulses,4,Joxer's Longsword,perk_2,Destabilizing Rounds Demoralize Withering Gaze,S,2.0
+Pulses,5,Gridskipper,perk_1,Repulsor Brace Demoralize,S,3.0
+Pulses,6,The Martlet,perk_1,Firefly Repulsor Brace,S,4.0
+Pulses,7,Nullify,perk_1,Firefly Heal Clip Burning Ambition,S,5.0
+Pulses,7,Nullify,perk_2,Incandescent Chaos Reshaped Meganeura,S,5.0
+Pulses,8,Veles-X,perk_1,Repulsor Brace Demoralize,S,6.0
+Pulses,8,Veles-X,perk_2,Destabilizing Rounds Withering Gaze Firefly,S,6.0
+Pulses,9,High Tyrant,perk_1,Destabilizing Rounds Repulsor Brace Loose Change,S,7.0
+Pulses,9,High Tyrant,perk_2,Meganeura Demoralize Frenzy,S,7.0
+Pulses,10,Blast Furnace,perk_1,Kinetic Tremors Bewildering Burst Ancillary Ordinance,A,8.0
+Pulses,10,Blast Furnace,perk_2,Chaos Reshaped Firefly,A,8.0
+Pulses,11,Oversoul Edict,perk_1,Rolling Storm Eddy Current,A,9.0
+Pulses,11,Oversoul Edict,perk_2,Voltshot Jolting Feedback Gear Shift,A,9.0
+Pulses,12,Horror's Least,perk_1,Trickle Charge Supercharged Magazine,A,10.0
+Pulses,12,Horror's Least,perk_2,Jolting Feedback Rolling Storm,A,10.0
+Pulses,14,All or Nothing,perk_1,Firefly Slice,A,12.0
+Pulses,14,All or Nothing,perk_2,Tear Hatchling,A,12.0
+Pulses,15,Infinite Paths 8,perk_1,Dragonfly Demolitionist,A,13.0
+Pulses,15,Infinite Paths 8,perk_2,Voltshot Rolling Storm,A,13.0
+Pulses,16,Corrasion,perk_1,Eddy Current Enlightened Action,A,14.0
+Pulses,17,Premonition,perk_1,Repulsor Brace Firefly Demoralize,A,15.0
+Pulses,17,Premonition,perk_2,Destabilizing Rounds Meganeura Withering Gaze,A,15.0
+Pulses,18,Elsie's Rifle,perk_1,Repulsor Brace Dimensional Shift Collective Demolition,A,16.0
+Pulses,18,Elsie's Rifle,perk_2,Destabilizing Rounds Demoralize Frenzy,A,16.0
+Pulses,19,The Time-Worn Spire,perk_2,Crystalline Corpsebloom Headstone Elemental Honing,A,17.0
+Pulses,20,Jurassic Green,perk_1,Heal Clip Loose Change,A,18.0
+Pulses,21,Adhortative,perk_1,Heal Clip Attrition Orbs Shoot to Loot,A,19.0
+Pulses,22,Darkest Before,perk_1,Heal Clip Attrition Orbs,A,20.0
+Pulses,22,Darkest Before,perk_2,Incandescent Burning Ambition,A,20.0
+Pulses,23,Redrix's Estoc,perk_1,Firefly Crystalline Corpsebloom Rimestealer,A,21.0
+Pulses,24,Hailing Confusion,perk_1,Headstone Rimestealer,A,22.0
+Pulses,24,Hailing Confusion,perk_2,Crystalline Corpsebloom Meganeura,A,22.0
+Pulses,27,The Messenger,perk_1,Firefly Bewildering Burst Stopping Power,A,24.0
+Pulses,27,The Messenger,perk_2,Kinetic Tremors Ancillary Ordinance,A,24.0
+Pulses,28,Insidious,perk_1,Rolling Storm Dragonfly,A,25.0
+Pulses,28,Insidious,perk_2,Voltshot Chaos Reshaped,A,25.0
+Pulses,30,Cruel Mercy,perk_1,Dragonfly Eddy Current Demolitionist,A,27.0
+Pulses,30,Cruel Mercy,perk_2,Rolling Storm Frenzy,A,27.0
+Pulses,31,Stars in Shadow,perk_1,Heal Clip Rapid Hit Impromptu Ammunition,A,28.0
+Pulses,31,Stars in Shadow,perk_2,Incandescent Burning Ambition,A,28.0
+Scouts,3,Unworthy,perk_1,Firefly Rolling Storm,S,1.0
+Scouts,3,Unworthy,perk_2,Voltshot Frenzy Gear Shift,S,1.0
+Scouts,4,Vouchsafe,perk_1,Repulsor Brace Dimensional Shift Shoot to Loot,S,2.0
+Scouts,4,Vouchsafe,perk_2,Destabilizing Rounds Withering Gaze Explosive Payload,S,2.0
+Scouts,5,Trustee,perk_2,Burning Ambition Incandescent,S,3.0
+Scouts,6,Voltaic Shade,perk_1,Jolting Feedback Rapid Hit Shoot to Loot,S,4.0
+Scouts,6,Voltaic Shade,perk_2,Voltshot Meganeura Frenzy,S,4.0
+Scouts,7,Aisha's Embrace,perk_1,Demoralize Rapid Hit Shoot to Loot,S,5.0
+Scouts,7,Aisha's Embrace,perk_2,Destabilizing Rounds Desperate Measures Withering Gaze,S,5.0
+Scouts,8,Doom of Chelchis,perk_1,Destabilizing Rounds Firefly Explosive Payload,S,6.0
+Scouts,8,Doom of Chelchis,perk_2,Meganeura Repulsor Brace Withering Gaze,S,6.0
+Scouts,9,No Feelings,perk_1,Voltshot Rolling Storm,S,7.0
+Scouts,9,No Feelings,perk_2,Meganeura Explosive Payload,S,7.0
+Scouts,10,Forced Memorializer,perk_1,Bewildering Burst Explosive Payload Rapid Hit,A,8.0
+Scouts,10,Forced Memorializer,perk_2,Ancillary Ordinance Kinetic Tremors,A,8.0
+Scouts,11,Hung Jury SR4,perk_1,Kinetic Tremors Shoot to Loot Adhesive Ordnance,A,9.0
+Scouts,11,Hung Jury SR4,perk_2,Firefly Ancillary Ordinance Explosive Payload,A,9.0
+Scouts,12,Vision of Confluence,perk_1,Incandescent Heal Clip Rewind Rounds,A,10.0
+Scouts,12,Vision of Confluence,perk_2,Firefly Explosive Payload Burning Ambition,A,10.0
+Scouts,13,Randy's Throwing Knife,perk_2,Kinetic Tremors Firefly,A,11.0
+Scouts,14,Patron of Lost Causes,perk_1,Rapid Hit Strategist,A,12.0
+Scouts,14,Patron of Lost Causes,perk_2,Kinetic Tremors Explosive Payload,A,12.0
+Scouts,15,Nature Reclaimed,perk_1,Heal Clip Rapid Hit Shoot to Loot,A,13.0
+Scouts,15,Nature Reclaimed,perk_2,Incandescent Explosive Payload,A,13.0
+Scouts,16,Tarnished Mettle,perk_1,Rapid Hit Shoot to Loot Demolitionist,A,14.0
+Scouts,16,Tarnished Mettle,perk_2,Voltshot Explosive Payload,A,14.0
+Scouts,17,Fang of Ir Yût,perk_1,Tear Slice Shoot to Loot,A,15.0
+Scouts,17,Fang of Ir Yût,perk_2,Meganeura Hatchling,A,15.0
+Scouts,18,The Scholar,perk_1,Firefly Slice Shoot to Loot,A,16.0
+Scouts,18,The Scholar,perk_2,Hatchling Tear Explosive Payload,A,16.0
+Sidearms,3,Evening SI4,perk_1,Heal Clip Impromptu Ammunition,S,1.0
+Sidearms,3,Evening SI4,perk_2,Incandescent Burning Ambition Desperate Measures,S,1.0
+Sidearms,4,Punching Out,perk_2,Incandescent Meganeura,S,2.0
+Sidearms,5,Drang,perk_1,Heal Clip Loose Change Collective Pugilism,S,3.0
+Sidearms,5,Drang,perk_2,Incandescent Burning Ambition Master of Arms,S,3.0
+Sidearms,6,Compact Defender,perk_2,Repulsor Brace Frenzy,S,4.0
+Sidearms,7,Brass Attacks,perk_1,Repulsor Brace Impromptu Ammunition,S,5.0
+Sidearms,7,Brass Attacks,perk_2,Destabilizing Rounds Demoralize,S,5.0
+Sidearms,8,Seventh Seraph SI-2,perk_1,Destabilizing Rounds Dimensional Shift,S,6.0
+Sidearms,8,Seventh Seraph SI-2,perk_2,Meganeura Repulsor Brace Demoralize,S,6.0
+Sidearms,9,Heliocentric QSc,perk_1,Heal Clip Demolitionist,S,7.0
+Sidearms,9,Heliocentric QSc,perk_2,Incandescent Frenzy Surrounded,S,7.0
+Sidearms,10,Insurmountable,perk_1,Repulsor Brace Air Trigger Attrition Orbs,S,8.0
+Sidearms,10,Insurmountable,perk_2,Destabilizing Rounds Surrounded,S,8.0
+Sidearms,11,The Keening,perk_2,Jolting Feedback Dragonfly,A,9.0
+Sidearms,12,Forgiveness,perk_2,Desperate Measures Kill Clip Surrounded,A,10.0
+Sidearms,13,Division,perk_1,Eddy Current Pugilist Grave Robber,A,11.0
+Sidearms,13,Division,perk_2,Voltshot Surrounded,A,11.0
+Sidearms,14,Fimbulwinter Stitch,perk_1,Supercharged Magazine Loose Change Trickle Charge,A,12.0
+Sidearms,14,Fimbulwinter Stitch,perk_2,Jolting Feedback Voltshot Rolling Storm,A,12.0
+Sidearms,15,Anonymous Autumn,perk_1,Eddy Current Attrition Orbs Demolitionist,A,13.0
+Sidearms,16,Brigand's Law,perk_1,Threat Detector Feeding Frenzy Pugilist,A,14.0
+Sidearms,16,Brigand's Law,perk_2,Voltshot Swashbuckler,A,14.0
+Sidearms,17,Drang (Baroque),perk_1,Wellspring Disruption Break,A,15.0
+Sidearms,17,Drang (Baroque),perk_2,Incandescent Swashbuckler,A,15.0
+SMGs,3,Multimach CCX,perk_1,Attrition Orbs Bewildering Burst Stopping Power,S,1.0
+SMGs,3,Multimach CCX,perk_2,Kinetic Tremors Master of Arms,S,1.0
+SMGs,4,Yeartide Apex,perk_1,Heal Clip Attrition Orbs Demolitionist,S,2.0
+SMGs,4,Yeartide Apex,perk_2,Incandescent Chaos Reshaped Burning Ambition,S,2.0
+SMGs,5,Unforgiven,perk_1,Destabilizing Rounds Attrition Orbs,S,3.0
+SMGs,5,Unforgiven,perk_2,Repulsor Brace Chaos Reshaped Dimensional Shift,S,3.0
+SMGs,6,The Recluse,perk_1,Repulsor Brace Dimensional Shift Collective Pugilism,S,4.0
+SMGs,6,The Recluse,perk_2,Destabilizing Rounds Chaos Reshaped,S,4.0
+SMGs,7,"M-17 ""Fast Talker""",perk_1,Attrition Orbs Cooling Baubles Demolitionist,S,5.0
+SMGs,7,"M-17 ""Fast Talker""",perk_2,Target Lock Crystalline Corpsebloom,S,5.0
+SMGs,8,Peculiar Charm,perk_1,Attrition Orbs Stopping Power Shoot to Loot,S,6.0
+SMGs,8,Peculiar Charm,perk_2,Kinetic Tremors Bewildering Burst Firefly,S,6.0
+SMGs,9,MIDA Mini-Tool,perk_1,Heal Clip Attrition Orbs Loose Change,S,7.0
+SMGs,9,MIDA Mini-Tool,perk_2,Incandescent Burning Ambition Collective Pugilism,S,7.0
+SMGs,10,No Survivors,perk_1,Heal Clip Attrition Orbs Burning Ambition,S,8.0
+SMGs,13,Antedate,perk_1,Dragonfly Rewind Rounds Rolling Storm,S,11.0
+SMGs,13,Antedate,perk_2,Jolting Feedback Target Lock Desperate Measures,S,11.0
+SMGs,14,The Title,perk_1,Repulsor Brace Threat Detector,S,12.0
+SMGs,14,The Title,perk_2,Destabilizing Rounds Surrounded,S,12.0
+SMGs,15,Bug-Out Bag,perk_1,Repulsor Brace Attrition Orbs,S,13.0
+SMGs,16,Vikala SMG4,perk_2,Destabilizing Rounds Chaos Reshaped,A,14.0
+SMGs,17,Imminence,perk_1,Slice Tear,A,15.0
+SMGs,17,Imminence,perk_2,Chaos Reshaped Hatchling Firefly,A,15.0
+SMGs,18,Gunburn,perk_1,Bewildering Burst Lead from Light Pugilist,A,16.0
+SMGs,18,Gunburn,perk_2,Kinetic Tremors Ancillary Ordinance Attrition Orbs,A,16.0
+SMGs,19,No Survivors RotN version,weapon,No Survivors RotN version,A,17.0
+SMGs,20,Parabellum,perk_1,Heal Clip Collective Demolition,A,18.0
+SMGs,20,Parabellum,perk_2,Incandescent Burning Ambition Attrition Orbs,A,18.0
+SMGs,21,Shayura's Wrath,perk_1,Repulsor Brace Demoralize,A,19.0
+SMGs,22,Every Waking Moment,perk_1,Destabilizing Rounds Repulsor Brace,A,20.0
+SMGs,22,Every Waking Moment,perk_2,Meganeura Demoralize,A,20.0
+SMGs,24,Noxious Vetiver,perk_1,Attrition Orbs Loose Change Pugilist,A,22.0
+BGLs,3,VS Velocity Baton,perk_1,Repulsor Brace Dimensional Shift Reconstruction,S,1.0
+BGLs,3,VS Velocity Baton,perk_2,Destabilizing Rounds Chain Reaction Attrition Orbs,S,1.0
+BGLs,4,Ouster Engine,perk_1,Air Trigger Blast Distributor Auto-Loading Holster,S,2.0
+BGLs,4,Ouster Engine,perk_2,Chaos Reshaped Crystalline Corpsebloom Chain Reaction,S,2.0
+BGLs,5,Psychopomp,perk_1,Auto-Loading Holster Blast Distributor Impromptu Ammunition,S,3.0
+BGLs,5,Psychopomp,perk_2,Aggregate Charge Voltshot Attrition Orbs,S,3.0
+BGLs,6,Festival Flight,perk_1,Envious Arsenal Blast Distributor Slice,S,4.0
+BGLs,6,Festival Flight,perk_2,Elemental Honing One for All Attrition Orbs,S,4.0
+BGLs,7,Gizmo Weft,perk_1,Air Trigger Slideshot Envious Arsenal,S,5.0
+BGLs,7,Gizmo Weft,perk_2,Bipod Aggregate Charge Elemental Honing,S,5.0
+BGLs,8,Motif-41,perk_1,Auto-Loading Holster Wellspring Impulse Amplifier,S,6.0
+BGLs,8,Motif-41,perk_2,Incandescent Master of Arms Attrition Orbs,S,6.0
+BGLs,9,Lost Signal,perk_1,Auto-Loading Holster Lead from Gold,S,7.0
+BGLs,9,Lost Signal,perk_2,Vorpal Weapon Demolitionist One for All,S,7.0
+BGLs,10,Theodolite,perk_1,Reconstruction Blast Distributor Eddy Current,S,8.0
+BGLs,10,Theodolite,perk_2,Elemental Honing Voltshot Frenzy,S,8.0
+BGLs,11,The Mountaintop BRAVE version,weapon,The Mountaintop BRAVE version,A,9.0
+BGLs,12,Liturgy,perk_1,Envious Arsenal Slideways,A,10.0
+BGLs,12,Liturgy,perk_2,Chill Clip Lead from Gold Chain Reaction,A,10.0
+BGLs,13,Romantic Death,perk_1,Repulsor Brace Proximity Power,A,11.0
+BGLs,13,Romantic Death,perk_2,Destabilizing Rounds Chain Reaction Surrounded,A,11.0
+BGLs,14,New Pacific Epitaph,perk_1,Chain Reaction Air Trigger Rimestealer,A,12.0
+BGLs,14,New Pacific Epitaph,perk_2,Redirection Reaper's Tithe Crystalline Corpsebloom,A,12.0
+BGLs,15,Wilderflight,perk_1,Envious Arsenal Auto-Loading Holster Repulsor Brace,A,13.0
+BGLs,15,Wilderflight,perk_2,Aggregate Charge Bait and Switch Withering Gaze,A,13.0
+BGLs,16,Wilderflight RotN version,weapon,Wilderflight RotN version,A,14.0
+BGLs,17,Martyr's Retribution,perk_1,Heal Clip Demolitionist Field Prep,A,15.0
+BGLs,17,Martyr's Retribution,perk_2,Incandescent Kill Clip Desperate Measures,A,15.0
+BGLs,18,Forbearance BRAVE version,weapon,Forbearance BRAVE version,A,16.0
+BGLs,19,Forbearance,perk_1,Rolling Storm Unrelenting Demolitionist,A,17.0
+BGLs,19,Forbearance,perk_2,Chain Reaction Gear Shift,A,17.0
+BGLs,20,Lingering Dread,perk_1,Auto-Loading Holster Demolitionist Discord,A,18.0
+BGLs,20,Lingering Dread,perk_2,Bipod Chill Clip,A,18.0
+BGLs,21,New Pacific Epitaph RotN version,weapon,New Pacific Epitaph RotN version,A,19.0
+BGLs,22,Permafrost,perk_1,Rimestealer Demolitionist Blast Distributor,A,20.0
+BGLs,22,Permafrost,perk_2,Crystalline Corpsebloom Reaper's Tithe Wellspring,A,20.0
+BGLs,23,Tusk of the Boar,perk_1,Slice Slideways,A,21.0
+BGLs,23,Tusk of the Boar,perk_2,Chain Reaction Deconstruct,A,21.0
+Fusions,3,Cartesian Coordinate,perk_1,Reconstruction Envious Arsenal Discord,S,1.0
+Fusions,3,Cartesian Coordinate,perk_2,Aggregate Charge Controlled Burst Reservoir Burst,S,1.0
+Fusions,4,Null Composure,perk_1,Overflow Reconstruction Envious Arsenal,S,2.0
+Fusions,4,Null Composure,perk_2,Elemental Honing Controlled Burst Reservoir Burst,S,2.0
+Fusions,5,The Beacon,perk_1,Rewind Rounds Lead from Gold Demolitionist,S,3.0
+Fusions,5,The Beacon,perk_2,Bait and Switch Controlled Burst Deconstruct,S,3.0
+Fusions,6,Riptide,perk_1,Auto-Loading Holster Overflow,S,4.0
+Fusions,6,Riptide,perk_2,Chill Clip Controlled Burst,S,4.0
+Fusions,7,Lionfish-4fr,perk_1,Reconstruction Lead from Gold,S,5.0
+Fusions,7,Lionfish-4fr,perk_2,Chill Clip Controlled Burst Elemental Honing,S,5.0
+Fusions,8,Accelerando-42,perk_1,Overflow Slice,S,6.0
+Fusions,8,Accelerando-42,perk_2,Aggregate Charge Controlled Burst Surrounded,S,6.0
+Fusions,9,Scatter Signal,perk_1,Overflow Slice,S,7.0
+Fusions,10,Techeun Force,perk_1,Rewind Rounds Demolitionist Collective Demolition,A,8.0
+Fusions,10,Techeun Force,perk_2,Controlled Burst Aggregate Charge,A,8.0
+Fusions,11,Finite Maybe,perk_1,Reconstruction Incandescent Demolitionist,A,9.0
+Fusions,11,Finite Maybe,perk_2,Bait and Switch Controlled Burst Discord,A,9.0
+Fusions,12,TAHOMA 01,perk_1,Overflow Collective Demolition Lead from Gold,A,10.0
+Fusions,12,TAHOMA 01,perk_2,Aggregate Charge Controlled Burst Collective Pugilism,A,10.0
+Fusions,13,Zealot's Reward,perk_1,Auto-Loading Holster Lead from Gold Destabilizing Rounds,A,11.0
+Fusions,13,Zealot's Reward,perk_2,Controlled Burst Reservoir Burst Withering Gaze,A,11.0
+Fusions,14,Glacioclasm,perk_1,Envious Assassin Slideshot Air Trigger,A,12.0
+Fusions,14,Glacioclasm,perk_2,Controlled Burst Reservoir Burst Withering Gaze,A,12.0
+Fusions,15,Monody-44,perk_1,Discord Repulsor Brace,A,13.0
+Fusions,15,Monody-44,perk_2,Destabilizing Rounds Withering Gaze Controlled Burst,A,13.0
+Fusions,16,Afterlight,perk_1,Discord Lead from Gold Grave Robber,A,14.0
+Fusions,16,Afterlight,perk_2,Reservoir Burst Destabilizing Rounds Vorpal Weapon,A,14.0
+Glaives,3,Rake Angle,perk_1,Overflow Impulse Amplifier Lead from Gold,S,1.0
+Glaives,3,Rake Angle,perk_2,Chill Clip Close to Melee,S,1.0
+Glaives,4,Refusal of the Call,perk_1,Slice Close to Melee Chain Reaction,S,2.0
+Glaives,4,Refusal of the Call,perk_2,Chaos Reshaped Mega Kill Clip Replenishing Aegis,S,2.0
+Glaives,5,Forthcoming Deviance,perk_1,Repulsor Brace Dimensional Shift Impulse Amplifier,S,3.0
+Glaives,5,Forthcoming Deviance,perk_2,Destabilizing Rounds Close to Melee Chaos Reshaped,S,3.0
+Glaives,6,The Heron,perk_1,Repulsor Brace Disruption Break Lead from Gold,S,4.0
+Glaives,6,The Heron,perk_2,Destabilizing Rounds Close to Melee Redirection,S,4.0
+Glaives,7,Lubrae's Ruin,perk_1,Close to Melee Grave Robber Frenzy,S,5.0
+Glaives,7,Lubrae's Ruin,perk_2,Chaos Reshaped Incandescent Unrelenting,S,5.0
+Glaives,8,Nezarec's Whisper,perk_1,Demolitionist Impulse Amplifier Lead from Gold,S,6.0
+Glaives,9,Ecliptic Distaff,perk_1,Repulsor Brace Impulse Amplifier Disruption Break,S,7.0
+Glaives,9,Ecliptic Distaff,perk_2,Close to Melee Destabilizing Rounds Chaos Reshaped,S,7.0
+Glaives,10,Greasy Luck,perk_1,Chaos Reshaped Reconstruction Heal Clip,S,8.0
+Glaives,10,Greasy Luck,perk_2,Close to Melee Mega Kill Clip Chain Reaction,S,8.0
+Glaives,11,The Enigma,perk_1,Impulse Amplifier Lead from Gold,S,9.0
+Glaives,11,The Enigma,perk_2,Close to Melee Frenzy,S,9.0
+Glaives,12,Unexpected Resurgence,perk_1,Auto-Loading Holster Impulse Amplifier Replenishing Aegis,A,10.0
+Glaives,12,Unexpected Resurgence,perk_2,Frenzy Close to Melee Voltshot,A,10.0
+Glaives,13,Backfang,perk_1,Impulse Amplifier Grave Robber Lead from Gold,A,11.0
+Glaives,13,Backfang,perk_2,Surrounded Close to Melee Voltshot,A,11.0
+Glaives,14,Greasy Luck RotN version,weapon,Greasy Luck RotN version,A,12.0
+Shotguns,3,Perfect Paradox,perk_1,Pugilist Stopping Power Bewildering Burst,S,1.0
+Shotguns,3,Perfect Paradox,perk_2,One-Two Punch Trench Barrel All-Star,S,1.0
+Shotguns,4,Heritage,perk_1,Redirection Reconstruction Demolitionist,S,2.0
+Shotguns,4,Heritage,perk_2,Recombination Aggregate Charge Cascade Point,S,2.0
+Shotguns,5,Unvoiced,perk_1,Redirection Fourth Time's the Charm,S,3.0
+Shotguns,5,Unvoiced,perk_2,Bait and Switch Vorpal Weapon,S,3.0
+Shotguns,6,Found Verdict,perk_1,Aggregate Charge Discord,S,4.0
+Shotguns,6,Found Verdict,perk_2,Trench Barrel Elemental Honing Gear Shift,S,4.0
+Shotguns,7,Basso Ostinato,perk_1,Grave Robber Discord Demolitionist,S,5.0
+Shotguns,7,Basso Ostinato,perk_2,One-Two Punch Destabilizing Rounds Trench Barrel,S,5.0
+Shotguns,8,One Small Step,perk_1,Grave Robber Lead from Gold,S,6.0
+Shotguns,8,One Small Step,perk_2,One-Two Punch Trench Barrel,S,6.0
+Shotguns,9,Threat Level,perk_1,Grave Robber One-Two Punch Cascade Point,S,7.0
+Shotguns,9,Threat Level,perk_2,Chaos Reshaped Trench Barrel Elemental Honing,S,7.0
+Shotguns,10,IKELOS_SG_v1.0.3,perk_1,Grave Robber Threat Detector Pugilist,S,8.0
+Shotguns,10,IKELOS_SG_v1.0.3,perk_2,One-Two Punch Surrounded Cascade Point,S,8.0
+Shotguns,11,Arcane Embrace,perk_1,Fourth Time's the Charm Dual Loader Grave Robber,A,9.0
+Shotguns,11,Arcane Embrace,perk_2,Aggregate Charge Precision Instrument Surrounded,A,9.0
+Shotguns,12,Until Its Return,perk_1,Auto-Loading Holster Overflow,A,10.0
+Shotguns,12,Until Its Return,perk_2,Cascade Point Surrounded Vorpal Weapon,A,10.0
+Shotguns,14,A Sudden Death RotN version,weapon,A Sudden Death RotN version,A,12.0
+Shotguns,15,Imperial Decree,perk_2,Trench Barrel Surrounded,A,13.0
+Shotguns,16,Pure Recollection,perk_1,Envious Arsenal High-Impact Reserves,A,14.0
+Shotguns,16,Pure Recollection,perk_2,Bait and Switch Withering Gaze,A,14.0
+Snipers,4,Praedyth's Revenge,perk_1,Aggregate Charge Fourth Time's the Charm Kinetic Tremors,S,1.0
+Snipers,4,Praedyth's Revenge,perk_2,Elemental Honing Bait and Switch Firefly,S,1.0
+Snipers,6,Lance Ephemeral,perk_1,Fourth Time's the Charm Envious Arsenal Lead from Gold,S,3.0
+Snipers,6,Lance Ephemeral,perk_2,Bait and Switch Elemental Honing Redirection,S,3.0
+Snipers,7,Rapid Growth,perk_2,Aggregate Charge Gear Shift,S,4.0
+Snipers,8,Omniscient Eye,perk_1,Fourth Time's the Charm Envious Arsenal,S,5.0
+Snipers,9,Something Something,perk_1,Triple Tap Discord,S,6.0
+Snipers,9,Something Something,perk_2,Elemental Honing All-Star Adhesive Ordnance,S,6.0
+Snipers,11,The Supremacy,perk_1,Rewind Rounds Lead from Gold Discord,A,8.0
+Snipers,11,The Supremacy,perk_2,Kinetic Tremors Bait and Switch Fourth Time's the Charm,A,8.0
+Snipers,12,Critical Anomaly,perk_1,Chill Clip Rewind Rounds Crystalline Corpsebloom,A,9.0
+Snipers,12,Critical Anomaly,perk_2,Chaos Reshaped Mega Kill Clip Elemental Honing,A,9.0
+Snipers,13,ALLEN 05,perk_2,Precision Instrument Firing Line Mega Kill Clip,A,10.0
+Snipers,14,Father's Sins,perk_1,Triple Tap Shoot to Loot Lead from Gold,A,11.0
+Snipers,14,Father's Sins,perk_2,Bait and Switch Withering Gaze,A,11.0
+Snipers,15,Keen Thistle,perk_1,Envious Arsenal Incandescent Triple Tap,A,12.0
+Snipers,15,Keen Thistle,perk_2,Bait and Switch Elemental Honing Fourth Time's the Charm,A,12.0
+Snipers,16,Trophy Hunter,perk_1,Triple Tap Lead from Gold Auto-Loading Holster,A,13.0
+Snipers,16,Trophy Hunter,perk_2,Aggregate Charge Withering Gaze Bait and Switch,A,13.0
+Snipers,18,Succession BRAVE version,weapon,Succession BRAVE version,A,15.0
+Snipers,19,Succession,perk_1,Reconstruction Demolitionist Discord,A,16.0
+Snipers,19,Succession,perk_2,Elemental Honing Recombination Redirection,A,16.0
+Rocket Sidearms,3,Lotus-Eater,perk_1,Repulsor Brace Dimensional Shift Air Trigger,S,1.0
+Rocket Sidearms,3,Lotus-Eater,perk_2,Destabilizing Rounds Withering Gaze Surrounded,S,1.0
+Rocket Sidearms,4,Returned Memory,perk_1,Heal Clip Lead from Gold Impromptu Ammunition,S,2.0
+Rocket Sidearms,4,Returned Memory,perk_2,Incandescent Redirection Desperate Measures,S,2.0
+Rocket Sidearms,5,High Albedo,perk_1,Lead from Gold Stopping Power Blast Distributor,S,3.0
+Rocket Sidearms,5,High Albedo,perk_2,Kinetic Tremors All-Star Recombination,S,3.0
+Rocket Sidearms,6,Aberrant Action,perk_1,Heal Clip Field Prep,S,4.0
+Rocket Sidearms,6,Aberrant Action,perk_2,Incandescent Demolitionist,S,4.0
+Rocket Sidearms,7,The Call,perk_1,Slice Lead from Gold Impulse Amplifier,S,5.0
+Rocket Sidearms,7,The Call,perk_2,Chaos Reshaped Hatchling,S,5.0
+Rocket Sidearms,8,Tinasha's Mastery,perk_1,Air Trigger Impulse Amplifier Loose Change,S,6.0
+Rocket Sidearms,8,Tinasha's Mastery,perk_2,Chill Clip Surrounded Desperate Measures,S,6.0
+Rocket Sidearms,9,Indebted Kindness,perk_1,Air Trigger Beacon Rounds Deconstruct,S,7.0
+Rocket Sidearms,9,Indebted Kindness,perk_2,Voltshot Chain Reaction Gear Shift,S,7.0
+Rocket Sidearms,10,Unfall,perk_1,Lead from Gold Impulse Amplifier Beacon Rounds,A,8.0
+Rocket Sidearms,10,Unfall,perk_2,Jolting Feedback Rolling Storm Master of Arms,A,8.0
+Traces,3,Unsworn,perk_1,Shoot to Loot Tear Collective Pugilism,S,1.0
+Traces,3,Unsworn,perk_2,Chaos Reshaped Detonator Beam Hatchling,S,1.0
+Traces,4,Chronophage,perk_1,Shoot to Loot Repulsor Brace,S,2.0
+Traces,4,Chronophage,perk_2,Destabilizing Rounds Demolitionist Desperate Measures,S,2.0
+Traces,5,Keraunios,perk_1,Shoot to Loot Fourth Time's the Charm,S,3.0
+Traces,5,Keraunios,perk_2,Chain Reaction Rolling Storm Detonator Beam,S,3.0
+Traces,6,Retraced Path,perk_2,Demolitionist Frenzy Incandescent,A,4.0
+Traces,7,Acasia's Dejection,perk_1,Burning Ambition Reconstruction Field Prep,A,5.0
+Traces,7,Acasia's Dejection,perk_2,Chaos Reshaped Incandescent Detonator Beam,A,5.0
+Traces,9,Incisor,perk_2,Attrition Orbs Hatchling,A,7.0
+Traces,10,Action Item,perk_1,Deconstruct Demolitionist Rimestealer,A,8.0
+Traces,10,Action Item,perk_2,Crystalline Corpsebloom Detonator Beam Headstone,A,8.0
+HGLs,3,VS Chill Inhibitor,perk_1,Envious Arsenal Cascade Point Chill Clip,S,1.0
+HGLs,3,VS Chill Inhibitor,perk_2,Aggregate Charge Elemental Honing Surrounded,S,1.0
+HGLs,4,Edge Transit BRAVE version,weapon,Edge Transit BRAVE version,S,2.0
+HGLs,5,The Ever-Present,perk_2,Aggregate Charge Bait and Switch Elemental Honing,S,3.0
+HGLs,6,Koraxis's Distress,perk_1,Envious Arsenal Chain Reaction,S,4.0
+HGLs,6,Koraxis's Distress,perk_2,Bait and Switch Chaos Reshaped Surrounded,S,4.0
+HGLs,7,Outrageous Fortune,perk_1,Envious Arsenal Incandescent,S,5.0
+HGLs,7,Outrageous Fortune,perk_2,Bait and Switch Explosive Light Chain Reaction,S,5.0
+HGLs,8,Love and Death,perk_1,Envious Arsenal Cascade Point Impromptu Ammunition,S,6.0
+HGLs,8,Love and Death,perk_2,Aggregate Charge Elemental Honing Chain Reaction,S,6.0
+HGLs,9,Canis Major,perk_1,Reconstruction Incandescent Rampage,A,7.0
+HGLs,9,Canis Major,perk_2,Aggregate Charge Bait and Switch Chain Reaction,A,7.0
+HGLs,10,Doomsday,perk_2,Bait and Switch Explosive Light Chain Reaction,A,8.0
+HGLs,11,Bitter/Sweet,perk_2,Bait and Switch Cascade Point Explosive Light,A,9.0
+HGLs,12,Wicked Sister,perk_2,Bait and Switch Cascade Point Explosive Light,A,10.0
+HGLs,13,Cataphract GL3,perk_1,Envious Arsenal Auto-Loading Holster,A,11.0
+HGLs,13,Cataphract GL3,perk_2,Bait and Switch Explosive Light,A,11.0
+HGLs,14,Dimensional Hypotrochoid,perk_1,Envious Arsenal Field Prep,A,12.0
+HGLs,14,Dimensional Hypotrochoid,perk_2,Bait and Switch Crystalline Corpsebloom Chain Reaction,A,12.0
+LFRs,3,Eyes Unveiled,perk_1,Fourth Time's the Charm Mega Kill Clip,S,1.0
+LFRs,4,Cataclysmic,perk_2,Aggregate Charge Elemental Honing Bait and Switch,S,2.0
+LFRs,5,Briar's Contempt,perk_2,Aggregate Charge Chaos Reshaped Surrounded,S,3.0
+LFRs,6,Scintillation,perk_1,Rewind Rounds Cornered,S,4.0
+LFRs,6,Scintillation,perk_2,Bait and Switch Surrounded,S,4.0
+LFRs,7,Mistral Lift,perk_1,Envious Arsenal Reconstruction Withering Gaze,S,5.0
+LFRs,7,Mistral Lift,perk_2,Bait and Switch Precision Instrument,S,5.0
+LFRs,8,Stormchaser,perk_1,Auto-Loading Holster Clown Cartridge,A,6.0
+LFRs,8,Stormchaser,perk_2,Aggregate Charge Elemental Honing,A,6.0
+LFRs,9,Boomslang-4fr,perk_1,Envious Arsenal Rapid Hit,A,7.0
+LFRs,9,Boomslang-4fr,perk_2,Precision Instrument Reservoir Burst,A,7.0
+LFRs,10,Doomed Petitioner,perk_1,Envious Assassin Reconstruction,A,8.0
+LFRs,10,Doomed Petitioner,perk_2,Surrounded Precision Instrument,A,8.0
+LMGs,3,Song of Ir Yût,perk_1,Demolitionist Reconstruction Jolting Feedback,S,1.0
+LMGs,3,Song of Ir Yût,perk_2,Mega Kill Clip High Ground Bait and Switch,S,1.0
+LMGs,4,Qua Vinctus IV,perk_1,Demolitionist Hatchling Slice,S,2.0
+LMGs,4,Qua Vinctus IV,perk_2,Meganeura Killing Tally,S,2.0
+LMGs,5,Thermal Erosion,perk_1,Demolitionist Incandescent,S,3.0
+LMGs,5,Thermal Erosion,perk_2,Meganeura Burning Ambition Mega Kill Clip,S,3.0
+LMGs,6,Pro Memoria,perk_1,Demolitionist Reconstruction Tear,S,4.0
+LMGs,6,Pro Memoria,perk_2,Desperate Measures Bait and Switch Mega Kill Clip,S,4.0
+LMGs,7,Circular Logic,perk_1,Firefly Demolitionist Fourth Time's the Charm,S,5.0
+LMGs,7,Circular Logic,perk_2,Mega Kill Clip Hatchling Desperate Measures,S,5.0
+LMGs,8,Ulterior Observation,perk_1,Demolitionist Headstone Envious Arsenal,S,6.0
+LMGs,8,Ulterior Observation,perk_2,Dragonfly Rimestealer Killing Tally,S,6.0
+LMGs,9,Corrective Measure,perk_1,Destabilizing Rounds Firefly Demolitionist,S,7.0
+LMGs,9,Corrective Measure,perk_2,One for All Demoralize Killing Tally,S,7.0
+LMGs,10,Chain of Command,perk_1,Headstone Overflow,S,8.0
+LMGs,10,Chain of Command,perk_2,Meganeura Demolitionist Desperate Measures,S,8.0
+LMGs,11,Bane of Sorrow,perk_1,Destabilizing Rounds Dimensional Shift Collective Demolition,S,9.0
+LMGs,11,Bane of Sorrow,perk_2,Mega Kill Clip Meganeura Killing Tally,S,9.0
+LMGs,12,Qullim's Terminus,perk_2,Mega Kill Clip Crystalline Corpsebloom Headstone,S,10.0
+LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
+LMGs,14,Seventh Seraph SAW,perk_1,Reconstruction Trickle Charge,A,12.0
+LMGs,14,Seventh Seraph SAW,perk_2,Meganeura Mega Kill Clip Rolling Storm,A,12.0
+LMGs,15,Terminus Horizon,perk_1,Meganeura Reconstruction Fourth Time's the Charm,A,13.0
+LMGs,15,Terminus Horizon,perk_2,Mega Kill Clip Rolling Storm,A,13.0
+LMGs,16,Commemoration,perk_1,Reconstruction Dragonfly Subsistence,A,14.0
+LMGs,16,Commemoration,perk_2,Killing Tally Repulsor Brace Redirection,A,14.0
+LMGs,17,DIABLERETS 06,perk_1,Auto-Loading Holster Hatchling,A,15.0
+LMGs,17,DIABLERETS 06,perk_2,Meganeura Redirection Killing Tally,A,15.0
+LMGs,18,Avalanche,perk_1,Auto-Loading Holster Subsistence Dragonfly,A,16.0
+LMGs,18,Avalanche,perk_2,Incandescent Cascade Point Golden Tricorn,A,16.0
+LMGs,19,Unwavering Duty,perk_1,Incandescent Fourth Time's the Charm Auto-Loading Holster,A,17.0
+LMGs,19,Unwavering Duty,perk_2,Killing Tally Target Lock Burning Ambition,A,17.0
+LMGs,20,Temporal Clause,perk_1,Demolitionist Meganeura Incandescent,A,18.0
+LMGs,20,Temporal Clause,perk_2,Mega Kill Clip Burning Ambition Killing Tally,A,18.0
+LMGs,21,Hammerhead,perk_1,Demolitionist Destabilizing Rounds Dimensional Shift,A,19.0
+LMGs,21,Hammerhead,perk_2,Mega Kill Clip Desperate Measures,A,19.0
+LMGs,22,Dawn Far Off,perk_1,Burning Ambition Impromptu Ammunition Subsistence,A,20.0
+LMGs,22,Dawn Far Off,perk_2,Incandescent Meganeura Redirection,A,20.0
+LMGs,23,Speleologist,perk_1,Envious Assassin Heal Clip Deconstruct,A,21.0
+LMGs,23,Speleologist,perk_2,Incandescent Killing Tally One For All,A,21.0
+LMGs,24,Archon's Thunder,perk_1,Rimestealer Air Trigger Fourth Time's the Charm,A,22.0
+LMGs,24,Archon's Thunder,perk_2,Headstone Desperate Measures Killing Tally,A,22.0
+LMGs,25,Watchful Eye,perk_1,Overflow Field Prep,A,23.0
+LMGs,25,Watchful Eye,perk_2,Jolting Feedback Killing Tally Rolling Storm,A,23.0
+Rockets,3,Hezen Vengeance,perk_1,Envious Arsenal Cluster Bomb Collective Demolition,S,1.0
+Rockets,3,Hezen Vengeance,perk_2,Bait and Switch Aggregate Charge Bipod,S,1.0
+Rockets,4,Cynosure,perk_2,Aggregate Charge Bait and Switch Bipod,S,2.0
+Rockets,5,The Hothead,perk_2,Aggregate Charge Elemental Honing Bipod,S,3.0
+Rockets,6,The When and Where,perk_1,Clown Cartridge Reconstruction Overflow,S,4.0
+Rockets,6,The When and Where,perk_2,Bait and Switch Elemental Honing Bipod,S,4.0
+Rockets,7,Crux Celeritas IV,perk_1,Reconstruction Clown Cartridge,S,5.0
+Rockets,7,Crux Celeritas IV,perk_2,Aggregate Charge Elemental Honing Bipod,S,5.0
+Rockets,8,Bellowing Giant,perk_2,Aggregate Charge Reaper's Tithe Bipod,S,6.0
+Rockets,9,Roar of the Bear,perk_1,Explosive Light Reconstruction,S,7.0
+Rockets,9,Roar of the Bear,perk_2,Reaper's Tithe Bipod,S,7.0
+Rockets,10,Apex Predator,perk_1,Reconstruction Cluster Bomb Chain Reaction,S,8.0
+Rockets,10,Apex Predator,perk_2,Bait and Switch Reaper's Tithe Bipod,S,8.0
+Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
+Rockets,12,Heretic,perk_1,Envious Arsenal Cluster Bomb,A,11.0
+Rockets,12,Heretic,perk_2,Explosive Light Gear Shift Bipod,A,11.0
+Rockets,13,Tomorrow's Answer,perk_1,Envious Arsenal Air Trigger,A,10.0
+Rockets,13,Tomorrow's Answer,perk_2,Bait and Switch Explosive Light Bipod,A,10.0
+Rockets,14,Bad Omens,perk_1,Bipod Auto-Loading Holster,A,12.0
+Rockets,14,Bad Omens,perk_2,Elemental Honing Bait and Switch Explosive Light,A,12.0
+Rockets,15,Red Herring,perk_1,Reconstruction Cluster Bomb,A,13.0
+Rockets,16,Cold Comfort,perk_1,Envious Assassin Reconstruction Vorpal Weapon,A,14.0
+Rockets,16,Cold Comfort,perk_2,Aggregate Charge Reaper's Tithe Bipod,A,14.0
+Swords,3,Zephyr,perk_1,Surrounded Cold Steel Whirlwind Blade,S,1.0
+Swords,3,Zephyr,perk_2,Surrounded Cold Steel Whirlwind Blade,S,1.0
+Swords,4,Synanceia,perk_1,Relentless Strikes Attrition Orbs Sharp Harvest,S,2.0
+Swords,4,Synanceia,perk_2,Elemental Honing Eager Edge Burning Ambition,S,2.0
+Swords,5,The Slammer,perk_1,Eager Edge Chain Reaction Relentless Strikes,S,3.0
+Swords,5,The Slammer,perk_2,Cold Steel Chaos Reshaped Surrounded,S,3.0
+Swords,6,False Idols,perk_1,Relentless Strikes Attrition Orbs Eager Edge,S,4.0
+Swords,6,False Idols,perk_2,Bait and Switch Surrounded Elemental Honing,S,4.0
+Swords,7,Sullen Claw,perk_1,Eager Edge Vorpal Weapon Relentless Strikes,S,5.0
+Swords,7,Sullen Claw,perk_2,Assassin's Blade Whirlwind Blade Destabilizing Rounds,S,5.0
+Swords,8,Terciopelo-4bl,perk_1,Relentless Strikes Burning Ambition Eager Edge,S,6.0
+Swords,8,Terciopelo-4bl,perk_2,Chaos Reshaped Aggregate Charge Whirlwind Blade,S,6.0
+Swords,9,Bequest,perk_1,Relentless Strikes Jolting Feedback,S,7.0
+Swords,9,Bequest,perk_2,Surrounded Elemental Honing Redirection,S,7.0
+Swords,10,Aurora Dawn,perk_1,Sharp Harvest Flash Counter Rimestealer,A,8.0
+Swords,10,Aurora Dawn,perk_2,Whirlwind Blade Elemental Honing Cold Steel,A,8.0
+Swords,11,Summum Bonum,perk_1,Relentless Strikes Attrition Orbs Deconstruct,A,9.0
+Swords,11,Summum Bonum,perk_2,Chaos Reshaped Whirlwind Blade Surrounded,A,9.0
+Swords,12,Abyssal Edge,perk_1,Relentless Strikes Flash Counter,A,10.0
+Swords,12,Abyssal Edge,perk_2,Elemental Honing Surrounded Redirection,A,10.0
+Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
+Swords,15,Ill Omen,perk_1,Relentless Strikes Attrition Orbs,A,13.0
+Swords,15,Ill Omen,perk_2,Whirlwind Blade Surrounded,A,13.0
+Swords,16,Nasreddin,perk_1,Relentless Strikes Sharp Harvest,A,14.0
+Swords,16,Nasreddin,perk_2,Surrounded Whirlwind Blade Eager Edge,A,14.0
+Swords,17,Sola's Scar,perk_1,Relentless Strikes Eager Edge,A,15.0
+Swords,17,Sola's Scar,perk_2,Elemental Honing Whirlwind Blade Redirection,A,15.0
+Swords,18,Chivalric Fire,perk_1,Relentless Strikes Sharp Harvest Collective Demolition,A,16.0
+Swords,18,Chivalric Fire,perk_2,Destabilizing Rounds Whirlwind Blade Eager Edge,A,16.0
+Swords,19,Night Terror,perk_1,Relentless Strikes Eager Edge,A,17.0
+Swords,19,Night Terror,perk_2,Aggregate Charge Elemental Honing Whirlwind Blade,A,17.0
+Swords,20,Hardline Cut,perk_1,Relentless Strikes Attrition Orbs Sharp Harvest,A,18.0
+Swords,20,Hardline Cut,perk_2,Whirlwind Blade Surrounded Eager Edge,A,18.0
+Swords,21,Abide the Return,perk_1,Relentless Strikes Sharp Harvest,A,19.0
+Swords,21,Abide the Return,perk_2,Whirlwind Blade Elemental Honing Eager Edge,A,19.0
+Swords,22,The Other Half,perk_1,Eager Edge Relentless Strikes,A,20.0
+Swords,22,The Other Half,perk_2,Surrounded Frenzy Whirlwind Blade,A,20.0
+Swords,23,Eighty-Six,perk_1,Relentless Strikes Sharp Harvest Slice,A,21.0
+Swords,23,Eighty-Six,perk_2,Elemental Honing Redirection Attrition Orbs,A,21.0
+Swords,25,Temptation's Hook,perk_1,Relentless Strikes Attrition Orbs,A,23.0
+Swords,26,Stryker's Sure-Hand,perk_1,Relentless Strikes Sharp Harvest,A,24.0
+Swords,26,Stryker's Sure-Hand,perk_2,Whirlwind Blade Surrounded Redirection,A,24.0

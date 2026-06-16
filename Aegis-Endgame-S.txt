@@ -1,5 +1,32 @@
 title:Aegis Endgame S-tier
-description:Current Aegis Endgame Analysis S-tier weapons.
-// Generated from the current Aegis Endgame Analysis Excel file.
-// Strict matching mode: weapon + one recommended Column 1 perk + one recommended Column 2 perk.
-// Barrels, mags, masterworks, and origin traits are intentionally not required by default.
+description:Current Aegis Endgame S-tier weapons.
+// Generated from current Aegis Endgame Analysis Excel.
+// Strict mode: weapon + one recommended Perk 1 + one recommended Perk 2.
+// Barrels, mags, masterworks, and origin traits are intentionally not required.
+
+
+//notes:Submission - Rank 9.0, Tier S by TheAegisRelic\nSheet: SMGs\nColumn 1: Kinetic Tremors\nColumn 2: Chaos Reshaped\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Souldrinker\nNotes: great survivability origin + perk combo, good frame with KT
+dimwishlist:item=3886416794&perks=1549370717,1817983009
+dimwishlist:item=3886416794&perks=1549370717,3640170453
+dimwishlist:item=3886416794&perks=3891536761,1817983009
+dimwishlist:item=3886416794&perks=3891536761,3640170453
+
+//notes:Out of Bounds - Rank 10.0, Tier S by TheAegisRelic\nSheet: SMGs\nColumn 1: Voltshot\nColumn 2: Jolting Feedback\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Accelerated Assault\nNotes: probably as good as an arc SMG gets, just missing AO
+dimwishlist:item=2579239008&perks=1720528630,717070634
+dimwishlist:item=2579239008&perks=1720528630,3966416502
+dimwishlist:item=2579239008&perks=2173046394,717070634
+dimwishlist:item=2579239008&perks=2173046394,3966416502
+dimwishlist:item=2988121501&perks=1720528630,717070634
+dimwishlist:item=2988121501&perks=1720528630,3966416502
+dimwishlist:item=2988121501&perks=2173046394,717070634
+dimwishlist:item=2988121501&perks=2173046394,3966416502
+dimwishlist:item=3021407779&perks=1720528630,717070634
+dimwishlist:item=3021407779&perks=1720528630,3966416502
+dimwishlist:item=3021407779&perks=2173046394,717070634
+dimwishlist:item=3021407779&perks=2173046394,3966416502
+
+//notes:Conspiracy Honed - Rank 2.0, Tier S by TheAegisRelic\nSheet: Snipers\nColumn 1: Vorpal Weapon\nColumn 2: Bait and Switch\nBarrel: Fluted Barrel\nMag: Ionized Heatsink Overclocked Heatsink\nOrigin Trait: Imperial Allegiance\nNotes: double perk fast vent style burst sniper, no ammo gen perk though
+dimwishlist:item=4062069077&perks=1546637391,3078487919
+dimwishlist:item=4062069077&perks=1546637391,3744057135
+dimwishlist:item=4062069077&perks=3418165135,3078487919
+dimwishlist:item=4062069077&perks=3418165135,3744057135

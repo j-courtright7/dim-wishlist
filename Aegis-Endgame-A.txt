@@ -1,5 +1,118 @@
 title:Aegis Endgame A-tier
-description:Current Aegis Endgame Analysis A-tier weapons.
-// Generated from the current Aegis Endgame Analysis Excel file.
-// Strict matching mode: weapon + one recommended Column 1 perk + one recommended Column 2 perk.
-// Barrels, mags, masterworks, and origin traits are intentionally not required by default.
+description:Current Aegis Endgame A-tier weapons.
+// Generated from current Aegis Endgame Analysis Excel.
+// Strict mode: weapon + one recommended Perk 1 + one recommended Perk 2.
+// Barrels, mags, masterworks, and origin traits are intentionally not required.
+
+
+//notes:Sightline Survey - Rank 10.0, Tier A by TheAegisRelic\nSheet: HCs\nColumn 1: Enlightened Action\nColumn 2: Voltshot\nBarrel: Fluted Barrel\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Radiolaria Transposer\nNotes: doesn't scale as well as Posterity into upper-tier content
+dimwishlist:item=2350330520&perks=777589557,1720528630
+dimwishlist:item=2350330520&perks=777589557,2173046394
+dimwishlist:item=2350330520&perks=1771736209,1720528630
+dimwishlist:item=2350330520&perks=1771736209,2173046394
+dimwishlist:item=2350330520&perks=3828510309,1720528630
+dimwishlist:item=2350330520&perks=3828510309,2173046394
+
+//notes:Vantage Point - Rank 11.0, Tier A by TheAegisRelic\nSheet: Pulses\nColumn 1: Eddy Current\nColumn 2: Jolting Feedback\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Dark Ether Reaper\nNotes: underrated combo of Jolting + great origin
+dimwishlist:item=3830941962&perks=684456054,717070634
+dimwishlist:item=3830941962&perks=684456054,3966416502
+dimwishlist:item=3830941962&perks=2785334058,717070634
+dimwishlist:item=3830941962&perks=2785334058,3966416502
+
+//notes:Phyllotactic Spiral - Rank 26.0, Tier A by TheAegisRelic\nSheet: Pulses\nColumn 1: Rapid Hit\nColumn 2: Voltshot\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Nanotech Tracer Missiles\nNotes: no double splash, bad frame, otherwise good
+dimwishlist:item=3635821806&perks=247725512,1720528630
+dimwishlist:item=3635821806&perks=247725512,2173046394
+dimwishlist:item=3635821806&perks=2578928835,1720528630
+dimwishlist:item=3635821806&perks=2578928835,2173046394
+dimwishlist:item=3635821806&perks=2938480696,1720528630
+dimwishlist:item=3635821806&perks=2938480696,2173046394
+
+//notes:Adjudicator - Rank 21.0, Tier A by TheAegisRelic\nSheet: SMGs\nColumn 1: Attrition Orbs\nColumn 2: Kinetic Tremors\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Crossing Over\nNotes: AO + KT but bad frame and poor diversity, mediocre origin
+dimwishlist:item=140914741&perks=243981275,1549370717
+dimwishlist:item=140914741&perks=243981275,3891536761
+dimwishlist:item=140914741&perks=984655331,1549370717
+dimwishlist:item=140914741&perks=984655331,3891536761
+dimwishlist:item=1013434963&perks=243981275,1549370717
+dimwishlist:item=1013434963&perks=243981275,3891536761
+dimwishlist:item=1013434963&perks=984655331,1549370717
+dimwishlist:item=1013434963&perks=984655331,3891536761
+dimwishlist:item=2094938673&perks=243981275,1549370717
+dimwishlist:item=2094938673&perks=243981275,3891536761
+dimwishlist:item=2094938673&perks=984655331,1549370717
+dimwishlist:item=2094938673&perks=984655331,3891536761
+
+//notes:Death Adder - Rank 23.0, Tier A by TheAegisRelic\nSheet: SMGs\nColumn 1: Heal Clip\nColumn 2: Burning Ambition\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Veist Stinger\nNotes: Burning Ambition is a little build-dependent to be only splash perk
+dimwishlist:item=2130249527&perks=3017780555,2890807135
+dimwishlist:item=2130249527&perks=3017780555,3581929919
+dimwishlist:item=2130249527&perks=4223976499,2890807135
+dimwishlist:item=2130249527&perks=4223976499,3581929919
+dimwishlist:item=2517599010&perks=3017780555,2890807135
+dimwishlist:item=2517599010&perks=3017780555,3581929919
+dimwishlist:item=2517599010&perks=4223976499,2890807135
+dimwishlist:item=2517599010&perks=4223976499,3581929919
+dimwishlist:item=2742490609&perks=3017780555,2890807135
+dimwishlist:item=2742490609&perks=3017780555,3581929919
+dimwishlist:item=2742490609&perks=4223976499,2890807135
+dimwishlist:item=2742490609&perks=4223976499,3581929919
+
+//notes:Perfect Pitch - Rank 24.0, Tier A by TheAegisRelic\nSheet: SMGs\nColumn 1: Heal Clip\nColumn 2: Incandescent\nBarrel: Fluted Barrel Arrowhead Brake\nMag: Flared Magwell Alloy Magazine\nOrigin Trait: Vanguard Determination\nNotes: worst Heal + Incandescent SMG
+dimwishlist:item=2191451996&perks=3017780555,2675184851
+dimwishlist:item=2191451996&perks=3017780555,4293542123
+dimwishlist:item=2191451996&perks=4223976499,2675184851
+dimwishlist:item=2191451996&perks=4223976499,4293542123
+dimwishlist:item=3276304504&perks=3017780555,2675184851
+dimwishlist:item=3276304504&perks=3017780555,4293542123
+dimwishlist:item=3276304504&perks=4223976499,2675184851
+dimwishlist:item=3276304504&perks=4223976499,4293542123
+
+//notes:Blasphemer - Rank 11.0, Tier A by TheAegisRelic\nSheet: Shotguns\nColumn 1: Fourth Time's the Charm\nColumn 2: All-Star\nBarrel: Fluted Barrel\nMag: Assault Mag\nOrigin Trait: Loss\nNotes: carried by a single roll, not bad though
+dimwishlist:item=2527058297&perks=848860060,1226351311
+dimwishlist:item=2527058297&perks=848860060,3251326479
+dimwishlist:item=2527058297&perks=1354429876,1226351311
+dimwishlist:item=2527058297&perks=1354429876,3251326479
+dimwishlist:item=2782847179&perks=848860060,1226351311
+dimwishlist:item=2782847179&perks=848860060,3251326479
+dimwishlist:item=2782847179&perks=1354429876,1226351311
+dimwishlist:item=2782847179&perks=1354429876,3251326479
+
+//notes:Adored - Rank 7.0, Tier A by TheAegisRelic\nSheet: Snipers\nColumn 1: Fourth Time's the Charm\nColumn 2: Elemental Honing\nBarrel: Fluted Barrel\nMag: Extended Mag\nOrigin Trait: Accelerated Assault\nNotes: only held back by frame, 2nd column could be a little more diverse
+dimwishlist:item=891765152&perks=848860060,496047945
+dimwishlist:item=891765152&perks=848860060,1089671869
+dimwishlist:item=891765152&perks=1354429876,496047945
+dimwishlist:item=891765152&perks=1354429876,1089671869
+dimwishlist:item=1405095983&perks=848860060,496047945
+dimwishlist:item=1405095983&perks=848860060,1089671869
+dimwishlist:item=1405095983&perks=1354429876,496047945
+dimwishlist:item=1405095983&perks=1354429876,1089671869
+dimwishlist:item=4184808992&perks=848860060,496047945
+dimwishlist:item=4184808992&perks=848860060,1089671869
+dimwishlist:item=4184808992&perks=1354429876,496047945
+dimwishlist:item=4184808992&perks=1354429876,1089671869
+
+//notes:IKELOS_SR_v1.0.3 - Rank 14.0, Tier A by TheAegisRelic\nSheet: Snipers\nColumn 1: Fourth Time's the Charm\nColumn 2: Focused Fury\nBarrel: Fluted Barrel\nMag: Tactical Mag\nOrigin Trait: Rasputin's Arsenal\nNotes: FTTC + very consistent 20% perk on good frame
+dimwishlist:item=2302346155&perks=848860060,2402480669
+dimwishlist:item=2302346155&perks=848860060,2896038713
+dimwishlist:item=2302346155&perks=1354429876,2402480669
+dimwishlist:item=2302346155&perks=1354429876,2896038713
+
+//notes:Path of Least Resistance - Rank 6.0, Tier A by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot\nColumn 2: Voltshot\nBarrel: Fluted Barrel\nMag: Enhanced Battery\nOrigin Trait: Ambush\nNotes: feels excellent but objectively worse than Chronophage
+dimwishlist:item=2827764482&perks=2840833776,1720528630
+dimwishlist:item=2827764482&perks=2840833776,2173046394
+dimwishlist:item=2827764482&perks=3700496672,1720528630
+dimwishlist:item=2827764482&perks=3700496672,2173046394
+
+//notes:Geodetic HSm - Rank 11.0, Tier A by TheAegisRelic\nSheet: Swords\nColumn 1: Relentless Strikes\nColumn 2: Whirlwind Blade\nBarrel: Jagged Edge Tempered Edge\nMag: Swordmaster's Guard Heavy Guard\nOrigin Trait: Nadir Focus\nNotes: best consistent adaptive sword
+dimwishlist:item=3637669759&perks=1749209109,147913470
+dimwishlist:item=3637669759&perks=1749209109,3913600130
+dimwishlist:item=3637669759&perks=4085959009,147913470
+dimwishlist:item=3637669759&perks=4085959009,3913600130
+
+//notes:Goldtusk - Rank 22.0, Tier A by TheAegisRelic\nSheet: Swords\nColumn 1: Relentless Strikes\nColumn 2: Whirlwind Blade\nBarrel: Jagged Edge Tempered Edge\nMag: Swordmaster's Guard\nOrigin Trait: Veist Stinger\nNotes: interesting frame, arguably most consistent light spammer
+dimwishlist:item=569799275&perks=1749209109,147913470
+dimwishlist:item=569799275&perks=1749209109,3913600130
+dimwishlist:item=569799275&perks=4085959009,147913470
+dimwishlist:item=569799275&perks=4085959009,3913600130
+dimwishlist:item=3371413057&perks=1749209109,147913470
+dimwishlist:item=3371413057&perks=1749209109,3913600130
+dimwishlist:item=3371413057&perks=4085959009,147913470
+dimwishlist:item=3371413057&perks=4085959009,3913600130
