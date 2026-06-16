@@ -125,12 +125,19 @@ def split_perks(value: Any) -> tuple[str, ...]:
 
 def find_header_row(ws: Any, max_scan_rows: int = 20) -> tuple[int, dict[str, int]] | None:
     """
-    Locate a header row containing Name, Perk 1, Perk 2, Tier, Rank.
+    Locate a header row containing Name, Perk 1, Perk 2, Tier.
     Returns (row_number, normalized_header -> 1-based column index).
     """
-    for row in range(1, min(max_scan_rows, ws.max_row) + 1):
+    max_row = ws.max_row or 0
+    max_col = ws.max_column or 0
+
+    if max_row < 1 or max_col < 1:
+        return None
+
+    for row in range(1, min(max_scan_rows, max_row) + 1):
         headers: dict[str, int] = {}
-        for col in range(1, ws.max_column + 1):
+
+        for col in range(1, max_col + 1):
             text = clean_cell(ws.cell(row=row, column=col).value)
             if text:
                 headers[norm_name(text)] = col
