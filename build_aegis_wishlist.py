@@ -17,7 +17,6 @@ def normalize_quotes(x):
 
 
 def clean(x):
-    """Clean display text for notes/matching, collapsing whitespace."""
     s = normalize_quotes(x)
     return re.sub(r"\s+", " ", s).strip()
 
@@ -27,22 +26,10 @@ def norm(x):
 
 
 def split_perks(x):
-    """
-    Split perk cells while preserving Excel line breaks.
-
-    The previous version called clean() first, which collapsed newlines into spaces.
-    That turned cells like:
-        Physic\nBurning Ambition
-    into:
-        Physic Burning Ambition
-    which is not a real perk name and caused hundreds of unresolved rows.
-    """
     raw = normalize_quotes(x)
     if not raw:
         return []
-
     raw = re.sub(r"\bEnhanced\b", "", raw, flags=re.I)
-
     out, seen = [], set()
     for p in re.split(r"[\n\r,;]+", raw):
         p = clean(p)
@@ -80,8 +67,6 @@ def col(h, *names):
 
 
 def read_rows(xlsx):
-    # IMPORTANT: read_only=False is required for this workbook. In read_only mode,
-    # some sheets can report max_row/max_column as None, causing zero detected rows.
     wb = openpyxl.load_workbook(xlsx, data_only=True, read_only=False)
     rows = []
 
@@ -116,8 +101,8 @@ def read_rows(xlsx):
                 "rank": clean(ws.cell(r, c_rank).value) if c_rank else "",
                 "p1": p1,
                 "p2": p2,
-                "barrel": clean(ws.cell(r, c_barrel).value) if c_barrel else "",
-                "mag": clean(ws.cell(r, c_mag).value) if c_mag else "",
+                "barrel": split_perks(ws.cell(r, c_barrel).value) if c_barrel else [],
+                "mag": split_perks(ws.cell(r, c_mag).value) if c_mag else [],
                 "origin": clean(ws.cell(r, c_origin).value) if c_origin else "",
                 "notes": clean(ws.cell(r, c_notes).value) if c_notes else "",
             })
@@ -126,7 +111,7 @@ def read_rows(xlsx):
 
 
 def get_json(url, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.1"}
+    headers = {"User-Agent": "aegis-dim-builder/1.2"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -135,7 +120,7 @@ def get_json(url, key=None):
 
 
 def download(url, path, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.1"}
+    headers = {"User-Agent": "aegis-dim-builder/1.2"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -193,9 +178,9 @@ def note(row):
         "Column 2: " + ", ".join(row["p2"]),
     ]
     if row["barrel"]:
-        bits.append("Barrel: " + row["barrel"])
+        bits.append("Barrel: " + ", ".join(row["barrel"]))
     if row["mag"]:
-        bits.append("Mag: " + row["mag"])
+        bits.append("Mag: " + ", ".join(row["mag"]))
     if row["origin"]:
         bits.append("Origin Trait: " + row["origin"])
     if row["notes"]:
@@ -203,7 +188,18 @@ def note(row):
     return "\\n".join(bits).replace("#", "").replace("\r", "")
 
 
-def generate(rows, weapons, plugs, tiers):
+def hashes_for_names(names, plugs, row, missing, missing_type):
+    all_hashes = []
+    for name in names:
+        hs = plugs.get(norm(name), [])
+        if hs:
+            all_hashes.extend(hs[:20])
+        else:
+            missing.append([row["sheet"], row["row"], row["name"], missing_type, name, row["tier"], row["rank"]])
+    return sorted(set(all_hashes))
+
+
+def generate(rows, weapons, plugs, tiers, require_barrel_mag=False):
     lines, missing, seen = [], [], set()
     for row in rows:
         if row["tier"] not in tiers:
@@ -214,43 +210,69 @@ def generate(rows, weapons, plugs, tiers):
             missing.append([row["sheet"], row["row"], row["name"], "weapon", row["name"], row["tier"], row["rank"]])
             continue
 
-        p1s, p2s = [], []
-        for p in row["p1"]:
-            hs = plugs.get(norm(p), [])
-            if hs:
-                p1s.extend(hs[:20])
-            else:
-                missing.append([row["sheet"], row["row"], row["name"], "perk_1", p, row["tier"], row["rank"]])
-        for p in row["p2"]:
-            hs = plugs.get(norm(p), [])
-            if hs:
-                p2s.extend(hs[:20])
-            else:
-                missing.append([row["sheet"], row["row"], row["name"], "perk_2", p, row["tier"], row["rank"]])
-
+        p1s = hashes_for_names(row["p1"], plugs, row, missing, "perk_1")
+        p2s = hashes_for_names(row["p2"], plugs, row, missing, "perk_2")
         if not p1s or not p2s:
             continue
 
+        if require_barrel_mag:
+            barrels = hashes_for_names(row["barrel"], plugs, row, missing, "barrel")
+            mags = hashes_for_names(row["mag"], plugs, row, missing, "mag")
+            if not barrels or not mags:
+                continue
+            combos = itertools.product(barrels, mags, p1s, p2s)
+        else:
+            combos = itertools.product(p1s, p2s)
+
         lines += ["", "//notes:" + note(row)]
-        for w, p1, p2 in itertools.product(wh[:20], sorted(set(p1s)), sorted(set(p2s))):
-            line = f"dimwishlist:item={w}&perks={p1},{p2}"
-            if line not in seen:
-                seen.add(line)
-                lines.append(line)
+
+        for w in wh[:20]:
+            for combo in combos:
+                perk_hashes = ",".join(str(x) for x in combo)
+                line = f"dimwishlist:item={w}&perks={perk_hashes}"
+                if line not in seen:
+                    seen.add(line)
+                    lines.append(line)
+
+            # Recreate iterator for the next weapon hash.
+            if require_barrel_mag:
+                combos = itertools.product(barrels, mags, p1s, p2s)
+            else:
+                combos = itertools.product(p1s, p2s)
 
     return lines, missing
 
 
-def write_file(path, title, desc, lines):
+def write_file(path, title, desc, lines, require_barrel_mag=False):
+    strict = "weapon + one recommended Perk 1 + one recommended Perk 2"
+    if require_barrel_mag:
+        strict = "weapon + one recommended barrel + one recommended mag + one recommended Perk 1 + one recommended Perk 2"
+
     head = [
         "title:" + title,
         "description:" + desc,
         "// Generated from current Aegis Endgame Analysis Excel.",
-        "// Strict mode: weapon + one recommended Perk 1 + one recommended Perk 2.",
-        "// Barrels, mags, masterworks, and origin traits are intentionally not required.",
+        f"// Strict mode: {strict}.",
         "",
     ]
     Path(path).write_text("\n".join(head + lines).strip() + "\n", encoding="utf-8")
+
+
+def build_outputs(rows, weapons, plugs, outdir, require_barrel_mag, suffix, desc_extra):
+    all_missing = []
+    outputs = [
+        (f"Aegis-Endgame-S{suffix}.txt", {"S"}, f"Aegis Endgame S-tier{desc_extra}", f"Current Aegis Endgame S-tier weapons{desc_extra}."),
+        (f"Aegis-Endgame-A{suffix}.txt", {"A"}, f"Aegis Endgame A-tier{desc_extra}", f"Current Aegis Endgame A-tier weapons{desc_extra}."),
+        (f"Aegis-Endgame-A-and-S{suffix}.txt", {"A", "S"}, f"Aegis Endgame A and S-tier{desc_extra}", f"Current Aegis Endgame A/S-tier weapons{desc_extra}."),
+    ]
+
+    for fn, tiers, title, desc in outputs:
+        lines, missing = generate(rows, weapons, plugs, tiers, require_barrel_mag=require_barrel_mag)
+        write_file(Path(outdir) / fn, title, desc, lines, require_barrel_mag=require_barrel_mag)
+        all_missing += missing
+        print(f"Wrote {fn}: {sum(1 for l in lines if l.startswith('dimwishlist:'))} DIM lines; {len(missing)} unresolved")
+
+    return all_missing
 
 
 def main():
@@ -270,15 +292,11 @@ def main():
     print(f"Indexed {len(weapons)} weapon names and {len(plugs)} plug names")
 
     all_missing = []
-    for fn, tiers, title, desc in [
-        ("Aegis-Endgame-S.txt", {"S"}, "Aegis Endgame S-tier", "Current Aegis Endgame S-tier weapons."),
-        ("Aegis-Endgame-A.txt", {"A"}, "Aegis Endgame A-tier", "Current Aegis Endgame A-tier weapons."),
-        ("Aegis-Endgame-A-and-S.txt", {"A", "S"}, "Aegis Endgame A and S-tier", "Current Aegis Endgame A/S-tier weapons."),
-    ]:
-        lines, missing = generate(rows, weapons, plugs, tiers)
-        write_file(Path(args.outdir) / fn, title, desc, lines)
-        all_missing += missing
-        print(f"Wrote {fn}: {sum(1 for l in lines if l.startswith('dimwishlist:'))} DIM lines; {len(missing)} unresolved")
+    # Original perk-only files.
+    all_missing += build_outputs(rows, weapons, plugs, args.outdir, False, "", "")
+
+    # Stricter barrel+mag+perks files.
+    all_missing += build_outputs(rows, weapons, plugs, args.outdir, True, "-Barrel-Mag", " with Barrel and Mag")
 
     with open(Path(args.outdir) / "Aegis-Unresolved-Names.csv", "w", newline="", encoding="utf-8") as f:
         wr = csv.writer(f)
