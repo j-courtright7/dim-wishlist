@@ -1,5 +1,5 @@
-title:Aegis Endgame A and S-tier
-description:Current Aegis Endgame Analysis A/S-tier weapons.
+title:Aegis Endgame A-tier
+description:Current Aegis Endgame Analysis A-tier weapons.
 // Generated from the current Aegis Endgame Analysis Excel file.
 // Strict matching mode: weapon + one recommended Column 1 perk + one recommended Column 2 perk.
 // Barrels, mags, masterworks, and origin traits are intentionally not required by default.
