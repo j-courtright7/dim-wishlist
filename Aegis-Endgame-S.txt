@@ -3030,7 +3030,7 @@ dimwishlist:item=4146673635&perks=3696140595,2173046394
 dimwishlist:item=4146673635&perks=3696140595,3007133316
 dimwishlist:item=4146673635&perks=3696140595,4104185692
 
-//notes:Cartesian Coordinate - Rank 1.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Reconstruction, Envious Arsenal, Discord\nColumn 2: Aggregate Charge, Controlled Burst, Reservoir Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Veteran's Wisdom\nNotes: best add clear fusion, also solid for damage besides frame
+//notes:Cartesian Coordinate - Rank 1.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Reconstruction, Envious Arsenal, Discord\nColumn 2: Aggregate Charge, Controlled Burst, Reservoir Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Veteran's Wisdom\nNotes: best add clear fusion, also solid for damage besides frame
 dimwishlist:item=2481881293&perks=461595545,254337357
 dimwishlist:item=2481881293&perks=461595545,1427256713
 dimwishlist:item=2481881293&perks=461595545,2037312142
@@ -3140,7 +3140,7 @@ dimwishlist:item=3719824177&perks=3987942396,2594592626
 dimwishlist:item=3719824177&perks=3987942396,3192447905
 dimwishlist:item=3719824177&perks=3987942396,3764420437
 
-//notes:Null Composure - Rank 2.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Overflow, Reconstruction, Envious Arsenal\nColumn 2: Elemental Honing, Controlled Burst, Reservoir Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Accelerated Assault\nNotes: best energy rapid DPS fusion
+//notes:Null Composure - Rank 2.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Overflow, Reconstruction, Envious Arsenal\nColumn 2: Elemental Honing, Controlled Burst, Reservoir Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Accelerated Assault\nNotes: best energy rapid DPS fusion
 dimwishlist:item=1644680957&perks=461595545,254337357
 dimwishlist:item=1644680957&perks=461595545,496047945
 dimwishlist:item=1644680957&perks=461595545,1089671869
@@ -3250,7 +3250,7 @@ dimwishlist:item=3613444087&perks=3987942396,1427256713
 dimwishlist:item=3613444087&perks=3987942396,2037312142
 dimwishlist:item=3613444087&perks=3987942396,2594592626
 
-//notes:The Beacon - Rank 3.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Rewind Rounds, Lead from Gold, Demolitionist\nColumn 2: Bait and Switch, Controlled Burst, Deconstruct\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Classy Contender\nNotes: no AA but better perks than every rapid
+//notes:The Beacon - Rank 3.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Rewind Rounds, Lead from Gold, Demolitionist\nColumn 2: Bait and Switch, Controlled Burst, Deconstruct\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Classy Contender\nNotes: no AA but better perks than every rapid
 dimwishlist:item=76739872&perks=1556840489,1164602481
 dimwishlist:item=76739872&perks=1556840489,2037312142
 dimwishlist:item=76739872&perks=1556840489,2594592626
@@ -3348,7 +3348,7 @@ dimwishlist:item=2161618499&perks=3523296417,3078487919
 dimwishlist:item=2161618499&perks=3523296417,3744057135
 dimwishlist:item=2161618499&perks=3523296417,3993379141
 
-//notes:Riptide - Rank 4.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Auto-Loading Holster, Overflow\nColumn 2: Chill Clip, Controlled Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Accelerated Assault\nNotes: Accelerated Assault probably takes the cake over Lionfish versatility
+//notes:Riptide - Rank 4.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Auto-Loading Holster, Overflow\nColumn 2: Chill Clip, Controlled Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Accelerated Assault\nNotes: Accelerated Assault probably takes the cake over Lionfish versatility
 dimwishlist:item=1323862250&perks=2682205016,344235611
 dimwishlist:item=1323862250&perks=2682205016,2037312142
 dimwishlist:item=1323862250&perks=2682205016,2594592626
@@ -3398,7 +3398,7 @@ dimwishlist:item=2715240478&perks=3643424744,2037312142
 dimwishlist:item=2715240478&perks=3643424744,2594592626
 dimwishlist:item=2715240478&perks=3643424744,2978966579
 
-//notes:Lionfish-4fr - Rank 5.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Reconstruction, Lead from Gold\nColumn 2: Chill Clip, Controlled Burst, Elemental Honing\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Problem Solver\nNotes: BiS utility and damage fusion on best archetype, only Rewind missing
+//notes:Lionfish-4fr - Rank 5.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Reconstruction, Lead from Gold\nColumn 2: Chill Clip, Controlled Burst, Elemental Honing\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Problem Solver\nNotes: BiS utility and damage fusion on best archetype, only Rewind missing
 dimwishlist:item=2423071981&perks=461595545,344235611
 dimwishlist:item=2423071981&perks=461595545,496047945
 dimwishlist:item=2423071981&perks=461595545,1089671869
@@ -3424,7 +3424,7 @@ dimwishlist:item=2423071981&perks=3442762221,2037312142
 dimwishlist:item=2423071981&perks=3442762221,2594592626
 dimwishlist:item=2423071981&perks=3442762221,2978966579
 
-//notes:Accelerando-42 - Rank 6.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Overflow, Slice\nColumn 2: Aggregate Charge, Controlled Burst, Surrounded\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Featherweight\nNotes: Scatter Signal with a better frame and 2nd column
+//notes:Accelerando-42 - Rank 6.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Overflow, Slice\nColumn 2: Aggregate Charge, Controlled Burst, Surrounded\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Featherweight\nNotes: Scatter Signal with a better frame and 2nd column
 dimwishlist:item=1540621132&perks=923806249,781192741
 dimwishlist:item=1540621132&perks=923806249,2037312142
 dimwishlist:item=1540621132&perks=923806249,2594592626
@@ -3474,7 +3474,7 @@ dimwishlist:item=3610531207&perks=3643424744,3192447905
 dimwishlist:item=3610531207&perks=3643424744,3708227201
 dimwishlist:item=3610531207&perks=3643424744,3764420437
 
-//notes:Scatter Signal - Rank 7.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Overflow, Slice\nColumn 2: Controlled Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Dragon's Vengeance\nNotes: Slice utility helpful in some cases, e. Overflow still good synergy
+//notes:Scatter Signal - Rank 7.0, Tier S by TheAegisRelic\nSheet: Fusions\nColumn 1: Overflow, Slice\nColumn 2: Controlled Burst\nBarrel: Fluted Barrel, Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Dragon's Vengeance\nNotes: Slice utility helpful in some cases, e. Overflow still good synergy
 dimwishlist:item=2558925366&perks=923806249,2037312142
 dimwishlist:item=2558925366&perks=923806249,2594592626
 dimwishlist:item=2558925366&perks=2682205016,2037312142
@@ -5451,7 +5451,7 @@ dimwishlist:item=3381450498&perks=3993379141,2173046394
 dimwishlist:item=3381450498&perks=3993379141,2396489472
 dimwishlist:item=3381450498&perks=3993379141,4065965131
 
-//notes:Unsworn - Rank 1.0, Tier S by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot, Tear, Collective Pugilism\nColumn 2: Chaos Reshaped, Detonator Beam, Hatchling\nBarrel: Fluted Barrel\nMag: Battery\nOrigin Trait: Subjugation\nNotes: probably as good as it gets for the kinetic slot, perks + origin excellent
+//notes:Unsworn - Rank 1.0, Tier S by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot, Tear, Collective Pugilism\nColumn 2: Chaos Reshaped, Detonator Beam, Hatchling\nBarrel: Fluted Barrel\nMag: Any / generic\nOrigin Trait: Subjugation\nNotes: probably as good as it gets for the kinetic slot, perks + origin excellent
 dimwishlist:item=1303313141&perks=960997401,102912326
 dimwishlist:item=1303313141&perks=960997401,222783511
 dimwishlist:item=1303313141&perks=960997401,831391274
@@ -5525,7 +5525,7 @@ dimwishlist:item=3462679024&perks=3700496672,1817983009
 dimwishlist:item=3462679024&perks=3700496672,3640170453
 dimwishlist:item=3462679024&perks=3700496672,4198902903
 
-//notes:Chronophage - Rank 2.0, Tier S by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot, Repulsor Brace\nColumn 2: Destabilizing Rounds, Demolitionist, Desperate Measures\nBarrel: Fluted Barrel\nMag: Battery\nOrigin Trait: Radiolaria Transposer\nNotes: StL + utility/splash options, great origin trait for low-tier content
+//notes:Chronophage - Rank 2.0, Tier S by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot, Repulsor Brace\nColumn 2: Destabilizing Rounds, Demolitionist, Desperate Measures\nBarrel: Fluted Barrel\nMag: Any / generic\nOrigin Trait: Radiolaria Transposer\nNotes: StL + utility/splash options, great origin trait for low-tier content
 dimwishlist:item=1886840007&perks=776531651,1906147653
 dimwishlist:item=1886840007&perks=776531651,1926441324
 dimwishlist:item=1886840007&perks=776531651,2048641572
@@ -5555,7 +5555,7 @@ dimwishlist:item=1886840007&perks=3700496672,2222960133
 dimwishlist:item=1886840007&perks=3700496672,2799030358
 dimwishlist:item=1886840007&perks=3700496672,3523296417
 
-//notes:Keraunios - Rank 3.0, Tier S by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot, Fourth Time's the Charm\nColumn 2: Chain Reaction, Rolling Storm, Detonator Beam\nBarrel: Fluted Barrel\nMag: Battery\nOrigin Trait: Classy Contender\nNotes: StL + Chain best overall trace roll, also FTTC + TL for "damage"
+//notes:Keraunios - Rank 3.0, Tier S by TheAegisRelic\nSheet: Traces\nColumn 1: Shoot to Loot, Fourth Time's the Charm\nColumn 2: Chain Reaction, Rolling Storm, Detonator Beam\nBarrel: Fluted Barrel\nMag: Any / generic\nOrigin Trait: Classy Contender\nNotes: StL + Chain best overall trace roll, also FTTC + TL for "damage"
 dimwishlist:item=981450701&perks=848860060,222783511
 dimwishlist:item=981450701&perks=848860060,598607952
 dimwishlist:item=981450701&perks=848860060,2396489472
@@ -5702,6 +5702,152 @@ dimwishlist:item=2452936817&perks=3987942396,1089671869
 dimwishlist:item=2452936817&perks=3987942396,3192447905
 dimwishlist:item=2452936817&perks=3987942396,3708227201
 dimwishlist:item=2452936817&perks=3987942396,3764420437
+
+//notes:Edge Transit BRAVE version - Rank 2.0, Tier S by TheAegisRelic\nSheet: HGLs\nColumn 1: Envious Arsenal, Cascade Point, Chain Reaction\nColumn 2: Elemental Honing, Explosive Light, Bait and Switch\nBarrel: Quick Launch\nMag: Spike Grenades, Sticky Grenades\nOrigin Trait: Indomitability\nNotes: has sticky + EL access, also Cascade
+dimwishlist:item=218335759&perks=331667533,496047945
+dimwishlist:item=218335759&perks=331667533,1089671869
+dimwishlist:item=218335759&perks=331667533,2275087323
+dimwishlist:item=218335759&perks=331667533,3078487919
+dimwishlist:item=218335759&perks=331667533,3194351027
+dimwishlist:item=218335759&perks=331667533,3744057135
+dimwishlist:item=218335759&perks=598607952,496047945
+dimwishlist:item=218335759&perks=598607952,1089671869
+dimwishlist:item=218335759&perks=598607952,2275087323
+dimwishlist:item=218335759&perks=598607952,3078487919
+dimwishlist:item=218335759&perks=598607952,3194351027
+dimwishlist:item=218335759&perks=598607952,3744057135
+dimwishlist:item=218335759&perks=2396489472,496047945
+dimwishlist:item=218335759&perks=2396489472,1089671869
+dimwishlist:item=218335759&perks=2396489472,2275087323
+dimwishlist:item=218335759&perks=2396489472,3078487919
+dimwishlist:item=218335759&perks=2396489472,3194351027
+dimwishlist:item=218335759&perks=2396489472,3744057135
+dimwishlist:item=218335759&perks=2817499044,496047945
+dimwishlist:item=218335759&perks=2817499044,1089671869
+dimwishlist:item=218335759&perks=2817499044,2275087323
+dimwishlist:item=218335759&perks=2817499044,3078487919
+dimwishlist:item=218335759&perks=2817499044,3194351027
+dimwishlist:item=218335759&perks=2817499044,3744057135
+dimwishlist:item=218335759&perks=3751912585,496047945
+dimwishlist:item=218335759&perks=3751912585,1089671869
+dimwishlist:item=218335759&perks=3751912585,2275087323
+dimwishlist:item=218335759&perks=3751912585,3078487919
+dimwishlist:item=218335759&perks=3751912585,3194351027
+dimwishlist:item=218335759&perks=3751912585,3744057135
+dimwishlist:item=218335759&perks=3987942396,496047945
+dimwishlist:item=218335759&perks=3987942396,1089671869
+dimwishlist:item=218335759&perks=3987942396,2275087323
+dimwishlist:item=218335759&perks=3987942396,3078487919
+dimwishlist:item=218335759&perks=3987942396,3194351027
+dimwishlist:item=218335759&perks=3987942396,3744057135
+dimwishlist:item=568611923&perks=331667533,496047945
+dimwishlist:item=568611923&perks=331667533,1089671869
+dimwishlist:item=568611923&perks=331667533,2275087323
+dimwishlist:item=568611923&perks=331667533,3078487919
+dimwishlist:item=568611923&perks=331667533,3194351027
+dimwishlist:item=568611923&perks=331667533,3744057135
+dimwishlist:item=568611923&perks=598607952,496047945
+dimwishlist:item=568611923&perks=598607952,1089671869
+dimwishlist:item=568611923&perks=598607952,2275087323
+dimwishlist:item=568611923&perks=598607952,3078487919
+dimwishlist:item=568611923&perks=598607952,3194351027
+dimwishlist:item=568611923&perks=598607952,3744057135
+dimwishlist:item=568611923&perks=2396489472,496047945
+dimwishlist:item=568611923&perks=2396489472,1089671869
+dimwishlist:item=568611923&perks=2396489472,2275087323
+dimwishlist:item=568611923&perks=2396489472,3078487919
+dimwishlist:item=568611923&perks=2396489472,3194351027
+dimwishlist:item=568611923&perks=2396489472,3744057135
+dimwishlist:item=568611923&perks=2817499044,496047945
+dimwishlist:item=568611923&perks=2817499044,1089671869
+dimwishlist:item=568611923&perks=2817499044,2275087323
+dimwishlist:item=568611923&perks=2817499044,3078487919
+dimwishlist:item=568611923&perks=2817499044,3194351027
+dimwishlist:item=568611923&perks=2817499044,3744057135
+dimwishlist:item=568611923&perks=3751912585,496047945
+dimwishlist:item=568611923&perks=3751912585,1089671869
+dimwishlist:item=568611923&perks=3751912585,2275087323
+dimwishlist:item=568611923&perks=3751912585,3078487919
+dimwishlist:item=568611923&perks=3751912585,3194351027
+dimwishlist:item=568611923&perks=3751912585,3744057135
+dimwishlist:item=568611923&perks=3987942396,496047945
+dimwishlist:item=568611923&perks=3987942396,1089671869
+dimwishlist:item=568611923&perks=3987942396,2275087323
+dimwishlist:item=568611923&perks=3987942396,3078487919
+dimwishlist:item=568611923&perks=3987942396,3194351027
+dimwishlist:item=568611923&perks=3987942396,3744057135
+dimwishlist:item=2228325504&perks=331667533,496047945
+dimwishlist:item=2228325504&perks=331667533,1089671869
+dimwishlist:item=2228325504&perks=331667533,2275087323
+dimwishlist:item=2228325504&perks=331667533,3078487919
+dimwishlist:item=2228325504&perks=331667533,3194351027
+dimwishlist:item=2228325504&perks=331667533,3744057135
+dimwishlist:item=2228325504&perks=598607952,496047945
+dimwishlist:item=2228325504&perks=598607952,1089671869
+dimwishlist:item=2228325504&perks=598607952,2275087323
+dimwishlist:item=2228325504&perks=598607952,3078487919
+dimwishlist:item=2228325504&perks=598607952,3194351027
+dimwishlist:item=2228325504&perks=598607952,3744057135
+dimwishlist:item=2228325504&perks=2396489472,496047945
+dimwishlist:item=2228325504&perks=2396489472,1089671869
+dimwishlist:item=2228325504&perks=2396489472,2275087323
+dimwishlist:item=2228325504&perks=2396489472,3078487919
+dimwishlist:item=2228325504&perks=2396489472,3194351027
+dimwishlist:item=2228325504&perks=2396489472,3744057135
+dimwishlist:item=2228325504&perks=2817499044,496047945
+dimwishlist:item=2228325504&perks=2817499044,1089671869
+dimwishlist:item=2228325504&perks=2817499044,2275087323
+dimwishlist:item=2228325504&perks=2817499044,3078487919
+dimwishlist:item=2228325504&perks=2817499044,3194351027
+dimwishlist:item=2228325504&perks=2817499044,3744057135
+dimwishlist:item=2228325504&perks=3751912585,496047945
+dimwishlist:item=2228325504&perks=3751912585,1089671869
+dimwishlist:item=2228325504&perks=3751912585,2275087323
+dimwishlist:item=2228325504&perks=3751912585,3078487919
+dimwishlist:item=2228325504&perks=3751912585,3194351027
+dimwishlist:item=2228325504&perks=3751912585,3744057135
+dimwishlist:item=2228325504&perks=3987942396,496047945
+dimwishlist:item=2228325504&perks=3987942396,1089671869
+dimwishlist:item=2228325504&perks=3987942396,2275087323
+dimwishlist:item=2228325504&perks=3987942396,3078487919
+dimwishlist:item=2228325504&perks=3987942396,3194351027
+dimwishlist:item=2228325504&perks=3987942396,3744057135
+dimwishlist:item=3736001863&perks=331667533,496047945
+dimwishlist:item=3736001863&perks=331667533,1089671869
+dimwishlist:item=3736001863&perks=331667533,2275087323
+dimwishlist:item=3736001863&perks=331667533,3078487919
+dimwishlist:item=3736001863&perks=331667533,3194351027
+dimwishlist:item=3736001863&perks=331667533,3744057135
+dimwishlist:item=3736001863&perks=598607952,496047945
+dimwishlist:item=3736001863&perks=598607952,1089671869
+dimwishlist:item=3736001863&perks=598607952,2275087323
+dimwishlist:item=3736001863&perks=598607952,3078487919
+dimwishlist:item=3736001863&perks=598607952,3194351027
+dimwishlist:item=3736001863&perks=598607952,3744057135
+dimwishlist:item=3736001863&perks=2396489472,496047945
+dimwishlist:item=3736001863&perks=2396489472,1089671869
+dimwishlist:item=3736001863&perks=2396489472,2275087323
+dimwishlist:item=3736001863&perks=2396489472,3078487919
+dimwishlist:item=3736001863&perks=2396489472,3194351027
+dimwishlist:item=3736001863&perks=2396489472,3744057135
+dimwishlist:item=3736001863&perks=2817499044,496047945
+dimwishlist:item=3736001863&perks=2817499044,1089671869
+dimwishlist:item=3736001863&perks=2817499044,2275087323
+dimwishlist:item=3736001863&perks=2817499044,3078487919
+dimwishlist:item=3736001863&perks=2817499044,3194351027
+dimwishlist:item=3736001863&perks=2817499044,3744057135
+dimwishlist:item=3736001863&perks=3751912585,496047945
+dimwishlist:item=3736001863&perks=3751912585,1089671869
+dimwishlist:item=3736001863&perks=3751912585,2275087323
+dimwishlist:item=3736001863&perks=3751912585,3078487919
+dimwishlist:item=3736001863&perks=3751912585,3194351027
+dimwishlist:item=3736001863&perks=3751912585,3744057135
+dimwishlist:item=3736001863&perks=3987942396,496047945
+dimwishlist:item=3736001863&perks=3987942396,1089671869
+dimwishlist:item=3736001863&perks=3987942396,2275087323
+dimwishlist:item=3736001863&perks=3987942396,3078487919
+dimwishlist:item=3736001863&perks=3987942396,3194351027
+dimwishlist:item=3736001863&perks=3987942396,3744057135
 
 //notes:The Ever-Present - Rank 3.0, Tier S by TheAegisRelic\nSheet: HGLs\nColumn 1: Envious Arsenal\nColumn 2: Aggregate Charge, Bait and Switch, Elemental Honing\nBarrel: Quick Launch\nMag: Spike Grenades, Mini Frags\nOrigin Trait: Frame of Reference\nNotes: best non-Cascade + damage perk rapid HGL option
 dimwishlist:item=3177074192&perks=2817499044,496047945
@@ -5867,7 +6013,7 @@ dimwishlist:item=3690523502&perks=4096144819,2396489472
 dimwishlist:item=3690523502&perks=4096144819,3192447905
 dimwishlist:item=3690523502&perks=4096144819,3764420437
 
-//notes:Eyes Unveiled - Rank 1.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Fourth Time's the Charm, Mega Kill Clip\nColumn 2: Elemental Honing\nBarrel: Fluted Barrel\nMag: Accelerated Coils, Battery\nOrigin Trait: Heretical Behavior\nNotes: excellent perks and origin for LFR damage
+//notes:Eyes Unveiled - Rank 1.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Fourth Time's the Charm, Mega Kill Clip\nColumn 2: Elemental Honing\nBarrel: Fluted Barrel\nMag: Accelerated Coils\nOrigin Trait: Heretical Behavior\nNotes: excellent perks and origin for LFR damage
 dimwishlist:item=615373993&perks=848860060,496047945
 dimwishlist:item=615373993&perks=848860060,1089671869
 dimwishlist:item=615373993&perks=1354429876,496047945
@@ -5893,7 +6039,7 @@ dimwishlist:item=4147428506&perks=2260261934,1089671869
 dimwishlist:item=4147428506&perks=2305480722,496047945
 dimwishlist:item=4147428506&perks=2305480722,1089671869
 
-//notes:Cataclysmic - Rank 2.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Fourth Time's the Charm\nColumn 2: Aggregate Charge, Elemental Honing, Bait and Switch\nBarrel: Fluted Barrel\nMag: Accelerated Coils, Battery\nOrigin Trait: Souldrinker\nNotes: excellent damage perk spread for a precision linear
+//notes:Cataclysmic - Rank 2.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Fourth Time's the Charm\nColumn 2: Aggregate Charge, Elemental Honing, Bait and Switch\nBarrel: Fluted Barrel\nMag: Accelerated Coils\nOrigin Trait: Souldrinker\nNotes: excellent damage perk spread for a precision linear
 dimwishlist:item=999767358&perks=848860060,496047945
 dimwishlist:item=999767358&perks=848860060,1089671869
 dimwishlist:item=999767358&perks=848860060,3078487919
@@ -5907,7 +6053,7 @@ dimwishlist:item=999767358&perks=1354429876,3192447905
 dimwishlist:item=999767358&perks=1354429876,3744057135
 dimwishlist:item=999767358&perks=1354429876,3764420437
 
-//notes:Briar's Contempt - Rank 3.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Rewind Rounds\nColumn 2: Aggregate Charge, Chaos Reshaped, Surrounded\nBarrel: Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Harmonic Resonance\nNotes: best adaptive burst linear
+//notes:Briar's Contempt - Rank 3.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Rewind Rounds\nColumn 2: Aggregate Charge, Chaos Reshaped, Surrounded\nBarrel: Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Harmonic Resonance\nNotes: best adaptive burst linear
 dimwishlist:item=1491665733&perks=1563455254,781192741
 dimwishlist:item=1491665733&perks=1563455254,1817983009
 dimwishlist:item=1491665733&perks=1563455254,3192447905
@@ -5927,7 +6073,7 @@ dimwishlist:item=1491665733&perks=3418782618,3640170453
 dimwishlist:item=1491665733&perks=3418782618,3708227201
 dimwishlist:item=1491665733&perks=3418782618,3764420437
 
-//notes:Scintillation - Rank 4.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Rewind Rounds, Cornered\nColumn 2: Bait and Switch, Surrounded\nBarrel: Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Veist Stinger\nNotes: basically perfect LFR roll, maybe Honing one day
+//notes:Scintillation - Rank 4.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Rewind Rounds, Cornered\nColumn 2: Bait and Switch, Surrounded\nBarrel: Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Veist Stinger\nNotes: basically perfect LFR roll, maybe Honing one day
 dimwishlist:item=1207321710&perks=1008128453,781192741
 dimwishlist:item=1207321710&perks=1008128453,3078487919
 dimwishlist:item=1207321710&perks=1008128453,3708227201
@@ -5969,7 +6115,7 @@ dimwishlist:item=2591257541&perks=3418782618,3078487919
 dimwishlist:item=2591257541&perks=3418782618,3708227201
 dimwishlist:item=2591257541&perks=3418782618,3744057135
 
-//notes:Mistral Lift - Rank 5.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Envious Arsenal, Reconstruction, Withering Gaze\nColumn 2: Bait and Switch, Precision Instrument\nBarrel: Arrowhead Brake\nMag: Accelerated Coils, Battery\nOrigin Trait: Veist Stinger\nNotes: Arsenal worse than Rewind for dump-style weapon
+//notes:Mistral Lift - Rank 5.0, Tier S by TheAegisRelic\nSheet: LFRs\nColumn 1: Envious Arsenal, Reconstruction, Withering Gaze\nColumn 2: Bait and Switch, Precision Instrument\nBarrel: Arrowhead Brake\nMag: Accelerated Coils\nOrigin Trait: Veist Stinger\nNotes: Arsenal worse than Rewind for dump-style weapon
 dimwishlist:item=270610849&perks=461595545,332733060
 dimwishlist:item=270610849&perks=461595545,555281244
 dimwishlist:item=270610849&perks=461595545,3078487919
