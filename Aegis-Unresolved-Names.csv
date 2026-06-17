@@ -23,6 +23,41 @@ HGLs,4,Edge Transit BRAVE version,weapon,Edge Transit BRAVE version,S,2.0
 LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
 Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
 Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
+Autos,29,Prosecutor RotN version,weapon,Prosecutor RotN version,B,26.0
+HCs,50,Judgment RotN version,weapon,Judgment RotN version,C,47.0
+Pulses,38,Relentless RotN version,weapon,Relentless RotN version,B,35.0
+Scouts,38,Long Arm RotN version,weapon,Long Arm RotN version,C,36.0
+Sidearms,20,Liminal Vigil RotN version,weapon,Liminal Vigil RotN version,B,18.0
+SMGs,19,No Survivors RotN version,weapon,No Survivors RotN version,A,17.0
+BGLs,11,The Mountaintop BRAVE version,weapon,The Mountaintop BRAVE version,A,9.0
+BGLs,16,Wilderflight RotN version,weapon,Wilderflight RotN version,A,14.0
+BGLs,18,Forbearance BRAVE version,weapon,Forbearance BRAVE version,A,16.0
+BGLs,21,New Pacific Epitaph RotN version,weapon,New Pacific Epitaph RotN version,A,19.0
+Glaives,14,Greasy Luck RotN version,weapon,Greasy Luck RotN version,A,12.0
+Shotguns,14,A Sudden Death RotN version,weapon,A Sudden Death RotN version,A,12.0
+Snipers,18,Succession BRAVE version,weapon,Succession BRAVE version,A,15.0
+LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
+Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
+Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
+HCs,50,Judgment RotN version,weapon,Judgment RotN version,C,47.0
+Scouts,38,Long Arm RotN version,weapon,Long Arm RotN version,C,36.0
+Autos,29,Prosecutor RotN version,weapon,Prosecutor RotN version,B,26.0
+HCs,50,Judgment RotN version,weapon,Judgment RotN version,C,47.0
+Pulses,38,Relentless RotN version,weapon,Relentless RotN version,B,35.0
+Scouts,38,Long Arm RotN version,weapon,Long Arm RotN version,C,36.0
+Sidearms,20,Liminal Vigil RotN version,weapon,Liminal Vigil RotN version,B,18.0
+SMGs,19,No Survivors RotN version,weapon,No Survivors RotN version,A,17.0
+BGLs,11,The Mountaintop BRAVE version,weapon,The Mountaintop BRAVE version,A,9.0
+BGLs,16,Wilderflight RotN version,weapon,Wilderflight RotN version,A,14.0
+BGLs,18,Forbearance BRAVE version,weapon,Forbearance BRAVE version,A,16.0
+BGLs,21,New Pacific Epitaph RotN version,weapon,New Pacific Epitaph RotN version,A,19.0
+Glaives,14,Greasy Luck RotN version,weapon,Greasy Luck RotN version,A,12.0
+Shotguns,14,A Sudden Death RotN version,weapon,A Sudden Death RotN version,A,12.0
+Snipers,18,Succession BRAVE version,weapon,Succession BRAVE version,A,15.0
+HGLs,4,Edge Transit BRAVE version,weapon,Edge Transit BRAVE version,S,2.0
+LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
+Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
+Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
 Fusions,3,Cartesian Coordinate,mag,Battery,S,1.0
 Fusions,4,Null Composure,mag,Battery,S,2.0
 Fusions,5,The Beacon,mag,Battery,S,3.0
@@ -104,6 +139,188 @@ LFRs,7,Mistral Lift,mag,Battery,S,5.0
 LFRs,8,Stormchaser,mag,Battery,A,6.0
 LFRs,9,Boomslang-4fr,mag,Battery,A,7.0
 LFRs,10,Doomed Petitioner,mag,Battery,A,8.0
+LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
+Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
+Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
+Autos,29,Prosecutor RotN version,weapon,Prosecutor RotN version,B,26.0
+HCs,50,Judgment RotN version,weapon,Judgment RotN version,C,47.0
+Pulses,38,Relentless RotN version,weapon,Relentless RotN version,B,35.0
+Scouts,38,Long Arm RotN version,weapon,Long Arm RotN version,C,36.0
+Sidearms,20,Liminal Vigil RotN version,weapon,Liminal Vigil RotN version,B,18.0
+SMGs,19,No Survivors RotN version,weapon,No Survivors RotN version,A,17.0
+BGLs,11,The Mountaintop BRAVE version,weapon,The Mountaintop BRAVE version,A,9.0
+BGLs,16,Wilderflight RotN version,weapon,Wilderflight RotN version,A,14.0
+BGLs,18,Forbearance BRAVE version,weapon,Forbearance BRAVE version,A,16.0
+BGLs,21,New Pacific Epitaph RotN version,weapon,New Pacific Epitaph RotN version,A,19.0
+Fusions,10,Techeun Force,mag,Battery,A,8.0
+Fusions,11,Finite Maybe,mag,Battery,A,9.0
+Fusions,12,TAHOMA 01,mag,Battery,A,10.0
+Fusions,13,Zealot's Reward,mag,Battery,A,11.0
+Fusions,14,Glacioclasm,mag,Battery,A,12.0
+Fusions,15,Monody-44,mag,Battery,A,13.0
+Fusions,16,Afterlight,mag,Battery,A,14.0
+Fusions,17,Cruoris FR4,mag,Battery,B,15.0
+Fusions,18,Burden of Guilt,mag,Battery,B,16.0
+Fusions,19,Dream Breaker,mag,Battery,B,17.0
+Fusions,20,PLUG ONE.1,mag,Battery,B,18.0
+Fusions,21,Axial Lacuna,mag,Battery,B,19.0
+Fusions,22,VS Gravitic Arrest,mag,Battery,B,20.0
+Fusions,23,Tempered Dynamo,mag,Battery,B,21.0
+Fusions,24,Royal Executioner,mag,Battery,B,22.0
+Fusions,25,Loaded Question,mag,Battery,B,23.0
+Fusions,26,The Eremite,mag,Battery,B,24.0
+Fusions,27,Nox Perennial V,mag,Battery,B,25.0
+Fusions,28,Pressurized Precision,mag,Battery,B,26.0
+Fusions,29,Deliverance,mag,Battery,C,27.0
+Fusions,30,Main Ingredient,mag,Battery,C,28.0
+Fusions,31,Nox Sidereal IV,mag,Battery,C,29.0
+Fusions,32,Resounding,mag,Battery,C,30.0
+Fusions,33,Midha's Reckoning,mag,Battery,C,31.0
+Fusions,34,Aurvandil FR6,mag,Battery,D,32.0
+Fusions,35,Coriolis Force,mag,Battery,D,33.0
+Fusions,36,Iterative Loop,mag,Battery,D,34.0
+Fusions,37,Exile's Curse,mag,Battery,D,35.0
+Fusions,38,Hollow Words,mag,Battery,E,36.0
+Fusions,39,The Wizened Rebuke,mag,Battery,E,37.0
+Fusions,40,Iota Draconis,mag,Battery,E,38.0
+Fusions,41,Snorri FR5,mag,Battery,E,39.0
+Glaives,14,Greasy Luck RotN version,weapon,Greasy Luck RotN version,A,12.0
+Shotguns,14,A Sudden Death RotN version,weapon,A Sudden Death RotN version,A,12.0
+Snipers,18,Succession BRAVE version,weapon,Succession BRAVE version,A,15.0
+Traces,6,Retraced Path,mag,Battery,A,4.0
+Traces,7,Acasia's Dejection,mag,Battery,A,5.0
+Traces,8,Path of Least Resistance,mag,Battery,A,6.0
+Traces,9,Incisor,mag,Battery,A,7.0
+Traces,10,Action Item,mag,Battery,A,8.0
+Traces,11,Hollow Denial,mag,Battery,B,9.0
+Traces,12,Warlord's Spear,mag,Battery,B,10.0
+Traces,13,Appetence,mag,Battery,B,11.0
+Traces,14,Ribbontail,mag,Battery,B,12.0
+LFRs,8,Stormchaser,mag,Battery,A,6.0
+LFRs,9,Boomslang-4fr,mag,Battery,A,7.0
+LFRs,10,Doomed Petitioner,mag,Battery,A,8.0
+LFRs,11,Line in the Sand,mag,Battery,B,9.0
+LFRs,12,Willful Hamartia,mag,Battery,B,10.0
+LFRs,13,Taipan-4fr,mag,Battery,C,11.0
+LFRs,14,Reed's Regret,mag,Battery,C,12.0
+LFRs,15,Fire and Forget,mag,Battery,C,13.0
+LFRs,16,Suspectum-4fr,mag,Battery,C,14.0
+LFRs,17,Sailspy Pitchglass,mag,Battery,D,15.0
+LFRs,18,Laser Painter,mag,Battery,D,16.0
+LFRs,19,Threaded Needle,mag,Battery,D,17.0
+LFRs,20,Tarantula,mag,Battery,E,18.0
+LFRs,21,Corsair's Wrath,mag,Battery,E,19.0
+LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
+Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
+Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
+HCs,50,Judgment RotN version,weapon,Judgment RotN version,C,47.0
+Scouts,38,Long Arm RotN version,weapon,Long Arm RotN version,C,36.0
+Fusions,29,Deliverance,mag,Battery,C,27.0
+Fusions,30,Main Ingredient,mag,Battery,C,28.0
+Fusions,31,Nox Sidereal IV,mag,Battery,C,29.0
+Fusions,32,Resounding,mag,Battery,C,30.0
+Fusions,33,Midha's Reckoning,mag,Battery,C,31.0
+Fusions,34,Aurvandil FR6,mag,Battery,D,32.0
+Fusions,35,Coriolis Force,mag,Battery,D,33.0
+Fusions,36,Iterative Loop,mag,Battery,D,34.0
+Fusions,37,Exile's Curse,mag,Battery,D,35.0
+Fusions,38,Hollow Words,mag,Battery,E,36.0
+Fusions,39,The Wizened Rebuke,mag,Battery,E,37.0
+Fusions,40,Iota Draconis,mag,Battery,E,38.0
+Fusions,41,Snorri FR5,mag,Battery,E,39.0
+LFRs,13,Taipan-4fr,mag,Battery,C,11.0
+LFRs,14,Reed's Regret,mag,Battery,C,12.0
+LFRs,15,Fire and Forget,mag,Battery,C,13.0
+LFRs,16,Suspectum-4fr,mag,Battery,C,14.0
+LFRs,17,Sailspy Pitchglass,mag,Battery,D,15.0
+LFRs,18,Laser Painter,mag,Battery,D,16.0
+LFRs,19,Threaded Needle,mag,Battery,D,17.0
+LFRs,20,Tarantula,mag,Battery,E,18.0
+LFRs,21,Corsair's Wrath,mag,Battery,E,19.0
+Autos,29,Prosecutor RotN version,weapon,Prosecutor RotN version,B,26.0
+HCs,50,Judgment RotN version,weapon,Judgment RotN version,C,47.0
+Pulses,38,Relentless RotN version,weapon,Relentless RotN version,B,35.0
+Scouts,38,Long Arm RotN version,weapon,Long Arm RotN version,C,36.0
+Sidearms,20,Liminal Vigil RotN version,weapon,Liminal Vigil RotN version,B,18.0
+SMGs,19,No Survivors RotN version,weapon,No Survivors RotN version,A,17.0
+BGLs,11,The Mountaintop BRAVE version,weapon,The Mountaintop BRAVE version,A,9.0
+BGLs,16,Wilderflight RotN version,weapon,Wilderflight RotN version,A,14.0
+BGLs,18,Forbearance BRAVE version,weapon,Forbearance BRAVE version,A,16.0
+BGLs,21,New Pacific Epitaph RotN version,weapon,New Pacific Epitaph RotN version,A,19.0
+Fusions,3,Cartesian Coordinate,mag,Battery,S,1.0
+Fusions,4,Null Composure,mag,Battery,S,2.0
+Fusions,5,The Beacon,mag,Battery,S,3.0
+Fusions,6,Riptide,mag,Battery,S,4.0
+Fusions,7,Lionfish-4fr,mag,Battery,S,5.0
+Fusions,8,Accelerando-42,mag,Battery,S,6.0
+Fusions,9,Scatter Signal,mag,Battery,S,7.0
+Fusions,10,Techeun Force,mag,Battery,A,8.0
+Fusions,11,Finite Maybe,mag,Battery,A,9.0
+Fusions,12,TAHOMA 01,mag,Battery,A,10.0
+Fusions,13,Zealot's Reward,mag,Battery,A,11.0
+Fusions,14,Glacioclasm,mag,Battery,A,12.0
+Fusions,15,Monody-44,mag,Battery,A,13.0
+Fusions,16,Afterlight,mag,Battery,A,14.0
+Fusions,17,Cruoris FR4,mag,Battery,B,15.0
+Fusions,18,Burden of Guilt,mag,Battery,B,16.0
+Fusions,19,Dream Breaker,mag,Battery,B,17.0
+Fusions,20,PLUG ONE.1,mag,Battery,B,18.0
+Fusions,21,Axial Lacuna,mag,Battery,B,19.0
+Fusions,22,VS Gravitic Arrest,mag,Battery,B,20.0
+Fusions,23,Tempered Dynamo,mag,Battery,B,21.0
+Fusions,24,Royal Executioner,mag,Battery,B,22.0
+Fusions,25,Loaded Question,mag,Battery,B,23.0
+Fusions,26,The Eremite,mag,Battery,B,24.0
+Fusions,27,Nox Perennial V,mag,Battery,B,25.0
+Fusions,28,Pressurized Precision,mag,Battery,B,26.0
+Fusions,29,Deliverance,mag,Battery,C,27.0
+Fusions,30,Main Ingredient,mag,Battery,C,28.0
+Fusions,31,Nox Sidereal IV,mag,Battery,C,29.0
+Fusions,32,Resounding,mag,Battery,C,30.0
+Fusions,33,Midha's Reckoning,mag,Battery,C,31.0
+Fusions,34,Aurvandil FR6,mag,Battery,D,32.0
+Fusions,35,Coriolis Force,mag,Battery,D,33.0
+Fusions,36,Iterative Loop,mag,Battery,D,34.0
+Fusions,37,Exile's Curse,mag,Battery,D,35.0
+Fusions,38,Hollow Words,mag,Battery,E,36.0
+Fusions,39,The Wizened Rebuke,mag,Battery,E,37.0
+Fusions,40,Iota Draconis,mag,Battery,E,38.0
+Fusions,41,Snorri FR5,mag,Battery,E,39.0
+Glaives,14,Greasy Luck RotN version,weapon,Greasy Luck RotN version,A,12.0
+Shotguns,14,A Sudden Death RotN version,weapon,A Sudden Death RotN version,A,12.0
+Snipers,18,Succession BRAVE version,weapon,Succession BRAVE version,A,15.0
+Traces,3,Unsworn,mag,Battery,S,1.0
+Traces,4,Chronophage,mag,Battery,S,2.0
+Traces,5,Keraunios,mag,Battery,S,3.0
+Traces,6,Retraced Path,mag,Battery,A,4.0
+Traces,7,Acasia's Dejection,mag,Battery,A,5.0
+Traces,8,Path of Least Resistance,mag,Battery,A,6.0
+Traces,9,Incisor,mag,Battery,A,7.0
+Traces,10,Action Item,mag,Battery,A,8.0
+Traces,11,Hollow Denial,mag,Battery,B,9.0
+Traces,12,Warlord's Spear,mag,Battery,B,10.0
+Traces,13,Appetence,mag,Battery,B,11.0
+Traces,14,Ribbontail,mag,Battery,B,12.0
+HGLs,4,Edge Transit BRAVE version,weapon,Edge Transit BRAVE version,S,2.0
+LFRs,3,Eyes Unveiled,mag,Battery,S,1.0
+LFRs,4,Cataclysmic,mag,Battery,S,2.0
+LFRs,5,Briar's Contempt,mag,Battery,S,3.0
+LFRs,6,Scintillation,mag,Battery,S,4.0
+LFRs,7,Mistral Lift,mag,Battery,S,5.0
+LFRs,8,Stormchaser,mag,Battery,A,6.0
+LFRs,9,Boomslang-4fr,mag,Battery,A,7.0
+LFRs,10,Doomed Petitioner,mag,Battery,A,8.0
+LFRs,11,Line in the Sand,mag,Battery,B,9.0
+LFRs,12,Willful Hamartia,mag,Battery,B,10.0
+LFRs,13,Taipan-4fr,mag,Battery,C,11.0
+LFRs,14,Reed's Regret,mag,Battery,C,12.0
+LFRs,15,Fire and Forget,mag,Battery,C,13.0
+LFRs,16,Suspectum-4fr,mag,Battery,C,14.0
+LFRs,17,Sailspy Pitchglass,mag,Battery,D,15.0
+LFRs,18,Laser Painter,mag,Battery,D,16.0
+LFRs,19,Threaded Needle,mag,Battery,D,17.0
+LFRs,20,Tarantula,mag,Battery,E,18.0
+LFRs,21,Corsair's Wrath,mag,Battery,E,19.0
 LMGs,13,Terminus Horizon RotN version,weapon,Terminus Horizon RotN version,A,11.0
 Rockets,11,Cold Comfort RotN version,weapon,Cold Comfort RotN version,A,9.0
 Swords,14,Falling Guillotine BRAVE version,weapon,Falling Guillotine BRAVE version,A,12.0
