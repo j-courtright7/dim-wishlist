@@ -10,6 +10,21 @@ import openpyxl
 ROOT = "https://www.bungie.net"
 VALID_TIERS = {"S", "A", "B", "C", "D", "E"}
 
+# These are not real exact perk names in the manifest when used by the sheet as a generic mag family.
+# Treat them as "no specific mag requirement" for Barrel-Mag files rather than causing the row to fail.
+GENERIC_MAG_TERMS = {
+    "battery",
+}
+
+# Suffixes the sheet uses for context, but Bungie's manifest usually doesn't include in the display name.
+WEAPON_SUFFIX_PATTERNS = [
+    r"\s+BRAVE\s+version$",
+    r"\s+RotN\s+version$",
+    r"\s+Adept\s+version$",
+    r"\s+Harrowed\s+version$",
+    r"\s+Timelost\s+version$",
+]
+
 
 def normalize_quotes(x):
     if x is None:
@@ -24,6 +39,28 @@ def clean(x):
 
 def norm(x):
     return clean(x).casefold()
+
+
+def weapon_name_candidates(name):
+    """
+    Try exact sheet name first, then strip contextual suffixes like:
+      "Succession BRAVE version" -> "Succession"
+      "Cold Comfort RotN version" -> "Cold Comfort"
+    """
+    base = clean(name)
+    candidates = [base]
+
+    for pattern in WEAPON_SUFFIX_PATTERNS:
+        stripped = re.sub(pattern, "", base, flags=re.I).strip()
+        if stripped and stripped not in candidates:
+            candidates.append(stripped)
+
+    # Also handle parenthetical variants just in case.
+    stripped_paren = re.sub(r"\s*\([^)]*\)\s*$", "", base).strip()
+    if stripped_paren and stripped_paren not in candidates:
+        candidates.append(stripped_paren)
+
+    return candidates
 
 
 def split_perks(x):
@@ -41,6 +78,16 @@ def split_perks(x):
             seen.add(k)
             out.append(p)
     return out
+
+
+def split_mag(x):
+    # Preserve specific mags, but drop generic category words like "Battery".
+    mags = []
+    for p in split_perks(x):
+        if norm(p) in GENERIC_MAG_TERMS:
+            continue
+        mags.append(p)
+    return mags
 
 
 def find_header(ws):
@@ -103,7 +150,7 @@ def read_rows(xlsx):
                 "p1": p1,
                 "p2": p2,
                 "barrel": split_perks(ws.cell(r, c_barrel).value) if c_barrel else [],
-                "mag": split_perks(ws.cell(r, c_mag).value) if c_mag else [],
+                "mag": split_mag(ws.cell(r, c_mag).value) if c_mag else [],
                 "origin": clean(ws.cell(r, c_origin).value) if c_origin else "",
                 "notes": clean(ws.cell(r, c_notes).value) if c_notes else "",
             })
@@ -112,7 +159,7 @@ def read_rows(xlsx):
 
 
 def get_json(url, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.3"}
+    headers = {"User-Agent": "aegis-dim-builder/1.4"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -121,7 +168,7 @@ def get_json(url, key=None):
 
 
 def download(url, path, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.3"}
+    headers = {"User-Agent": "aegis-dim-builder/1.4"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -171,6 +218,16 @@ def build_index(db):
     return {k: sorted(set(v)) for k, v in weapons.items()}, {k: sorted(set(v)) for k, v in plugs.items()}
 
 
+def find_weapon_hashes(row, weapons, missing):
+    for candidate in weapon_name_candidates(row["name"]):
+        wh = weapons.get(norm(candidate), [])
+        if wh:
+            return wh
+
+    missing.append([row["sheet"], row["row"], row["name"], "weapon", " / ".join(weapon_name_candidates(row["name"])), row["tier"], row["rank"]])
+    return []
+
+
 def note(row):
     bits = [
         f"{row['name']} - Rank {row['rank']}, Tier {row['tier']} by TheAegisRelic",
@@ -182,6 +239,8 @@ def note(row):
         bits.append("Barrel: " + ", ".join(row["barrel"]))
     if row["mag"]:
         bits.append("Mag: " + ", ".join(row["mag"]))
+    else:
+        bits.append("Mag: Any / generic")
     if row["origin"]:
         bits.append("Origin Trait: " + row["origin"])
     if row["notes"]:
@@ -206,9 +265,8 @@ def generate(rows, weapons, plugs, tiers, require_barrel_mag=False):
         if row["tier"] not in tiers:
             continue
 
-        wh = weapons.get(norm(row["name"]), [])
+        wh = find_weapon_hashes(row, weapons, missing)
         if not wh:
-            missing.append([row["sheet"], row["row"], row["name"], "weapon", row["name"], row["tier"], row["rank"]])
             continue
 
         p1s = hashes_for_names(row["p1"], plugs, row, missing, "perk_1")
@@ -217,11 +275,19 @@ def generate(rows, weapons, plugs, tiers, require_barrel_mag=False):
             continue
 
         if require_barrel_mag:
-            barrels = hashes_for_names(row["barrel"], plugs, row, missing, "barrel")
-            mags = hashes_for_names(row["mag"], plugs, row, missing, "mag")
-            if not barrels or not mags:
-                continue
-            combo_list = list(itertools.product(barrels, mags, p1s, p2s))
+            barrels = hashes_for_names(row["barrel"], plugs, row, missing, "barrel") if row["barrel"] else []
+            mags = hashes_for_names(row["mag"], plugs, row, missing, "mag") if row["mag"] else []
+
+            # If the sheet has specific barrel/mag names, require them.
+            # If the sheet only has a generic mag family like Battery, skip that requirement.
+            # This avoids dropping fusion/trace/LFR rows from Barrel-Mag outputs.
+            combo_parts = []
+            if barrels:
+                combo_parts.append(barrels)
+            if mags:
+                combo_parts.append(mags)
+            combo_parts.extend([p1s, p2s])
+            combo_list = list(itertools.product(*combo_parts))
         else:
             combo_list = list(itertools.product(p1s, p2s))
 
@@ -241,7 +307,7 @@ def generate(rows, weapons, plugs, tiers, require_barrel_mag=False):
 def write_file(path, title, desc, lines, require_barrel_mag=False):
     strict = "weapon + one recommended Perk 1 + one recommended Perk 2"
     if require_barrel_mag:
-        strict = "weapon + one recommended barrel + one recommended mag + one recommended Perk 1 + one recommended Perk 2"
+        strict = "weapon + recommended barrel/mag when specific + one recommended Perk 1 + one recommended Perk 2"
 
     head = [
         "title:" + title,
@@ -296,10 +362,19 @@ def main():
     all_missing += build_outputs(rows, weapons, plugs, args.outdir, False, "", "")
     all_missing += build_outputs(rows, weapons, plugs, args.outdir, True, "-Barrel-Mag", " with Barrel and Mag")
 
+    # Deduplicate unresolved rows for readability.
+    deduped = []
+    seen = set()
+    for row in all_missing:
+        key = tuple(row)
+        if key not in seen:
+            seen.add(key)
+            deduped.append(row)
+
     with open(Path(args.outdir) / "Aegis-Unresolved-Names.csv", "w", newline="", encoding="utf-8") as f:
         wr = csv.writer(f)
         wr.writerow(["sheet", "row", "weapon", "type", "missing", "tier", "rank"])
-        wr.writerows(all_missing)
+        wr.writerows(deduped)
 
 
 if __name__ == "__main__":
