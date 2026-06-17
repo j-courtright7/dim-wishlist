@@ -187,7 +187,7 @@ def read_rows(xlsx):
     return rows
 
 def get_json(url, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.4"}
+    headers = {"User-Agent": "aegis-dim-builder/1.7"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -196,7 +196,7 @@ def get_json(url, key=None):
 
 
 def download(url, path, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.4"}
+    headers = {"User-Agent": "aegis-dim-builder/1.7"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -277,14 +277,26 @@ def note(row):
 
 
 def hashes_for_names(names, plugs, row, missing, missing_type):
+    """
+    Return plug hashes while preserving the order from the spreadsheet.
+
+    This matters because DIM generally displays/highlights the first matching
+    wishlist line it finds. If we sort hashes numerically, a lower-priority perk
+    such as Explosive Payload can appear before Firefly even when Firefly is
+    listed first by Aegis.
+    """
     all_hashes = []
+    seen = set()
     for name in names:
         hs = plugs.get(norm(name), [])
         if hs:
-            all_hashes.extend(hs[:20])
+            for h in hs[:20]:
+                if h not in seen:
+                    seen.add(h)
+                    all_hashes.append(h)
         else:
             missing.append([row["sheet"], row["row"], row["name"], missing_type, name, row["tier"], row["rank"]])
-    return sorted(set(all_hashes))
+    return all_hashes
 
 
 def generate(rows, weapons, plugs, tiers, require_barrel_mag=False):
@@ -342,6 +354,7 @@ def write_file(path, title, desc, lines, require_barrel_mag=False):
         "description:" + desc,
         "// Generated from current Aegis Endgame Analysis Excel.",
         f"// Strict mode: {strict}.",
+        "// Match order preserves Aegis spreadsheet perk priority when possible.",
         "",
     ]
     Path(path).write_text("\n".join(head + lines).strip() + "\n", encoding="utf-8")
