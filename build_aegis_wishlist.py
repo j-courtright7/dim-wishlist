@@ -8,6 +8,7 @@ from pathlib import Path
 import openpyxl
 
 ROOT = "https://www.bungie.net"
+VALID_TIERS = {"S", "A", "B", "C", "D", "E"}
 
 
 def normalize_quotes(x):
@@ -85,7 +86,7 @@ def read_rows(xlsx):
         for r in range(hr + 1, max_row + 1):
             name = clean(ws.cell(r, c_name).value)
             tier = clean(ws.cell(r, c_tier).value).upper()
-            if not name or tier not in {"S", "A"}:
+            if not name or tier not in VALID_TIERS:
                 continue
 
             p1 = split_perks(ws.cell(r, c_p1).value)
@@ -111,7 +112,7 @@ def read_rows(xlsx):
 
 
 def get_json(url, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.2"}
+    headers = {"User-Agent": "aegis-dim-builder/1.3"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -120,7 +121,7 @@ def get_json(url, key=None):
 
 
 def download(url, path, key=None):
-    headers = {"User-Agent": "aegis-dim-builder/1.2"}
+    headers = {"User-Agent": "aegis-dim-builder/1.3"}
     if key:
         headers["X-API-Key"] = key
     req = urllib.request.Request(url, headers=headers)
@@ -220,25 +221,19 @@ def generate(rows, weapons, plugs, tiers, require_barrel_mag=False):
             mags = hashes_for_names(row["mag"], plugs, row, missing, "mag")
             if not barrels or not mags:
                 continue
-            combos = itertools.product(barrels, mags, p1s, p2s)
+            combo_list = list(itertools.product(barrels, mags, p1s, p2s))
         else:
-            combos = itertools.product(p1s, p2s)
+            combo_list = list(itertools.product(p1s, p2s))
 
         lines += ["", "//notes:" + note(row)]
 
         for w in wh[:20]:
-            for combo in combos:
+            for combo in combo_list:
                 perk_hashes = ",".join(str(x) for x in combo)
                 line = f"dimwishlist:item={w}&perks={perk_hashes}"
                 if line not in seen:
                     seen.add(line)
                     lines.append(line)
-
-            # Recreate iterator for the next weapon hash.
-            if require_barrel_mag:
-                combos = itertools.product(barrels, mags, p1s, p2s)
-            else:
-                combos = itertools.product(p1s, p2s)
 
     return lines, missing
 
@@ -261,12 +256,18 @@ def write_file(path, title, desc, lines, require_barrel_mag=False):
 def build_outputs(rows, weapons, plugs, outdir, require_barrel_mag, suffix, desc_extra):
     all_missing = []
     outputs = [
-        (f"Aegis-Endgame-S{suffix}.txt", {"S"}, f"Aegis Endgame S-tier{desc_extra}", f"Current Aegis Endgame S-tier weapons{desc_extra}."),
-        (f"Aegis-Endgame-A{suffix}.txt", {"A"}, f"Aegis Endgame A-tier{desc_extra}", f"Current Aegis Endgame A-tier weapons{desc_extra}."),
-        (f"Aegis-Endgame-A-and-S{suffix}.txt", {"A", "S"}, f"Aegis Endgame A and S-tier{desc_extra}", f"Current Aegis Endgame A/S-tier weapons{desc_extra}."),
+        ("Aegis-Endgame-S", {"S"}, "Aegis Endgame S-tier", "Current Aegis Endgame S-tier weapons."),
+        ("Aegis-Endgame-A", {"A"}, "Aegis Endgame A-tier", "Current Aegis Endgame A-tier weapons."),
+        ("Aegis-Endgame-A-and-S", {"A", "S"}, "Aegis Endgame A and S-tier", "Current Aegis Endgame A/S-tier weapons."),
+        ("Aegis-Endgame-A-through-E", {"A", "B", "C", "D", "E"}, "Aegis Endgame A through E-tier", "Current Aegis Endgame A-E-tier weapons."),
+        ("Aegis-Endgame-C-through-E", {"C", "D", "E"}, "Aegis Endgame C through E-tier", "Current Aegis Endgame C-E-tier weapons."),
+        ("Aegis-Endgame-S-through-E", {"S", "A", "B", "C", "D", "E"}, "Aegis Endgame S through E-tier", "Current Aegis Endgame S-E-tier weapons."),
     ]
 
-    for fn, tiers, title, desc in outputs:
+    for base_name, tiers, title, desc in outputs:
+        fn = f"{base_name}{suffix}.txt"
+        title = f"{title}{desc_extra}"
+        desc = f"{desc.rstrip('.')}{desc_extra}."
         lines, missing = generate(rows, weapons, plugs, tiers, require_barrel_mag=require_barrel_mag)
         write_file(Path(outdir) / fn, title, desc, lines, require_barrel_mag=require_barrel_mag)
         all_missing += missing
@@ -283,19 +284,16 @@ def main():
     args = ap.parse_args()
 
     rows = read_rows(Path(args.excel))
-    print(f"Found {len(rows)} A/S rows")
+    print(f"Found {len(rows)} S/A/B/C/D/E rows")
     if not rows:
-        raise SystemExit("No A/S rows found. Check that the Excel workbook has Name, Perk 1, Perk 2, Tier headers.")
+        raise SystemExit("No ranked rows found. Check that the Excel workbook has Name, Perk 1, Perk 2, Tier headers.")
 
     db = manifest_db(Path(args.cache_dir))
     weapons, plugs = build_index(db)
     print(f"Indexed {len(weapons)} weapon names and {len(plugs)} plug names")
 
     all_missing = []
-    # Original perk-only files.
     all_missing += build_outputs(rows, weapons, plugs, args.outdir, False, "", "")
-
-    # Stricter barrel+mag+perks files.
     all_missing += build_outputs(rows, weapons, plugs, args.outdir, True, "-Barrel-Mag", " with Barrel and Mag")
 
     with open(Path(args.outdir) / "Aegis-Unresolved-Names.csv", "w", newline="", encoding="utf-8") as f:
