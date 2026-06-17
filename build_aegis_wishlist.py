@@ -23,6 +23,7 @@ WEAPON_SUFFIX_PATTERNS = [
     r"\s+Adept\s+version$",
     r"\s+Harrowed\s+version$",
     r"\s+Timelost\s+version$",
+    r"\s+Pantheon\s+version$",
 ]
 
 
@@ -115,6 +116,17 @@ def col(h, *names):
 
 
 def read_rows(xlsx):
+    """
+    Read Aegis rows from sheets.
+
+    Handles two common spreadsheet shapes:
+    1) Normal rows where Name, Tier, Rank, Perk 1, Perk 2 are all on the same row.
+    2) Continuation/merged-style rows where Tier/Rank appear on the first visual row,
+       but the actual alternate-version perk row below has blank Tier/Rank cells.
+       Example:
+         Zaouli's Bane                 Tier A / Rank 6 / no perks
+         Zaouli's Bane Pantheon version blank tier/rank / Firefly + Chaos Reshaped
+    """
     wb = openpyxl.load_workbook(xlsx, data_only=True, read_only=False)
     rows = []
 
@@ -130,15 +142,32 @@ def read_rows(xlsx):
         c_origin, c_notes = col(h, "Origin Trait", "Origin Trai"), col(h, "Notes")
 
         max_row = ws.max_row or 0
+        last_rank = ""
+        last_tier = ""
+
         for r in range(hr + 1, max_row + 1):
             name = clean(ws.cell(r, c_name).value)
-            tier = clean(ws.cell(r, c_tier).value).upper()
+            raw_rank = clean(ws.cell(r, c_rank).value) if c_rank else ""
+            raw_tier = clean(ws.cell(r, c_tier).value).upper()
+
+            # Carry down rank/tier for visual continuation rows.
+            # This is needed because some Aegis sheet sections put alternate versions
+            # on the line below the ranked base row.
+            rank = raw_rank or last_rank
+            tier = raw_tier or last_tier
+
+            if raw_rank:
+                last_rank = raw_rank
+            if raw_tier in VALID_TIERS:
+                last_tier = raw_tier
+
             if not name or tier not in VALID_TIERS:
                 continue
 
             p1 = split_perks(ws.cell(r, c_p1).value)
             p2 = split_perks(ws.cell(r, c_p2).value)
             if not p1 or not p2:
+                # Still carry tier/rank, but do not emit a wishlist row without main perks.
                 continue
 
             rows.append({
@@ -146,7 +175,7 @@ def read_rows(xlsx):
                 "row": r,
                 "name": name,
                 "tier": tier,
-                "rank": clean(ws.cell(r, c_rank).value) if c_rank else "",
+                "rank": rank,
                 "p1": p1,
                 "p2": p2,
                 "barrel": split_perks(ws.cell(r, c_barrel).value) if c_barrel else [],
@@ -156,7 +185,6 @@ def read_rows(xlsx):
             })
 
     return rows
-
 
 def get_json(url, key=None):
     headers = {"User-Agent": "aegis-dim-builder/1.4"}
