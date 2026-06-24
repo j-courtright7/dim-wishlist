@@ -1,6 +1,6 @@
 title:Aegis-Endgame-A-and-S.txt
 description:Combined Aegis Relic DIM wishlist files for categories with explicit A/S-tier files.
-// Generated from chapo2501/theaegisrelic-wishlist on 2026-06-23T12:15:49.282629+00:00
+// Generated from chapo2501/theaegisrelic-wishlist on 2026-06-24T12:01:44.995382+00:00
 // Raw URL: https://raw.githubusercontent.com/j-courtright7/dim-wishlist/main/Aegis-Endgame-A-and-S.txt
 
 
