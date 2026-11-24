@@ -1,6 +1,6 @@
 title:Aegis-Endgame-All-Categories.txt
 description:Combined Aegis Relic DIM wishlist files from all category txt files.
-// Generated from chapo2501/theaegisrelic-wishlist on 2026-11-21T16:48:02.630472+00:00
+// Generated from chapo2501/theaegisrelic-wishlist on 2026-11-24T20:10:03.638478+00:00
 // Raw URL: https://raw.githubusercontent.com/j-courtright7/dim-wishlist/main/Aegis-Endgame-All-Categories.txt
 
 
